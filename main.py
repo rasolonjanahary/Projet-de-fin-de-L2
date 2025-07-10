@@ -20,6 +20,15 @@ model_hsgpa = joblib.load("models/model_hsgpa.pkl")
 async def home(request: Request):
     return templates.TemplateResponse("base.html", {"request": request})
 
+@app.get("/about", response_class=HTMLResponse)
+async def home(request: Request):
+    return templates.TemplateResponse("about.html", {"request": request})
+
+@app.get("/feature", response_class=HTMLResponse)
+async def home(request: Request):
+    return templates.TemplateResponse("feature.html", {"request": request})
+
+
 @app.get("/change-school", response_class=HTMLResponse)
 async def get_change_school_form(request: Request):
     return templates.TemplateResponse("change_school.html", {"request": request})
@@ -55,10 +64,25 @@ async def post_change_school_form(
         "Family Income": data.Family_Income
     }])
 
+    school_difficulty = {
+        "Harvard": 35,
+        "MIT": 30,
+        "Oxford": 28,
+        "Local University": 20,
+        "Community College": 10
+    }
+
+    def admission_chance(perf, school):
+        base = (perf - 1) / 4 * 100
+        reduction = school_difficulty.get(school, 25)
+        chance = base - reduction
+        return max(0, min(chance, 100))
+
     prediction = int(model_gpa.predict(input_df)[0])
     return templates.TemplateResponse("change_school.html", {
         "request": request,
-        "prediction": prediction
+        "prediction": prediction,
+        "admission_chances": {school: admission_chance(prediction, school) for school in school_difficulty}
     })
 
 
@@ -97,8 +121,24 @@ async def post_university_admission_form(
         "Family Income": data.Family_Income
     }])
 
+    school_difficulty = {
+        "Harvard": 35,
+        "MIT": 30,
+        "Oxford": 28,
+        "Local University": 20,
+        "Community College": 10
+    }
+
+    def admission_chance(perf, school):
+        base = (perf - 1) / 4 * 100
+        reduction = school_difficulty.get(school, 25)
+        chance = base - reduction
+        return max(0, min(chance, 100))
+
     prediction = int(model_hsgpa.predict(input_df)[0])
-    return templates.TemplateResponse("admission_universitaire.html", {
+
+    return templates.TemplateResponse("university_admission.html", {
         "request": request,
-        "prediction": prediction
+        "prediction": prediction,
+        "admission_chances": {school: admission_chance(prediction, school) for school in school_difficulty}
     })

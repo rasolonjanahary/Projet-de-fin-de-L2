@@ -1,0 +1,154 @@
+[
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Form",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTMLResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "StaticFiles",
+        "importPath": "fastapi.staticfiles",
+        "description": "fastapi.staticfiles",
+        "isExtraImport": true,
+        "detail": "fastapi.staticfiles",
+        "documentation": {}
+    },
+    {
+        "label": "Jinja2Templates",
+        "importPath": "fastapi.templating",
+        "description": "fastapi.templating",
+        "isExtraImport": true,
+        "detail": "fastapi.templating",
+        "documentation": {}
+    },
+    {
+        "label": "joblib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "joblib",
+        "description": "joblib",
+        "detail": "joblib",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "StudentInput",
+        "importPath": "schemas",
+        "description": "schemas",
+        "isExtraImport": true,
+        "detail": "schemas",
+        "documentation": {}
+    },
+    {
+        "label": "UniversityAdmissionInput",
+        "importPath": "schemas",
+        "description": "schemas",
+        "isExtraImport": true,
+        "detail": "schemas",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "app = FastAPI(title=\"Student Performance Predictor\")\napp.mount(\"/static\", StaticFiles(directory=\"static\"), name=\"static\")\ntemplates = Jinja2Templates(directory=\"templates\")\n# Charger le pipeline\nmodel_gpa = joblib.load(\"models/model_gpa.pkl\")\nmodel_hsgpa = joblib.load(\"models/model_hsgpa.pkl\")\n@app.get(\"/\", response_class=HTMLResponse)\nasync def home(request: Request):\n    return templates.TemplateResponse(\"base.html\", {\"request\": request})\n@app.get(\"/about\", response_class=HTMLResponse)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "templates",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "templates = Jinja2Templates(directory=\"templates\")\n# Charger le pipeline\nmodel_gpa = joblib.load(\"models/model_gpa.pkl\")\nmodel_hsgpa = joblib.load(\"models/model_hsgpa.pkl\")\n@app.get(\"/\", response_class=HTMLResponse)\nasync def home(request: Request):\n    return templates.TemplateResponse(\"base.html\", {\"request\": request})\n@app.get(\"/about\", response_class=HTMLResponse)\nasync def home(request: Request):\n    return templates.TemplateResponse(\"about.html\", {\"request\": request})",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "model_gpa",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "model_gpa = joblib.load(\"models/model_gpa.pkl\")\nmodel_hsgpa = joblib.load(\"models/model_hsgpa.pkl\")\n@app.get(\"/\", response_class=HTMLResponse)\nasync def home(request: Request):\n    return templates.TemplateResponse(\"base.html\", {\"request\": request})\n@app.get(\"/about\", response_class=HTMLResponse)\nasync def home(request: Request):\n    return templates.TemplateResponse(\"about.html\", {\"request\": request})\n@app.get(\"/feature\", response_class=HTMLResponse)\nasync def home(request: Request):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "model_hsgpa",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "model_hsgpa = joblib.load(\"models/model_hsgpa.pkl\")\n@app.get(\"/\", response_class=HTMLResponse)\nasync def home(request: Request):\n    return templates.TemplateResponse(\"base.html\", {\"request\": request})\n@app.get(\"/about\", response_class=HTMLResponse)\nasync def home(request: Request):\n    return templates.TemplateResponse(\"about.html\", {\"request\": request})\n@app.get(\"/feature\", response_class=HTMLResponse)\nasync def home(request: Request):\n    return templates.TemplateResponse(\"feature.html\", {\"request\": request})",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "StudentInput",
+        "kind": 6,
+        "importPath": "schemas",
+        "description": "schemas",
+        "peekOfCode": "class StudentInput(BaseModel):\n    GPA: float\n    Final_Exam_Scores: float\n    Hours_of_Study_per_Week: float\n    Attendance_Rate: float\n    Mental_Health_Status: str \n    Participation_in_Extracurricular_Activities: int\n    Family_Income: float\nclass UniversityAdmissionInput(BaseModel):\n    High_School_GPA: float",
+        "detail": "schemas",
+        "documentation": {}
+    },
+    {
+        "label": "UniversityAdmissionInput",
+        "kind": 6,
+        "importPath": "schemas",
+        "description": "schemas",
+        "peekOfCode": "class UniversityAdmissionInput(BaseModel):\n    High_School_GPA: float\n    Final_Exam_Scores: float\n    Hours_of_Study_per_Week: float\n    Attendance_Rate: float\n    Mental_Health_Status: str\n    Participation_in_Extracurricular_Activities: int\n    Family_Income: float",
+        "detail": "schemas",
+        "documentation": {}
+    }
+]
