@@ -1,0 +1,507 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+            <!-- En-tête -->
+            <div class="card shadow-lg mb-4">
+                <div class="card-header bg-gradient-primary text-white text-center">
+                    <h2 class="mb-0">
+                        <i class="fas fa-exchange-alt me-2"></i>
+                        Prédiction pour changement d'école
+                    </h2>
+                    <p class="mb-0 mt-2">Analysez votre situation académique actuelle</p>
+                </div>
+                
+                <div class="card-body p-4">
+                    <div class="alert alert-info border-0 mb-4">
+                        <i class="fas fa-info-circle me-2"></i>
+                        <strong>Information :</strong> Remplissez tous les champs pour obtenir une prédiction précise sur votre situation scolaire.
+                    </div>
+
+                    <form method="post" class="needs-validation" novalidate>
+                        <div class="row">
+                            <!-- Première colonne - Performances académiques -->
+                            <div class="col-md-6">
+                                <div class="form-section mb-4">
+                                    <h5 class="text-primary border-bottom pb-2">
+                                        <i class="fas fa-graduation-cap me-2"></i>
+                                        Performances académiques
+                                    </h5>
+                                    
+                                    <div class="mb-3">
+                                        <label for="gpa" class="form-label fw-bold">
+                                            <i class="fas fa-star text-warning me-1"></i>
+                                            GPA (Moyenne générale)
+                                        </label>
+                                        <div class="input-group">
+                                            <span class="input-group-text" style="height: 38px;">
+                                                <i class="fas fa-chart-line"></i>
+                                            </span>
+                                            <input type="number" 
+                                                   class="form-control h-100" 
+                                                   id="gpa"
+                                                   name="GPA" 
+                                                   step="0.01" 
+                                                   min="0" 
+                                                   max="4" 
+                                                   placeholder="Ex: 3.2"
+                                                   required>
+                                            <div class="invalid-feedback">
+                                                Veuillez saisir votre GPA (0-4).
+                                            </div>
+                                        </div>
+                                        <div class="form-text">
+                                            <small class="text-muted">Sur une échelle de 0.0 à 4.0</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="final_exam" class="form-label fw-bold">
+                                            <i class="fas fa-clipboard-check text-success me-1"></i>
+                                            Notes d'examens finaux
+                                        </label>
+                                        <div class="input-group">
+                                            <span class="input-group-text" style="height: 38px;">
+                                                <i class="fas fa-percentage"></i>
+                                            </span>
+                                            <input type="number" 
+                                                   class="form-control h-100" 
+                                                   id="final_exam"
+                                                   name="Final_Exam_Scores" 
+                                                   min="0" 
+                                                   max="100" 
+                                                   placeholder="Ex: 87"
+                                                   required>
+                                            <div class="invalid-feedback">
+                                                Veuillez saisir vos notes d'examens (0-100).
+                                            </div>
+                                        </div>
+                                        <div class="form-text">
+                                            <small class="text-muted">Moyenne de vos examens finaux sur 100</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="attendance" class="form-label fw-bold">
+                                            <i class="fas fa-calendar-check text-info me-1"></i>
+                                            Taux de présence
+                                        </label>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" style="height: 38px;">
+                                                <i class="fas fa-user-check"></i>
+                                            </span>
+                                            <input type="number" 
+                                                   class="form-control h-100" 
+                                                   id="attendance"
+                                                   name="Attendance_Rate" 
+                                                   step="0.01" 
+                                                   min="0" 
+                                                   max="100" 
+                                                   placeholder="Ex: 92.5"
+                                                   required>
+                                            <span class="input-group-text h-100">%</span>
+                                            <div class="invalid-feedback">
+                                                Veuillez saisir votre taux de présence (0-100%).
+                                            </div>
+                                        </div>
+                                        <div class="form-text">
+                                            <small class="text-muted">Pourcentage de présence aux cours</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Deuxième colonne - Facteurs personnels -->
+                            <div class="col-md-6">
+                                <div class="form-section mb-4">
+                                    <h5 class="text-primary border-bottom pb-2">
+                                        <i class="fas fa-user me-2"></i>
+                                        Facteurs personnels
+                                    </h5>
+                                    
+                                    <div class="mb-3">
+                                        <label for="study_hours" class="form-label fw-bold">
+                                            <i class="fas fa-clock text-warning me-1"></i>
+                                            Heures d'étude hebdomadaires
+                                        </label>
+                                        <div class="input-group" style="height: 38px;">
+                                            <span class="input-group-text h-100">
+                                                <i class="fas fa-book-open"></i>
+                                            </span>
+                                            <input type="number" 
+                                                   class="form-control h-100" 
+                                                   id="study_hours"
+                                                   name="Hours_of_Study_per_Week" 
+                                                   min="0" 
+                                                   max="168" 
+                                                   placeholder="Ex: 20"
+                                                   required>
+                                            <span class="input-group-text h-100">h</span>
+                                            <div class="invalid-feedback">
+                                                Veuillez saisir vos heures d'étude par semaine.
+                                            </div>
+                                        </div>
+                                        <div class="form-text">
+                                            <small class="text-muted">Nombre d'heures consacrées aux études par semaine</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="mental_health" class="form-label fw-bold">
+                                            <i class="fas fa-heart text-danger me-1"></i>
+                                            État de santé mentale
+                                        </label>
+                                        <input type="number" 
+                                                   class="form-control" 
+                                                   id="mental_health"
+                                                   name="Mental_Health_Status" 
+                                                   min="0" 
+                                                   max="1" 
+                                                   placeholder="Ex: 1"
+                                                   required>
+                                        <div class="invalid-feedback">
+                                            Veuillez choisir votre état de santé mentale.
+                                        </div>
+                                        <div class="form-text">
+                                            <small class="text-muted">Votre bien-être psychologique actuel</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="extracurricular" class="form-label fw-bold">
+                                            <i class="fas fa-running text-purple me-1"></i>
+                                            Activités extrascolaires
+                                        </label>
+                                        <input type="number" 
+                                                   class="form-control" 
+                                                   id="extracurricular"
+                                                   name="Participation_in_Extracurricular_Activities" 
+                                                   min="0" 
+                                                   max="1" 
+                                                   placeholder="Ex: 1"
+                                                   required>
+                                        <div class="invalid-feedback">
+                                            Veuillez choirir votre niveau de participation.
+                                        </div>
+                                        <div class="form-text">
+                                            <small class="text-muted">Sports, clubs, associations, bénévolat, etc.</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="family_income" class="form-label fw-bold">
+                                            <i class="fas fa-dollar-sign text-success me-1"></i>
+                                            Revenu familial annuel
+                                        </label>
+                                        <div class="input-group">
+                                            <span class="input-group-text" style="height: 38px;">$</span>
+                                            <input type="number" 
+                                                   class="form-control h-100" 
+                                                   id="family_income"
+                                                   name="Family_Income" 
+                                                   min="0" 
+                                                   placeholder="Ex: 45000"
+                                                   required>
+                                            <div class="invalid-feedback">
+                                                Veuillez saisir le revenu familial.
+                                            </div>
+                                        </div>
+                                        <div class="form-text">
+                                            <small class="text-muted">Revenu brut annuel du foyer en dollars</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bouton de soumission -->
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn btn-primary btn-lg px-5 py-3">
+                                <i class="fas fa-magic me-2"></i>
+                                Obtenir la prédiction
+                                <i class="fas fa-arrow-right ms-2"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Résultats -->
+            {% if prediction is defined %}
+            <div class="card shadow-lg result-card">
+                <div class="card-header bg-gradient-success text-white text-center">
+                    <h3 class="mb-0">
+                        <i class="fas fa-chart-pie me-2"></i>
+                        Résultat de votre analyse
+                    </h3>
+                </div>
+                <div class="card-body text-center p-5">
+                    <div class="result-display">
+                        <div class="prediction-icon mb-3">
+                            <i class="fas fa-bullseye fa-3x text-primary"></i>
+                        </div>
+                        <h2 class="text-primary mb-3">{{ prediction }}</h2>
+                        <p class="lead text-muted mb-4">
+                            Basé sur l'analyse de vos données académiques et personnelles
+                        </p>
+                        
+                        <div class="row mt-4">
+                            <div class="col-md-4">
+                                <div class="stat-card p-3">
+                                    <i class="fas fa-graduation-cap fa-2x text-warning mb-2"></i>
+                                    <h6 class="text-muted">Performances</h6>
+                                    <p class="mb-0">Analysées</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="stat-card p-3">
+                                    <i class="fas fa-brain fa-2x text-info mb-2"></i>
+                                    <h6 class="text-muted">Facteurs</h6>
+                                    <p class="mb-0">Évalués</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="stat-card p-3">
+                                    <i class="fas fa-check-circle fa-2x text-success mb-2"></i>
+                                    <h6 class="text-muted">Résultat</h6>
+                                    <p class="mb-0">Obtenu</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h5 class="mb-3">
+                            <i class="fas fa-university me-2"></i>
+                            Chances d'admission par établissement :
+                        </h5>
+                        
+                        <div class="row">
+                            {% for school, chance in admission_chances.items() %}
+                            <div class="col-md-6 mb-3">
+                                <div class="card border-left-primary">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="text-primary mb-0">{{ school }}</h6>
+                                            <span class="badge bg-primary rounded-pill fs-6">{{ chance }}%</span>
+                                        </div>
+                                        <div class="progress mt-2" style="height: 8px;">
+                                            <div class="progress-bar" 
+                                                role="progressbar" 
+                                                aria-valuenow="{{ chance }}" 
+                                                aria-valuemin="0" 
+                                                aria-valuemax="100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+
+                        <div class="mt-4">
+                            <a href="" class="btn btn-outline-primary btn-lg me-3">
+                                <i class="fas fa-redo me-2"></i>
+                                Nouvelle analyse
+                            </a>
+                            <button class="btn btn-outline-success btn-lg" onclick="window.print()">
+                                <i class="fas fa-print me-2"></i>
+                                Imprimer le résultat
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<style>
+.bg-gradient-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.bg-gradient-success {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+}
+
+.text-purple {
+    color: #6f42c1 !important;
+}
+
+.card {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card-header {
+    border-bottom: none;
+    padding: 1.5rem;
+}
+
+.form-section {
+    background: rgba(248, 249, 250, 0.5);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+.input-group-text {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+}
+
+.btn-outline-primary {
+    border: 2px solid #667eea;
+    color: #667eea;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    transform: translateY(-2px);
+}
+
+.btn-outline-success {
+    border: 2px solid #11998e;
+    color: #11998e;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-success:hover {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    transform: translateY(-2px);
+}
+
+.result-card {
+    animation: slideInUp 0.6s ease-out;
+}
+
+.prediction-icon {
+    animation: pulse 2s infinite;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    margin: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.result-display {
+    animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .form-section {
+        padding: 1rem;
+    }
+    
+    .card-body {
+        padding: 1.5rem !important;
+    }
+    
+    .btn-lg {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+/* Print styles */
+@media print {
+    .btn, .card-header {
+        display: none !important;
+    }
+    
+    .result-card {
+        box-shadow: none !important;
+        border: 1px solid #ddd !important;
+    }
+}
+</style>
+
+<script>
+// Validation Bootstrap
+(function() {
+    'use strict';
+    window.addEventListener('load', function() {
+        var forms = document.getElementsByClassName('needs-validation');
+        var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+        });
+    }, false);
+})();
+
+// Animation des input groups
+document.addEventListener('DOMContentLoaded', function() {
+    const inputs = document.querySelectorAll('.form-control, .form-select');
+    inputs.forEach(input => {
+        input.addEventListener('focus', function() {
+            this.parentElement.style.transform = 'scale(1.02)';
+        });
+        input.addEventListener('blur', function() {
+            this.parentElement.style.transform = 'scale(1)';
+        });
+    });
+});
+</script>
+{% endblock %}
