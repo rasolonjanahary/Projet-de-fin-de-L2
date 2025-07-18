@@ -46,13 +46,15 @@
 ## 4. Australian dataset  
 - **Source** : [https://www.kaggle.com/datasets/nasirayub2/australian-student-performancedata-aspd24](https://www.kaggle.com/datasets/nasirayub2/australian-student-performancedata-aspd24) 
 - **Colonnes clés** : 51 colonnes dont GPA, High School GPA, Entrance Exam Score, Attendance, Family Income, Parental Education, Health, Mental Health, Exam Scores, Performance  
-- **Taille** :10000
+- **Taille** : Non précisée  
 - **Note** : 85/100  
 - **Respect du sujet** : Oui  
 - **Commentaires** :  
+  - Très complet, avec données académiques, socio-économiques et personnelles.  
   - Cible possible : `Performance` (comportement/ réussite académique).  
   - Riche en variables explicatives, idéal pour un modèle avancé.  
   - Peu d’informations sur la source et taille exacte.  
 
 ---
+
 
