@@ -1,5 +1,48 @@
 [
     {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
         "label": "FastAPI",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -65,15 +108,6 @@
         "documentation": {}
     },
     {
-        "label": "pandas",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "pandas",
-        "description": "pandas",
-        "detail": "pandas",
-        "documentation": {}
-    },
-    {
         "label": "StudentInput",
         "importPath": "schemas",
         "description": "schemas",
@@ -90,65 +124,84 @@
         "documentation": {}
     },
     {
-        "label": "BaseModel",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
+        "label": "StudentInput",
+        "kind": 6,
+        "importPath": "other.schemas",
+        "description": "other.schemas",
+        "peekOfCode": "class StudentInput(BaseModel):\n    GPA: float\n    Final_Exam_Scores: float\n    Hours_of_Study_per_Week: float\n    Attendance_Rate: float\n    Mental_Health_Status: str \n    Participation_in_Extracurricular_Activities: int\n    Family_Income: float\nclass UniversityAdmissionInput(BaseModel):\n    High_School_GPA: float",
+        "detail": "other.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "UniversityAdmissionInput",
+        "kind": 6,
+        "importPath": "other.schemas",
+        "description": "other.schemas",
+        "peekOfCode": "class UniversityAdmissionInput(BaseModel):\n    High_School_GPA: float\n    Final_Exam_Scores: float\n    Hours_of_Study_per_Week: float\n    Attendance_Rate: float\n    Mental_Health_Status: str\n    Participation_in_Extracurricular_Activities: int\n    Family_Income: float",
+        "detail": "other.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "extract_data_from_page",
+        "kind": 2,
+        "importPath": "other.scrap",
+        "description": "other.scrap",
+        "peekOfCode": "def extract_data_from_page(url):\n    response = requests.get(url)\n    soup = BeautifulSoup(response.content, 'html.parser')\n    data = []\n    # Trouver toutes les rangées principales\n    main_rows = soup.select('table.tw-min-w-full tbody tr:not(.tw-border-none)')\n    for main_row in main_rows:\n        # Extraire les données de la rangée principale\n        school = main_row.select_one('td:nth-child(1) .tw-font-medium')\n        school = school.get_text(strip=True) if school else 'N/A'",
+        "detail": "other.scrap",
+        "documentation": {}
+    },
+    {
+        "label": "extract_gpa_gre",
+        "kind": 2,
+        "importPath": "other.scrap",
+        "description": "other.scrap",
+        "peekOfCode": "def extract_gpa_gre(details):\n    patterns = {\n        'GPA': r'GPA (\\d+\\.\\d+)',\n        'GRE': r'GRE (\\d+)',\n        'GRE_V': r'GRE V (\\d+)',\n        'GRE_Q': r'GRE Q (\\d+)',\n        'GRE_AW': r'GRE AW (\\d+\\.\\d+)',\n        'TOEFL': r'TOEFL (\\d+)',\n        'IELTS': r'IELTS (\\d+\\.\\d+)'\n    }",
+        "detail": "other.scrap",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "other.scrap",
+        "description": "other.scrap",
+        "peekOfCode": "def main():\n    base_url = 'https://www.thegradcafe.com/survey/?q=&sort=newest&institution=&program=&degree=&season=&decision=&decision_start=&decision_end=&added_start=&added_end=&page='\n    pages = 6000\n    all_data = []\n    for i in range(1, pages + 1):\n        url = f'{base_url}{i}'\n        print(f\"Extracting data from page {i}...\")\n        page_data = extract_data_from_page(url)\n        all_data.extend(page_data)\n        if len(all_data) >= 1000000:",
+        "detail": "other.scrap",
         "documentation": {}
     },
     {
         "label": "app",
         "kind": 5,
-        "importPath": "main",
-        "description": "main",
+        "importPath": "web.main",
+        "description": "web.main",
         "peekOfCode": "app = FastAPI(title=\"Student Performance Predictor\")\napp.mount(\"/static\", StaticFiles(directory=\"static\"), name=\"static\")\ntemplates = Jinja2Templates(directory=\"templates\")\n# Charger le pipeline\nmodel_gpa = joblib.load(\"models/model_gpa.pkl\")\nmodel_hsgpa = joblib.load(\"models/model_hsgpa.pkl\")\n@app.get(\"/\", response_class=HTMLResponse)\nasync def home(request: Request):\n    return templates.TemplateResponse(\"base.html\", {\"request\": request})\n@app.get(\"/about\", response_class=HTMLResponse)",
-        "detail": "main",
+        "detail": "web.main",
         "documentation": {}
     },
     {
         "label": "templates",
         "kind": 5,
-        "importPath": "main",
-        "description": "main",
+        "importPath": "web.main",
+        "description": "web.main",
         "peekOfCode": "templates = Jinja2Templates(directory=\"templates\")\n# Charger le pipeline\nmodel_gpa = joblib.load(\"models/model_gpa.pkl\")\nmodel_hsgpa = joblib.load(\"models/model_hsgpa.pkl\")\n@app.get(\"/\", response_class=HTMLResponse)\nasync def home(request: Request):\n    return templates.TemplateResponse(\"base.html\", {\"request\": request})\n@app.get(\"/about\", response_class=HTMLResponse)\nasync def home(request: Request):\n    return templates.TemplateResponse(\"about.html\", {\"request\": request})",
-        "detail": "main",
+        "detail": "web.main",
         "documentation": {}
     },
     {
         "label": "model_gpa",
         "kind": 5,
-        "importPath": "main",
-        "description": "main",
+        "importPath": "web.main",
+        "description": "web.main",
         "peekOfCode": "model_gpa = joblib.load(\"models/model_gpa.pkl\")\nmodel_hsgpa = joblib.load(\"models/model_hsgpa.pkl\")\n@app.get(\"/\", response_class=HTMLResponse)\nasync def home(request: Request):\n    return templates.TemplateResponse(\"base.html\", {\"request\": request})\n@app.get(\"/about\", response_class=HTMLResponse)\nasync def home(request: Request):\n    return templates.TemplateResponse(\"about.html\", {\"request\": request})\n@app.get(\"/feature\", response_class=HTMLResponse)\nasync def home(request: Request):",
-        "detail": "main",
+        "detail": "web.main",
         "documentation": {}
     },
     {
         "label": "model_hsgpa",
         "kind": 5,
-        "importPath": "main",
-        "description": "main",
+        "importPath": "web.main",
+        "description": "web.main",
         "peekOfCode": "model_hsgpa = joblib.load(\"models/model_hsgpa.pkl\")\n@app.get(\"/\", response_class=HTMLResponse)\nasync def home(request: Request):\n    return templates.TemplateResponse(\"base.html\", {\"request\": request})\n@app.get(\"/about\", response_class=HTMLResponse)\nasync def home(request: Request):\n    return templates.TemplateResponse(\"about.html\", {\"request\": request})\n@app.get(\"/feature\", response_class=HTMLResponse)\nasync def home(request: Request):\n    return templates.TemplateResponse(\"feature.html\", {\"request\": request})",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
-        "label": "StudentInput",
-        "kind": 6,
-        "importPath": "schemas",
-        "description": "schemas",
-        "peekOfCode": "class StudentInput(BaseModel):\n    GPA: float\n    Final_Exam_Scores: float\n    Hours_of_Study_per_Week: float\n    Attendance_Rate: float\n    Mental_Health_Status: str \n    Participation_in_Extracurricular_Activities: int\n    Family_Income: float\nclass UniversityAdmissionInput(BaseModel):\n    High_School_GPA: float",
-        "detail": "schemas",
-        "documentation": {}
-    },
-    {
-        "label": "UniversityAdmissionInput",
-        "kind": 6,
-        "importPath": "schemas",
-        "description": "schemas",
-        "peekOfCode": "class UniversityAdmissionInput(BaseModel):\n    High_School_GPA: float\n    Final_Exam_Scores: float\n    Hours_of_Study_per_Week: float\n    Attendance_Rate: float\n    Mental_Health_Status: str\n    Participation_in_Extracurricular_Activities: int\n    Family_Income: float",
-        "detail": "schemas",
+        "detail": "web.main",
         "documentation": {}
     }
 ]
