@@ -1,0 +1,131 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{lipsum}
+
+\geometry{margin=2.5cm}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\thepage}
+\lhead{Projet de Fin d'Études}
+
+%-------------------
+% Couverture
+%-------------------
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    {\scshape\LARGE Université / Institut \par}
+    \vspace{1cm}
+    {\scshape\Large Rapport de Projet de Fin d'Études \par}
+    \vspace{1.5cm}
+    {\huge\bfseries Titre du Projet \par}
+    \vspace{2cm}
+    {\Large\itshape Prénom NOM de l'étudiant \par}
+    \vfill
+    Encadrant : Nom Prénom\\
+    Filière : Data Analyse\\
+    Année universitaire : 2024 -- 2025
+    \vfill
+    {\large \today\par}
+\end{titlepage}
+
+%-------------------
+% Remerciements
+%-------------------
+\chapter*{Remerciements}
+\addcontentsline{toc}{chapter}{Remerciements}
+\lipsum[1]
+
+%-------------------
+% Résumé
+%-------------------
+\chapter*{Résumé}
+\addcontentsline{toc}{chapter}{Résumé}
+\lipsum[2]
+
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+\lipsum[2]
+
+%-------------------
+% Table des matières
+%-------------------
+\tableofcontents
+\newpage
+
+%-------------------
+% Introduction
+%-------------------
+\chapter{Introduction Générale}
+\section{Contexte}
+\section{Problématique}
+\section{Objectifs}
+\section{Démarche méthodologique}
+\section{Structure du document}
+
+%-------------------
+% Partie I
+%-------------------
+\chapter{Étude et Préparation des Données}
+\section{Présentation des données}
+\section{Nettoyage}
+\section{Transformation}
+\section{Analyse exploratoire}
+
+%-------------------
+% Partie II
+%-------------------
+\chapter{Modélisation}
+\section{Choix des modèles}
+\section{Évaluation}
+\section{Comparaison}
+\section{Sélection finale}
+
+%-------------------
+% Partie III
+%-------------------
+\chapter{Résultats et Interprétations}
+\section{Performances}
+\section{Interprétations}
+\section{Limitations}
+
+%-------------------
+% Partie IV
+%-------------------
+\chapter{Perspectives d'Amélioration}
+\section{Améliorations possibles}
+\section{Déploiement ou intégration}
+
+%-------------------
+% Conclusion
+%-------------------
+\chapter{Conclusion Générale}
+\lipsum[3]
+
+%-------------------
+% Annexes
+%-------------------
+\appendix
+\chapter{Annexes}
+\section{Code source}
+\section{Tables complémentaires}
+
+%-------------------
+% Bibliographie
+%-------------------
+\begin{thebibliography}{9}
+\addcontentsline{toc}{chapter}{Bibliographie}
+\bibitem{ex1} Auteur, \textit{Titre du livre}, Maison d'édition, année.
+\bibitem{ex2} Site web : \url{https://...}
+\end{thebibliography}
+
+\end{document}
