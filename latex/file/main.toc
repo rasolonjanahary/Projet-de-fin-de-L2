@@ -16,3 +16,8 @@
 \contentsline {subsection}{\numberline {1.6.5}Étude des valeurs aberrantes}{7}{subsection.1.6.5}%
 \contentsline {subsection}{\numberline {1.6.6}Étude des corrélations}{7}{subsection.1.6.6}%
 \contentsline {subsection}{\numberline {1.6.7}Conclusion de l'exploration}{7}{subsection.1.6.7}%
+\contentsline {chapter}{\numberline {2}Visualisation des Données}{8}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduction}{8}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Analyse univariée}{9}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Analyse bivariée}{15}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Conclusion}{19}{section.2.4}%
