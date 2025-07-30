@@ -1,0 +1,85 @@
+\section{Exploration des données}
+
+\subsection{Chargement du jeu de données}
+
+Le jeu de données a été chargé au format CSV à l’aide de la bibliothèque \texttt{pandas} :
+
+\begin{verbatim}
+import pandas as pd
+df = pd.read_csv("admission_data.csv")
+\end{verbatim}
+
+La commande \texttt{df.info()} a permis d'obtenir un aperçu des colonnes, de leurs types et du nombre de valeurs non nulles. On compte 9 colonnes et 550 lignes.
+
+\subsection{Aperçu des données}
+
+\begin{itemize}
+    \item Le jeu de données contient des variables quantitatives continues (\textit{GRE Score}, \textit{TOEFL Score}, \textit{CGPA}, \textit{Chance of Admit}) et discrètes (\textit{University Rating}, \textit{SOP}, \textit{LOR}, \textit{Research}).
+    \item L’attribut \textit{Chance of Admit} est la variable cible. Elle indique la probabilité d’admission.
+\end{itemize}
+
+\subsection{Traitement des valeurs manquantes}
+
+Des valeurs manquantes ont été détectées dans deux colonnes :
+\begin{itemize}
+    \item \textbf{TOEFL Score}
+    \item \textbf{SOP (Statement of Purpose)}
+\end{itemize}
+
+Ces deux colonnes présentaient chacune 37 valeurs manquantes.
+
+La stratégie choisie a été de supprimer toutes les lignes contenant au moins une valeur manquante :
+
+\begin{verbatim}
+df_clean = df.dropna()
+\end{verbatim}
+
+Puis une vérification a été effectuée pour s'assurer qu'il ne restait plus de données manquantes :
+
+\begin{verbatim}
+df_clean.isnull().sum()
+\end{verbatim}
+
+Résultat : toutes les valeurs manquantes ont été supprimées. Le jeu de données final contient 513 lignes.
+
+\subsection{Détection de doublons}
+
+Pour vérifier la présence de doublons, j’ai utilisé la commande suivante :
+
+\begin{verbatim}
+df_clean.duplicated().sum()
+\end{verbatim}
+
+Résultat : aucune ligne dupliquée n’a été détectée.
+
+\subsection{Étude des valeurs aberrantes}
+
+Des diagrammes en boîte (\textit{boxplots}) ont été tracés pour les variables numériques afin de visualiser les potentiels outliers. Bien que certains points soient situés à l’extérieur des moustaches, aucun n’a été jugé significativement aberrant ou incohérent (par exemple, un CGPA supérieur à 10 ou un score GRE supérieur à 340). Aucun traitement particulier n’a été effectué à ce stade.
+
+\subsection{Étude des corrélations}
+
+Une matrice de corrélation a été générée pour évaluer les relations entre les variables :
+
+\begin{verbatim}
+corr_matrix = df_clean.corr()
+\end{verbatim}
+
+Les coefficients de corrélation les plus élevés avec la variable cible \textit{Chance of Admit} sont :
+\begin{itemize}
+    \item \textbf{CGPA} : 0.87
+    \item \textbf{GRE Score} : 0.82
+    \item \textbf{TOEFL Score} : 0.79
+    \item \textbf{Research} : 0.55
+\end{itemize}
+
+On constate que les performances académiques (CGPA, GRE, TOEFL) et l'expérience de recherche sont fortement liées aux chances d'admission.
+
+\subsection{Conclusion de l'exploration}
+
+L'analyse exploratoire a permis de :
+\begin{itemize}
+    \item Nettoyer le jeu de données (suppression des lignes incomplètes),
+    \item Confirmer l'absence de doublons,
+    \item Identifier les variables les plus corrélées à la cible,
+    \item Préparer les données pour les étapes de visualisation et de modélisation.
+\end{itemize}

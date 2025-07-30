@@ -1,0 +1,68 @@
+\documentclass[12pt,a4paper]{report}
+
+% ------------ Packages ------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{float}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{lipsum}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{color}
+\usepackage{array}
+
+% ------------ Marges ------------
+\geometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+
+% ------------ En-têtes/Pieds de page ------------
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\thepage}
+\lhead{\nouppercase{\leftmark}}
+
+% ------------ Sections (titre stylisé) ------------
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries\Huge}
+  {\chaptername\ \thechapter}{20pt}{\Huge}
+
+% ------------ Titre ------------
+\title{
+    \vspace*{1cm}
+    \includegraphics[width=0.35\textwidth]{insi.png} \\[1.5cm]  % <-- Ton logo
+    \textbf{\Huge Projet de Fin d'Études} \\[1cm]
+    \Large Analyse Prédictive sur des Données Réelles \\[0.5cm]
+    \normalsize Parcours Data Analyst \\[2cm]
+    \textbf{Année universitaire 2024–2025} \\[3cm]
+    \normalsize Réalisé par : Aritendry Ramahafeno \\
+    En collaboration avec : Bernardin RASOLONJANAHARY \\
+    Encadré par :Docteur Dimby  \\
+    \vspace*{1cm}
+}
+\date{}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+% ------------ Import des fichiers ------------
+\input{remerciements}
+\input{resume}
+\input{introduction}
+\input{exploration}         % EDA
+%\input{nettoyage}           % Nettoyage des données
+%\input{visualisation}
+%\input{modelisation}        % Machine Learning
+%\input{resultats}
+%\input{conclusion}
+%\input{biblio}
+
+\end{document}
