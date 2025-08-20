@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.7.28)  30 JUL 2025 10:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.7.28)  20 AUG 2025 18:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -550,7 +550,7 @@ Package hyperref Info: Link coloring OFF on input line 50.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-<insi.png, id=92, 914.41624pt x 913.4125pt>
+<insi.png, id=136, 914.41624pt x 913.4125pt>
 File: insi.png Graphic file (type png)
 <use insi.png>
 Package pdftex.def Info: insi.png  used on input line 53.
@@ -584,48 +584,57 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[2] (./main.toc)
-\tf@toc=\write4
-\openout4 = `main.toc'.
-
-
+[2] (./main.toc
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.54 \newpage
-              [1
+l.34 ...{\numberline {5}Conclusion}{31}{chapter.5}
+                                                  % [1
 
-] (./remerciements.tex) (./resume.tex
+])
+\tf@toc=\write4
+\openout4 = `main.toc'.
+
+
+
+Package babel Info: 'french' activates 'french' shorthands.
+(babel)             Reported on input line 54.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1 \chapter
-            *{Résumé} [2
-
-]
+l.54 \newpage
+              [2] (./remerciements.tex) (./resume.tex
 
 [3
 
-]) (./introduction.tex
+]
 
 [4
+
+]) (./introduction.tex
+
+[5
 
 ]
 Chapitre 1.
 ) (./exploration.tex
 
-[5
+[6
 
 ]
 
-Package babel Info: 'french' activates 'french' shorthands.
-(babel)             Reported on input line 58.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -633,7 +642,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[6]) (./visualisation.tex
+[7]) (./visualisation.tex
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -642,157 +651,42 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[7]
+[8]
 Chapitre 2.
-! Undefined control sequence.
-<argument> latexfigures 
-                        hist _gre_score.png
-l.20 ...xtwidth]{latex\figures\hist_gre_score.png}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
-<argument> latexfigures hist 
-                             _gre_score.png
-l.20 ...xtwidth]{latex\figures\hist_gre_score.png}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> latexfigures 
-                        hist _gre_score.png
-l.20 ...xtwidth]{latex\figures\hist_gre_score.png}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> latexfigures hist 
-                             _gre_score.png
-l.20 ...xtwidth]{latex\figures\hist_gre_score.png}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> latexfigures 
-                        hist _gre_score.png
-l.20 ...xtwidth]{latex\figures\hist_gre_score.png}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> latexfigures hist 
-                             _gre_score.png
-l.20 ...xtwidth]{latex\figures\hist_gre_score.png}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<write> 
-LaTeX Warning: File `latex\figures 
-                                            \hist _gre_score.png' not found\...
-l.20 ...xtwidth]{latex\figures\hist_gre_score.png}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<write> 
-LaTeX Warning: File `latex\figures \hist 
-                                                  _gre_score.png' not found\...
-l.20 ...xtwidth]{latex\figures\hist_gre_score.png}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+LaTeX Warning: File `latex/figures/hist_gre_score.png' not found on input line 
+20.
 
 
-LaTeX Warning: File `latex_gre_score.png' not found on input line 20.
-
-
-! Package pdftex.def Error: File `latex_gre_score.png' not found: using draft s
-etting.
+! Package pdftex.def Error: File `latex/figures/hist_gre_score.png' not found: 
+using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.20 ...xtwidth]{latex\figures\hist_gre_score.png}
+l.20 ...xtwidth]{latex/figures/hist_gre_score.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
 
-[8
+[9
 
 ]
 
-LaTeX Warning: File `figures/hist_cgpa.png' not found on input line 28.
+LaTeX Warning: File `latex/figures/hist_cgpa.png' not found on input line 30.
 
 
-! Package pdftex.def Error: File `figures/hist_cgpa.png' not found: using draft
- setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.28 ...dth=0.65\textwidth]{figures/hist_cgpa.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[9]
-
-LaTeX Warning: File `figures/hist_toefl_score.png' not found on input line 36.
-
-
-! Package pdftex.def Error: File `figures/hist_toefl_score.png' not found: usin
-g draft setting.
+! Package pdftex.def Error: File `latex/figures/hist_cgpa.png' not found: using
+ draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.36 ...5\textwidth]{figures/hist_toefl_score.png}
+l.30 ...65\textwidth]{latex/figures/hist_cgpa.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -808,18 +702,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [10]
 
-LaTeX Warning: File `figures/hist_university_rating.png' not found on input lin
-e 44.
+LaTeX Warning: File `latex/figures/hist_toefl_score.png' not found on input lin
+e 40.
 
 
-! Package pdftex.def Error: File `figures/hist_university_rating.png' not found
+! Package pdftex.def Error: File `latex/figures/hist_toefl_score.png' not found
 : using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.44 ...width]{figures/hist_university_rating.png}
+l.40 ...width]{latex/figures/hist_toefl_score.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -835,17 +729,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [11]
 
-LaTeX Warning: File `figures/pie_research.png' not found on input line 52.
+LaTeX Warning: File `latex/figures/hist_university_rating.png' not found on inp
+ut line 50.
 
 
-! Package pdftex.def Error: File `figures/pie_research.png' not found: using dr
-aft setting.
+! Package pdftex.def Error: File `latex/figures/hist_university_rating.png' not
+ found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.52 ...=0.55\textwidth]{figures/pie_research.png}
+l.50 ...{latex/figures/hist_university_rating.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -861,18 +756,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [12]
 
-LaTeX Warning: File `figures/hist_chance_admit.png' not found on input line 60.
+LaTeX Warning: File `latex/figures/pie_research.png' not found on input line 60
+.
 
 
-
-! Package pdftex.def Error: File `figures/hist_chance_admit.png' not found: usi
-ng draft setting.
+! Package pdftex.def Error: File `latex/figures/pie_research.png' not found: us
+ing draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.60 ...\textwidth]{figures/hist_chance_admit.png}
+l.60 ...textwidth]{latex/figures/pie_research.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -888,18 +783,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [13]
 
-LaTeX Warning: File `figures/scatter_gre_admit.png' not found on input line 70.
+LaTeX Warning: File `latex/figures/hist_chance_admit.png' not found on input li
+ne 70.
 
 
-
-! Package pdftex.def Error: File `figures/scatter_gre_admit.png' not found: usi
-ng draft setting.
+! Package pdftex.def Error: File `latex/figures/hist_chance_admit.png' not foun
+d: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.70 ...\textwidth]{figures/scatter_gre_admit.png}
+l.70 ...idth]{latex/figures/hist_chance_admit.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -915,18 +810,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [14]
 
-LaTeX Warning: File `figures/scatter_cgpa_admit.png' not found on input line 78
-.
+LaTeX Warning: File `latex/figures/scatter_gre_admit.png' not found on input li
+ne 82.
 
 
-! Package pdftex.def Error: File `figures/scatter_cgpa_admit.png' not found: us
-ing draft setting.
+! Package pdftex.def Error: File `latex/figures/scatter_gre_admit.png' not foun
+d: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.78 ...textwidth]{figures/scatter_cgpa_admit.png}
+l.82 ...idth]{latex/figures/scatter_gre_admit.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -942,18 +837,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [15]
 
-LaTeX Warning: File `figures/scatter_toefl_admit.png' not found on input line 8
-6.
+LaTeX Warning: File `latex/figures/scatter_cgpa_admit.png' not found on input l
+ine 92.
 
 
-! Package pdftex.def Error: File `figures/scatter_toefl_admit.png' not found: u
-sing draft setting.
+! Package pdftex.def Error: File `latex/figures/scatter_cgpa_admit.png' not fou
+nd: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.86 ...extwidth]{figures/scatter_toefl_admit.png}
+l.92 ...dth]{latex/figures/scatter_cgpa_admit.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -969,18 +864,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [16]
 
-LaTeX Warning: File `figures/boxplot_research_admit.png' not found on input lin
-e 94.
+LaTeX Warning: File `latex/figures/scatter_toefl_admit.png' not found on input 
+line 102.
 
 
-! Package pdftex.def Error: File `figures/boxplot_research_admit.png' not found
-: using draft setting.
+! Package pdftex.def Error: File `latex/figures/scatter_toefl_admit.png' not fo
+und: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.94 ...width]{figures/boxplot_research_admit.png}
+l.102 ...h]{latex/figures/scatter_toefl_admit.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -996,18 +891,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [17]
 
-LaTeX Warning: File `figures/bar_research_counts.png' not found on input line 1
-07.
+LaTeX Warning: File `latex/figures/boxplot_research_admit.png' not found on inp
+ut line 112.
 
 
-! Package pdftex.def Error: File `figures/bar_research_counts.png' not found: u
-sing draft setting.
+! Package pdftex.def Error: File `latex/figures/boxplot_research_admit.png' not
+ found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.107 ...xtwidth]{figures/bar_research_counts.png}
+l.112 ...latex/figures/boxplot_research_admit.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1021,7 +916,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[18])
+[18]
+
+LaTeX Warning: File `latex/figures/bar_research_counts.png' not found on input 
+line 127.
+
+
+! Package pdftex.def Error: File `latex/figures/bar_research_counts.png' not fo
+und: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.127 ...h]{latex/figures/bar_research_counts.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1030,34 +943,378 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[19] (./main.aux)
+[19]
+Overfull \hbox (1.59433pt too wide) in paragraph at lines 151--153
+[]$\T1/cmtt/m/n/12 https : / / sourceforge . net / projects / triangleinequal /
+ files / Grad % 20Cafe % 20Data /
+ []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[20]
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.158 \end{itemize}
+                   
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<../figures/head.png, id=286, 326.4195pt x 139.11975pt>
+File: ../figures/head.png Graphic file (type png)
+<use ../figures/head.png>
+Package pdftex.def Info: ../figures/head.png  used on input line 164.
+(pdftex.def)             Requested size: 364.19667pt x 155.22502pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 165.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: File `latex/figures/corr.png' not found on input line 172.
+
+
+! Package pdftex.def Error: File `latex/figures/corr.png' not found: using draf
+t setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.172 ...th=0.7\textwidth]{latex/figures/corr.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.180 \end{itemize}
+                   
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[21 <../figures/head.PNG>]
+Overfull \hbox (64.82925pt too wide) in paragraph at lines 191--193
+[]$\T1/cmtt/m/n/12 https : / / www . kaggle . com / datasets / nasirayub2 / aus
+tralian-[]student-[]performancedata-[]aspd24$[] 
+ []
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 \end{itemize}
+                   
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `latex/figures/head1.png' not found on input line 204.
+
+
+! Package pdftex.def Error: File `latex/figures/head1.png' not found: using dra
+ft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.204 ...h=0.8\textwidth]{latex/figures/head1.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `latex/figures/head12.png' not found on input line 205.
+
+
+! Package pdftex.def Error: File `latex/figures/head12.png' not found: using dr
+aft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.205 ...=0.8\textwidth]{latex/figures/head12.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 206.
+See the caption package documentation for explanation.
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[22]
+
+LaTeX Warning: File `latex/figures/corr1.png' not found on input line 213.
+
+
+! Package pdftex.def Error: File `latex/figures/corr1.png' not found: using dra
+ft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.213 ...h=0.7\textwidth]{latex/figures/corr1.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[23]
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.222 \end{itemize}
+                   
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+) (./modelisation.tex
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[24]
+Chapitre 3.
+
+LaTeX Warning: File `figures/learning_curve_svc.png' not found on input line 40
+.
+
+
+! Package pdftex.def Error: File `figures/learning_curve_svc.png' not found: us
+ing draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.40 ...textwidth]{figures/learning_curve_svc.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+[25
+
+]
+
+LaTeX Warning: File `figures/learning_curve_rf.png' not found on input line 46.
+
+
+
+! Package pdftex.def Error: File `figures/learning_curve_rf.png' not found: usi
+ng draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 ...\textwidth]{figures/learning_curve_rf.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[26]
+
+LaTeX Warning: File `figures/learning_curve_dtc.png' not found on input line 52
+.
+
+
+! Package pdftex.def Error: File `figures/learning_curve_dtc.png' not found: us
+ing draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 ...textwidth]{figures/learning_curve_dtc.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[27]
+
+LaTeX Warning: File `figures/learning_curve_lr.png' not found on input line 58.
+
+
+
+! Package pdftex.def Error: File `figures/learning_curve_lr.png' not found: usi
+ng draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 ...\textwidth]{figures/learning_curve_lr.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[28]
+
+LaTeX Warning: File `figures/learning_curve_knn.png' not found on input line 64
+.
+
+
+! Package pdftex.def Error: File `figures/learning_curve_knn.png' not found: us
+ing draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.64 ...textwidth]{figures/learning_curve_knn.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[29]) (./deploiement.tex
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[30]
+Chapitre 4.
+) (./conclusion.tex
+
+[31
+
+]
+Chapitre 5.
+)
+
+[32
+
+] (./main.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-19>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 4A8EEB6E2040A7340E970280A56FB815;3346.
+(rerunfilecheck)             Checksum: 3DBF75F20044F6C430539D3D61E34526;4976.
  ) 
 Here is how much of TeX's memory you used:
- 15416 strings out of 467816
- 256140 string characters out of 5436431
- 753938 words of memory out of 5000000
- 43781 multiletter control sequences out of 15000+600000
+ 15774 strings out of 467816
+ 269731 string characters out of 5436431
+ 757788 words of memory out of 5000000
+ 44098 multiletter control sequences out of 15000+600000
  642693 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,79p,480b,493s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texl
-ive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2025/t
-exmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2025/texmf-dist/
-fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2025/texmf-dist/fonts/type
-1/public/cm-super/sfcc1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/c
-m-super/sfrm1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sf
-rm1728.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb
-><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on main.pdf (21 pages, 268634 bytes).
+ 75i,12n,79p,480b,747s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texl
+ive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2025/t
+exmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2025/texmf-dist/
+fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2025/texmf-dist/fonts/type
+1/public/cm-super/sfbx2488.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/c
+m-super/sfcc1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sf
+rm1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb
+><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb><c:/texli
+ve/2025/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on main.pdf (34 pages, 309471 bytes).
 PDF statistics:
- 279 PDF objects out of 1000 (max. 8388607)
- 233 compressed objects within 3 object streams
- 54 named destinations out of 1000 (max. 500000)
- 182 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 415 PDF objects out of 1000 (max. 8388607)
+ 351 compressed objects within 4 object streams
+ 86 named destinations out of 1000 (max. 500000)
+ 275 words of extra memory for PDF output out of 10000 (max. 10000000)
 

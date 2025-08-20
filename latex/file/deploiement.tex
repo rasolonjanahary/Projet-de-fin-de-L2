@@ -1,0 +1,30 @@
+\chapter{Déploiement}
+
+Dans ce chapitre, nous présentons la manière dont le modèle entraîné peut être testé par un utilisateur.
+
+\section{Test interactif du modèle}
+Un script Python a été développé pour permettre à l'utilisateur d'entrer ses informations académiques et personnelles afin d'obtenir une prédiction de réussite au concours d'entrée universitaire.
+
+\begin{itemize}
+    \item L'utilisateur renseigne le \textbf{GRE Score}, \textbf{TOEFL Score}, \textbf{Note de l'université}, \textbf{SOP}, \textbf{LOR}, \textbf{CGPA} et l'expérience de \textbf{recherche}.
+    \item Pour chaque entrée, si l'utilisateur n'a pas de donnée, une valeur par défaut neutre est utilisée.
+    \item Le script affiche ensuite le résultat de la prédiction : 
+    \begin{itemize}
+        \item \texttt{Candidat probablement admis} si le modèle prédit 1.
+        \item \texttt{Candidat probablement non admis} si le modèle prédit 0.
+    \end{itemize}
+\end{itemize}
+
+\section{Chargement du modèle}
+Le modèle a été sauvegardé à l'aide de la librairie \texttt{pickle} et peut être chargé depuis le fichier \texttt{logistic.pkl} pour être utilisé dans le script de test.
+
+\section{Illustration du script}
+\begin{verbatim}
+import pickle as pkl
+with open('models/logistic.pkl', 'rb') as f:
+    model_loaded = pkl.load(f)
+
+test_model_input(model_loaded)
+\end{verbatim}
+
+Ce script représente une première étape de déploiement dans un environnement local et permet de vérifier le fonctionnement du modèle avant tout déploiement plus complexe.
