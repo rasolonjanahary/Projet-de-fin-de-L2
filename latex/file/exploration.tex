@@ -2,20 +2,20 @@
 
 \subsection{Chargement du jeu de données}
 
-Le jeu de données a été chargé au format CSV à l’aide de la bibliothèque \texttt{pandas} :
+Le jeu de données  a été chargé au format .CSV à l’aide de la bibliothèque python \texttt{pandas} :
 
 \begin{verbatim}
 import pandas as pd
 df = pd.read_csv("admission_data.csv")
 \end{verbatim}
 
-La commande \texttt{df.info()} a permis d'obtenir un aperçu des colonnes, de leurs types et du nombre de valeurs non nulles. On compte 9 colonnes et 550 lignes.
+La commande \texttt{df.info()}permet de voir une partie des colonnes, de leurs types et du nombre de valeurs non nulles. On compte 9 colonnes et 550 lignes.
 
 \subsection{Aperçu des données}
 
 \begin{itemize}
-    \item Le jeu de données contient des variables quantitatives continues (\textit{GRE Score}, \textit{TOEFL Score}, \textit{CGPA}, \textit{Chance of Admit}) et discrètes (\textit{University Rating}, \textit{SOP}, \textit{LOR}, \textit{Research}).
-    \item L’attribut \textit{Chance of Admit} est la variable cible. Elle indique la probabilité d’admission.
+    \item Le jeu de données contient des variables quantitatives comme par exemple (\textit{GRE Score}, \textit{TOEFL Score}, \textit{CGPA}, \textit{Chance of Admit}) et discrètes (\textit{University Rating}, \textit{SOP}, \textit{LOR}, \textit{Research}).
+    \item Ici \textit{Chance of Admit} est la variable cible. Elle indique la probabilité d’admission.
 \end{itemize}
 
 \subsection{Traitement des valeurs manquantes}
@@ -34,7 +34,7 @@ La stratégie choisie a été de supprimer toutes les lignes contenant au moins 
 df_clean = df.dropna()
 \end{verbatim}
 
-Puis une vérification a été effectuée pour s'assurer qu'il ne restait plus de données manquantes :
+Puis on a fait une vérification pour s'il n'y a plus de variable manquantes dans le dataset
 
 \begin{verbatim}
 df_clean.isnull().sum()
@@ -54,7 +54,7 @@ Résultat : aucune ligne dupliquée n’a été détectée.
 
 \subsection{Étude des valeurs aberrantes}
 
-Des diagrammes en boîte (\textit{boxplots}) ont été tracés pour les variables numériques afin de visualiser les potentiels outliers. Bien que certains points soient situés à l’extérieur des moustaches, aucun n’a été jugé significativement aberrant ou incohérent (par exemple, un CGPA supérieur à 10 ou un score GRE supérieur à 340). Aucun traitement particulier n’a été effectué à ce stade.
+Des diagrammes en boîte (\textit{boxplots}) ont été tracés pour les variables numériques afin de visualiser les potentiels outliers. Bien que certains points soient situés à l’extérieur du graphe de boites a moustache, aucun n’a été jugé significativement aberrant ou incohérent (par exemple, un CGPA supérieur à 10 ou un score GRE supérieur à 340). Aucun traitement particulier n’a été effectué à ce niveau.
 
 \subsection{Étude des corrélations}
 
@@ -72,7 +72,7 @@ Les coefficients de corrélation les plus élevés avec la variable cible \texti
     \item \textbf{Research} : 0.55
 \end{itemize}
 
-On constate que les performances académiques (CGPA, GRE, TOEFL) et l'expérience de recherche sont fortement liées aux chances d'admission.
+On voit que les performances académiques (CGPA, GRE, TOEFL) et l'expérience de recherche sont fortement corrélés aux chances d'admission.
 
 \subsection{Conclusion de l'exploration}
 

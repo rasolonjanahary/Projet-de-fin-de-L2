@@ -1,18 +1,21 @@
 \chapter{Conclusion}
 
-Ce projet a permis de mettre en œuvre un modèle de machine learning capable de prédire les chances d'admission des candidats dans les universités, à partir de différentes informations académiques et personnelles. 
+Ce travail de recherche nous a permis d'aboutir à la création et à la validation d'un modèle prédictif dont l'objectif principale est d'évaluer les chances d’admission d’un étudiant=, en s’appuyant sur le dataset 
+La methodologie qu'on a adoptée repose sur ces successions d 'étapes clés comme :
 
-Plusieurs étapes ont été franchies avec succès : 
 \begin{itemize}
-    \item \textbf{Préparation des données} : nettoyage et sélection des colonnes pertinentes.
-    \item \textbf{Modélisation} : comparaison de plusieurs modèles classiques (SVC, Random Forest, Decision Tree, Logistic Regression, K-Nearest Neighbors) pour identifier celui offrant les meilleures performances.
-    \item \textbf{Évaluation} : analyse des métriques de classification (accuracy, précision, recall, F1-score) et visualisation des courbes d'apprentissage.
-    \item \textbf{Déploiement local} : implémentation d'un script interactif permettant à l'utilisateur de tester le modèle en fournissant ses propres données.
+\item \textbf{Préparation des données} : Cette phase préliminaire, bien que souvent sous estimée, s’est avérée déterminant. Elle a inclus le nettoyage des données, leurs exploration approfondie, et la sélection des variables principale pour la prédiction.
+
+\item \textbf{Modélisation} : Une comparaison approfondie parmis plusieurs algorithmes d’apprentissage supervisé a été réalisée. Nous avons confronté leurs performances comme les performances du SVC, random forest, l’Arbre de Décision, la Régression Logistique et les K Nearest Neighbors,cherchant ainsi à trouverlequel de ces algorithmes est le plus precis pour ainsi pouvoir le prendre.
+
+\item \textbf{Évaluation} : Au-delà des métriques classiques de performance comme l’exactitude, la précision ou le score F1, nous avons analysé les courbes d’apprentissage pour détecter et comprendre les écueils classiques que sont le surajustement ou le sous-ajustement, garantissant ainsi la robustesse de notre modèle.
+
+\item \textbf{Déploiement} : Pour concrétiser cette étude, une application interactive a été développée. Elle permet à un utilisateur de saisir ses informations et d’obtenir une estimation personnalisée, matérialisant ainsi l’utilité pratique du modèle.
 \end{itemize}
 
-Les résultats ont montré que le modèle de \textbf{Logistic Regression} offrait un compromis intéressant entre précision et capacité d'apprentissage, étant capable de généraliser correctement sur de nouvelles données. Comparé aux autres modèles qui semblaient mémoriser les jeux de données d'entraînement, le modèle logistic a été le seul à réellement apprendre les relations entre les variables.
+L’examen méticuleux des performances a révélé que la \textbf{Régression Logistique} s’est imposée comme l’approche la plus pertinente pour notre jeu de données. Son excellence ne réside pas dans une complexité algorithmique supérieure, mais plutôt dans son équilibre et sa remarquable capacité à généraliser, évitant ainsi les pièges du surajustement dans lesquels sont tombés certains de ses concurrents. Elle a su capturer avec finesse les relations fondamentales liant les variables explicatives au résultat à prédire.
 
-Enfin, ce projet constitue une base solide pour un futur déploiement plus avancé, pouvant inclure une interface web ou une API, afin de rendre le modèle accessible à un plus grand nombre d'utilisateurs. 
+In fine, ce mémoire ne se contente pas de présenter un modèle opérationnel ; il ouvre la voie à de multiples prolongements. Le développement d’une interface web intuitive ou la publication sous forme d’API constituent des évolutions naturelles pour étendre la portée de cet outil.
 
 \bigskip
-Le travail effectué illustre également l'importance de la préparation des données et de l'évaluation rigoureuse des modèles, étapes essentielles dans tout projet de machine learning.
+Par ailleurs, cette recherche vient rappeler, s’il le fallait encore, que la performance d’un modèle de machine learning ne naît pas de la sophistication de son algorithme, mais bien de la qualité du travail en amont : la préparation des données et leur analyse critique restent la pierre angulaire de tout projet réussi en science des données.
