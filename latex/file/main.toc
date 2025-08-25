@@ -31,4 +31,6 @@
 \contentsline {section}{\numberline {4.1}Test interactif du modèle}{29}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Chargement du modèle}{29}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Exemple d'utilisation}{29}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Conclusion}{31}{chapter.5}%
+\contentsline {chapter}{Annexes}{31}{chapter*.23}%
+\contentsline {chapter}{Bibliographie}{40}{chapter*.37}%
+\contentsline {chapter}{\numberline {5}Conclusion}{41}{chapter.5}%

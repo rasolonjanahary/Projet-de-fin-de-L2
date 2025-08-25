@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.7.28)  24 AUG 2025 22:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.7.28)  25 AUG 2025 21:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -550,7 +550,7 @@ Package hyperref Info: Link coloring OFF on input line 50.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-<insi.png, id=136, 914.41624pt x 913.4125pt>
+<insi.png, id=144, 914.41624pt x 913.4125pt>
 File: insi.png Graphic file (type png)
 <use insi.png>
 Package pdftex.def Info: insi.png  used on input line 53.
@@ -591,7 +591,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.34 ...{\numberline {5}Conclusion}{31}{chapter.5}
+l.34 ...tsline {chapter}{Annexes}{31}{chapter*.23}
                                                   % [1
 
 ])
@@ -653,7 +653,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [8]
 Chapitre 2.
-<../figures/hist_gre_score.png, id=221, 516.42938pt x 389.95688pt>
+<../figures/hist_gre_score.png, id=231, 516.42938pt x 389.95688pt>
 File: ../figures/hist_gre_score.png Graphic file (type png)
 <use ../figures/hist_gre_score.png>
 Package pdftex.def Info: ../figures/hist_gre_score.png  used on input line 20.
@@ -663,7 +663,7 @@ Package pdftex.def Info: ../figures/hist_gre_score.png  used on input line 20.
 [9
 
 ]
-<../figures/hist_cgpa.png, id=227, 517.935pt x 390.70969pt>
+<../figures/hist_cgpa.png, id=237, 517.935pt x 390.70969pt>
 File: ../figures/hist_cgpa.png Graphic file (type png)
 <use ../figures/hist_cgpa.png>
 Package pdftex.def Info: ../figures/hist_cgpa.png  used on input line 30.
@@ -678,7 +678,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [10 <../figures/hist_gre_score.png>]
-<../figures/hist_toefl_score.png, id=235, 517.935pt x 386.19281pt>
+<../figures/hist_toefl_score.png, id=245, 517.935pt x 386.19281pt>
 File: ../figures/hist_toefl_score.png Graphic file (type png)
 <use ../figures/hist_toefl_score.png>
 Package pdftex.def Info: ../figures/hist_toefl_score.png  used on input line 40
@@ -694,7 +694,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [11 <../figures/hist_cgpa.png>]
-<../figures/hist_university_rating.png, id=243, 520.19344pt x 386.19281pt>
+<../figures/hist_university_rating.png, id=253, 520.19344pt x 386.19281pt>
 File: ../figures/hist_university_rating.png Graphic file (type png)
 <use ../figures/hist_university_rating.png>
 Package pdftex.def Info: ../figures/hist_university_rating.png  used on input l
@@ -710,7 +710,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [12 <../figures/hist_toefl_score.png>]
-<../figures/pie_research.png, id=250, 380.92313pt x 361.35pt>
+<../figures/pie_research.png, id=260, 380.92313pt x 361.35pt>
 File: ../figures/pie_research.png Graphic file (type png)
 <use ../figures/pie_research.png>
 Package pdftex.def Info: ../figures/pie_research.png  used on input line 60.
@@ -725,7 +725,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [13 <../figures/hist_university_rating.png>]
-<../figures/hist_chance_admit.png, id=257, 526.96875pt x 386.19281pt>
+<../figures/hist_chance_admit.png, id=267, 526.96875pt x 386.19281pt>
 File: ../figures/hist_chance_admit.png Graphic file (type png)
 <use ../figures/hist_chance_admit.png>
 Package pdftex.def Info: ../figures/hist_chance_admit.png  used on input line 7
@@ -741,7 +741,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [14 <../figures/pie_research.png>]
-<../figures/scatter_gre_admit.png, id=264, 532.99126pt x 412.54124pt>
+<../figures/scatter_gre_admit.png, id=274, 532.99126pt x 412.54124pt>
 File: ../figures/scatter_gre_admit.png Graphic file (type png)
 <use ../figures/scatter_gre_admit.png>
 Package pdftex.def Info: ../figures/scatter_gre_admit.png  used on input line 8
@@ -757,7 +757,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [15 <../figures/hist_chance_admit.png>]
-<../figures/scatter_cgpa_admit.png, id=271, 531.48563pt x 408.77719pt>
+<../figures/scatter_cgpa_admit.png, id=281, 531.48563pt x 408.77719pt>
 File: ../figures/scatter_cgpa_admit.png Graphic file (type png)
 <use ../figures/scatter_cgpa_admit.png>
 Package pdftex.def Info: ../figures/scatter_cgpa_admit.png  used on input line 
@@ -773,7 +773,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [16 <../figures/scatter_gre_admit.png>]
-<../figures/scatter_toefl_admit.png, id=278, 527.72156pt x 408.02437pt>
+<../figures/scatter_toefl_admit.png, id=288, 527.72156pt x 408.02437pt>
 File: ../figures/scatter_toefl_admit.png Graphic file (type png)
 <use ../figures/scatter_toefl_admit.png>
 Package pdftex.def Info: ../figures/scatter_toefl_admit.png  used on input line
@@ -789,7 +789,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [17 <../figures/scatter_cgpa_admit.png>]
-<../figures/boxplot_research_admit.png, id=286, 797.98125pt x 523.20468pt>
+<../figures/boxplot_research_admit.png, id=296, 797.98125pt x 523.20468pt>
 File: ../figures/boxplot_research_admit.png Graphic file (type png)
 <use ../figures/boxplot_research_admit.png>
 Package pdftex.def Info: ../figures/boxplot_research_admit.png  used on input l
@@ -805,7 +805,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [18 <../figures/scatter_toefl_admit.png>]
-<../figures/bar_research_counts.png, id=293, 535.2497pt x 426.84468pt>
+<../figures/bar_research_counts.png, id=303, 535.2497pt x 426.84468pt>
 File: ../figures/bar_research_counts.png Graphic file (type png)
 <use ../figures/bar_research_counts.png>
 Package pdftex.def Info: ../figures/bar_research_counts.png  used on input line
@@ -836,32 +836,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [20 <../figures/bar_research_counts.png>]
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.158 \end{itemize}
-                   
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-<../figures/head.png, id=308, 326.4195pt x 139.11975pt>
+<../figures/head.png, id=318, 326.4195pt x 139.11975pt>
 File: ../figures/head.png Graphic file (type png)
 <use ../figures/head.png>
-Package pdftex.def Info: ../figures/head.png  used on input line 164.
+Package pdftex.def Info: ../figures/head.png  used on input line 167.
 (pdftex.def)             Requested size: 409.71692pt x 174.62737pt.
 
+
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 165.
+(caption)                particular \caption on input line 168.
 See the caption package documentation for explanation.
 
-<../figures/corr.png, id=309, 549.9747pt x 492.8814pt>
+<../figures/corr.png, id=319, 549.9747pt x 492.8814pt>
 File: ../figures/corr.png Graphic file (type png)
 <use ../figures/corr.png>
-Package pdftex.def Info: ../figures/corr.png  used on input line 172.
+Package pdftex.def Info: ../figures/corr.png  used on input line 175.
 (pdftex.def)             Requested size: 409.71692pt x 367.1858pt.
 
 
@@ -873,45 +862,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [21 <../figures/head.PNG>]
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.180 \end{itemize}
-                   
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (64.82925pt too wide) in paragraph at lines 191--193
+Overfull \hbox (64.82925pt too wide) in paragraph at lines 199--201
 []$\T1/cmtt/m/n/12 https : / / www . kaggle . com / datasets / nasirayub2 / aus
 tralian-[]student-[]performancedata-[]aspd24$[] 
  []
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.198 \end{itemize}
-                   
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-<../figures/head1.png, id=318, 513.71925pt x 225.84375pt>
-File: ../figures/head1.png Graphic file (type png)
-<use ../figures/head1.png>
-Package pdftex.def Info: ../figures/head1.png  used on input line 204.
-(pdftex.def)             Requested size: 409.71692pt x 180.13075pt.
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 205.
-See the caption package documentation for explanation.
 
 
 
@@ -923,25 +877,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [22 <../figures/corr.png>]
-<../figures/corr1.png, id=324, 667.0521pt x 605.6226pt>
+<../figures/head1.png, id=333, 513.71925pt x 225.84375pt>
+File: ../figures/head1.png Graphic file (type png)
+<use ../figures/head1.png>
+Package pdftex.def Info: ../figures/head1.png  used on input line 224.
+(pdftex.def)             Requested size: 409.71692pt x 180.13075pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 225.
+See the caption package documentation for explanation.
+
+<../figures/corr1.png, id=334, 667.0521pt x 605.6226pt>
 File: ../figures/corr1.png Graphic file (type png)
 <use ../figures/corr1.png>
-Package pdftex.def Info: ../figures/corr1.png  used on input line 213.
+Package pdftex.def Info: ../figures/corr1.png  used on input line 233.
 (pdftex.def)             Requested size: 409.71692pt x 371.98901pt.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.224 \end{itemize}
-                   
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
+) (./modelisation.tex
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -950,7 +902,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[23 <../figures/corr1.png> <../figures/head1.PNG>]) (./modelisation.tex
+[23 <../figures/head1.PNG>]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -959,7 +911,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[24]
+[24 <../figures/corr1.png>]
 Chapitre 3.
 
 Overfull \hbox (18.42622pt too wide) in paragraph at lines 3--4
@@ -967,7 +919,7 @@ Overfull \hbox (18.42622pt too wide) in paragraph at lines 3--4
 -ma-lis� les don-n�es avec \T1/cmtt/m/n/12 StandardScaler\T1/cmr/m/n/12 . 
  []
 
-<../figures/learning_curve_svc.png, id=338, 694.84593pt x 420.06938pt>
+<../figures/learning_curve_svc.png, id=348, 694.84593pt x 420.06938pt>
 File: ../figures/learning_curve_svc.png Graphic file (type png)
 <use ../figures/learning_curve_svc.png>
 Package pdftex.def Info: ../figures/learning_curve_svc.png  used on input line 
@@ -978,13 +930,13 @@ Package pdftex.def Info: ../figures/learning_curve_svc.png  used on input line
 [25
 
 ]
-<../figures/learning_curve_rf.png, id=344, 574.39594pt x 344.78813pt>
+<../figures/learning_curve_rf.png, id=354, 574.39594pt x 344.78813pt>
 File: ../figures/learning_curve_rf.png Graphic file (type png)
 <use ../figures/learning_curve_rf.png>
 Package pdftex.def Info: ../figures/learning_curve_rf.png  used on input line 4
 4.
 (pdftex.def)             Requested size: 455.24411pt x 273.274pt.
-<../figures/learning_curve_dtc.png, id=345, 574.39594pt x 344.78813pt>
+<../figures/learning_curve_dtc.png, id=355, 574.39594pt x 344.78813pt>
 File: ../figures/learning_curve_dtc.png Graphic file (type png)
 <use ../figures/learning_curve_dtc.png>
 Package pdftex.def Info: ../figures/learning_curve_dtc.png  used on input line 
@@ -1000,13 +952,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [26 <../figures/learning_curve_svc.png> <../figures/learning_curve_rf.png>]
-<../figures/learning_curve_lr.png, id=354, 572.89032pt x 338.76563pt>
+<../figures/learning_curve_lr.png, id=364, 572.89032pt x 338.76563pt>
 File: ../figures/learning_curve_lr.png Graphic file (type png)
 <use ../figures/learning_curve_lr.png>
 Package pdftex.def Info: ../figures/learning_curve_lr.png  used on input line 5
 6.
 (pdftex.def)             Requested size: 455.24411pt x 269.20366pt.
-<../figures/learning_curve_knn.png, id=355, 566.115pt x 338.76563pt>
+<../figures/learning_curve_knn.png, id=365, 566.115pt x 338.76563pt>
 File: ../figures/learning_curve_knn.png Graphic file (type png)
 <use ../figures/learning_curve_knn.png>
 Package pdftex.def Info: ../figures/learning_curve_knn.png  used on input line 
@@ -1033,33 +985,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [28 <../figures/learning_curve_knn.png>]
 Chapitre 4.
-! Undefined control sequence.
-l.10     \itemL
-               'utilisateur doit renseigné ces notes académique comme : le...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.11     \item S
-                i une information n’est pas disponible,alors une valeur pa...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
 
 
 [29
 
-]) (./conclusion.tex
+]) (./annexe.tex
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1069,6 +999,682 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [30]
+<../figures/importation_01.png, id=389, 306.39468pt x 103.88812pt>
+File: ../figures/importation_01.png Graphic file (type png)
+<use ../figures/importation_01.png>
+Package pdftex.def Info: ../figures/importation_01.png  used on input line 7.
+(pdftex.def)             Requested size: 318.66948pt x 108.05536pt.
+<../figures/load_dataset.png, id=390, 423.08063pt x 53.44969pt>
+File: ../figures/load_dataset.png Graphic file (type png)
+<use ../figures/load_dataset.png>
+Package pdftex.def Info: ../figures/load_dataset.png  used on input line 14.
+(pdftex.def)             Requested size: 318.66948pt x 40.26006pt.
+<../figures/head_5.png, id=391, 751.30687pt x 222.07968pt>
+File: ../figures/head_5.png Graphic file (type png)
+<use ../figures/head_5.png>
+Package pdftex.def Info: ../figures/head_5.png  used on input line 21.
+(pdftex.def)             Requested size: 409.71692pt x 121.11066pt.
+<../figures/info_dataset.png, id=392, 697.10437pt x 587.94656pt>
+File: ../figures/info_dataset.png Graphic file (type png)
+<use ../figures/info_dataset.png>
+Package pdftex.def Info: ../figures/info_dataset.png  used on input line 28.
+(pdftex.def)             Requested size: 409.71692pt x 345.55771pt.
+
+
+[31
+
+ <../figures/importation_01.png> <../figures/load_dataset.png> <../figures/head
+_5.png>]
+<../figures/describe_dataset.png, id=403, 928.21782pt x 288.3272pt>
+File: ../figures/describe_dataset.png Graphic file (type png)
+<use ../figures/describe_dataset.png>
+Package pdftex.def Info: ../figures/describe_dataset.png  used on input line 36
+.
+(pdftex.def)             Requested size: 409.71692pt x 127.2691pt.
+
+! Too many }'s.
+l.40 \section*{Suppression des colonnes inutiles}}
+                                                  
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+<../figures/remove_c.png, id=404, 549.55313pt x 51.94406pt>
+File: ../figures/remove_c.png Graphic file (type png)
+<use ../figures/remove_c.png>
+Package pdftex.def Info: ../figures/remove_c.png  used on input line 43.
+(pdftex.def)             Requested size: 409.71692pt x 38.72809pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[32 <../figures/info_dataset.png> <../figures/describe_dataset.png>]
+! Too many }'s.
+l.47 \section*{Nettoyage des données}}
+                                       
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+<../figures/cleaning_d.png, id=413, 245.41687pt x 308.65312pt>
+File: ../figures/cleaning_d.png Graphic file (type png)
+<use ../figures/cleaning_d.png>
+Package pdftex.def Info: ../figures/cleaning_d.png  used on input line 50.
+(pdftex.def)             Requested size: 409.71692pt x 515.30757pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[33 <../figures/remove_c.png>]
+<../figures/v1.png, id=420, 280.04625pt x 48.93282pt>
+File: ../figures/v1.png Graphic file (type png)
+<use ../figures/v1.png>
+Package pdftex.def Info: ../figures/v1.png  used on input line 57.
+(pdftex.def)             Requested size: 409.71692pt x 71.5936pt.
+<../figures/v2.png, id=421, 221.32687pt x 51.19125pt>
+File: ../figures/v2.png Graphic file (type png)
+<use ../figures/v2.png>
+Package pdftex.def Info: ../figures/v2.png  used on input line 58.
+(pdftex.def)             Requested size: 409.71692pt x 94.77026pt.
+<../figures/v3.png, id=422, 292.09125pt x 50.43843pt>
+File: ../figures/v3.png Graphic file (type png)
+<use ../figures/v3.png>
+Package pdftex.def Info: ../figures/v3.png  used on input line 59.
+(pdftex.def)             Requested size: 409.71692pt x 70.75644pt.
+<../figures/v4.png, id=423, 344.78813pt x 50.43843pt>
+File: ../figures/v4.png Graphic file (type png)
+<use ../figures/v4.png>
+Package pdftex.def Info: ../figures/v4.png  used on input line 60.
+(pdftex.def)             Requested size: 409.71692pt x 59.93703pt.
+<../figures/v5.png, id=424, 322.20375pt x 52.69687pt>
+File: ../figures/v5.png Graphic file (type png)
+<use ../figures/v5.png>
+Package pdftex.def Info: ../figures/v5.png  used on input line 61.
+(pdftex.def)             Requested size: 409.71692pt x 67.01271pt.
+<../figures/v6.png, id=425, 562.35094pt x 54.2025pt>
+File: ../figures/v6.png Graphic file (type png)
+<use ../figures/v6.png>
+Package pdftex.def Info: ../figures/v6.png  used on input line 62.
+(pdftex.def)             Requested size: 409.71692pt x 39.49057pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[34 <../figures/cleaning_d.png>]
+<../figures/b1.png, id=432, 692.5875pt x 53.44969pt>
+File: ../figures/b1.png Graphic file (type png)
+<use ../figures/b1.png>
+Package pdftex.def Info: ../figures/b1.png  used on input line 69.
+(pdftex.def)             Requested size: 409.71692pt x 31.61984pt.
+<../figures/b2.png, id=433, 468.24937pt x 46.67438pt>
+File: ../figures/b2.png Graphic file (type png)
+<use ../figures/b2.png>
+Package pdftex.def Info: ../figures/b2.png  used on input line 70.
+(pdftex.def)             Requested size: 409.71692pt x 40.84209pt.
+<../figures/b3.png, id=434, 654.19406pt x 51.19125pt>
+File: ../figures/b3.png Graphic file (type png)
+<use ../figures/b3.png>
+Package pdftex.def Info: ../figures/b3.png  used on input line 71.
+(pdftex.def)             Requested size: 409.71692pt x 32.06084pt.
+<../figures/b4.png, id=435, 438.8897pt x 50.43843pt>
+File: ../figures/b4.png Graphic file (type png)
+<use ../figures/b4.png>
+Package pdftex.def Info: ../figures/b4.png  used on input line 72.
+(pdftex.def)             Requested size: 409.71692pt x 47.08656pt.
+<../figures/b5.png, id=436, 701.62125pt x 47.42719pt>
+File: ../figures/b5.png Graphic file (type png)
+<use ../figures/b5.png>
+Package pdftex.def Info: ../figures/b5.png  used on input line 73.
+(pdftex.def)             Requested size: 409.71692pt x 27.69594pt.
+<../figures/b6.png, id=437, 465.99094pt x 51.94406pt>
+File: ../figures/b6.png Graphic file (type png)
+<use ../figures/b6.png>
+Package pdftex.def Info: ../figures/b6.png  used on input line 74.
+(pdftex.def)             Requested size: 409.71692pt x 45.67285pt.
+<../figures/b7.png, id=438, 579.66562pt x 50.43843pt>
+File: ../figures/b7.png Graphic file (type png)
+<use ../figures/b7.png>
+Package pdftex.def Info: ../figures/b7.png  used on input line 75.
+(pdftex.def)             Requested size: 409.71692pt x 35.65067pt.
+<../figures/b8.png, id=439, 450.9347pt x 51.19125pt>
+File: ../figures/b8.png Graphic file (type png)
+<use ../figures/b8.png>
+Package pdftex.def Info: ../figures/b8.png  used on input line 76.
+(pdftex.def)             Requested size: 409.71692pt x 46.51457pt.
+<../figures/b9.png, id=440, 380.17032pt x 68.50594pt>
+File: ../figures/b9.png Graphic file (type png)
+<use ../figures/b9.png>
+Package pdftex.def Info: ../figures/b9.png  used on input line 77.
+(pdftex.def)             Requested size: 409.71692pt x 73.83269pt.
+<../figures/b10.png, id=441, 690.32906pt x 140.77594pt>
+File: ../figures/b10.png Graphic file (type png)
+<use ../figures/b10.png>
+Package pdftex.def Info: ../figures/b10.png  used on input line 78.
+(pdftex.def)             Requested size: 409.71692pt x 83.55327pt.
+<../figures/b11.png, id=442, 563.10374pt x 100.87688pt>
+File: ../figures/b11.png Graphic file (type png)
+<use ../figures/b11.png>
+Package pdftex.def Info: ../figures/b11.png  used on input line 79.
+(pdftex.def)             Requested size: 409.71692pt x 73.39937pt.
+<../figures/b12.png, id=443, 662.475pt x 88.07906pt>
+File: ../figures/b12.png Graphic file (type png)
+<use ../figures/b12.png>
+Package pdftex.def Info: ../figures/b12.png  used on input line 80.
+(pdftex.def)             Requested size: 409.71692pt x 54.47404pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[35 <../figures/v1.png> <../figures/v2.png> <../figures/v3.png> <../figures/v4.
+png> <../figures/v5.png> <../figures/v6.png>]
+<../figures/v_u.png, id=456, 730.22812pt x 107.65219pt>
+File: ../figures/v_u.png Graphic file (type png)
+<use ../figures/v_u.png>
+Package pdftex.def Info: ../figures/v_u.png  used on input line 87.
+(pdftex.def)             Requested size: 409.71692pt x 60.40143pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[36 <../figures/b1.png> <../figures/b2.png> <../figures/b3.png> <../figures/b4.
+png> <../figures/b5.png> <../figures/b6.png> <../figures/b7.png> <../figures/b8
+.png> <../figures/b9.png> <../figures/b10.png> <../figures/b11.png> <../figures
+/b12.png>]
+<../figures/b_u.png, id=474, 650.43pt x 194.22563pt>
+File: ../figures/b_u.png Graphic file (type png)
+<use ../figures/b_u.png>
+Package pdftex.def Info: ../figures/b_u.png  used on input line 94.
+(pdftex.def)             Requested size: 409.71692pt x 122.34796pt.
+<../figures/E_u_t.png, id=475, 575.14874pt x 632.3625pt>
+File: ../figures/E_u_t.png Graphic file (type png)
+<use ../figures/E_u_t.png>
+Package pdftex.def Info: ../figures/E_u_t.png  used on input line 101.
+(pdftex.def)             Requested size: 409.71692pt x 450.48578pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[37 <../figures/v_u.png> <../figures/b_u.png>]
+<../figures/t1.png, id=484, 608.2725pt x 706.89093pt>
+File: ../figures/t1.png Graphic file (type png)
+<use ../figures/t1.png>
+Package pdftex.def Info: ../figures/t1.png  used on input line 107.
+(pdftex.def)             Requested size: 409.71692pt x 476.16002pt.
+<../figures/t2.png, id=485, 614.295pt x 716.6775pt>
+File: ../figures/t2.png Graphic file (type png)
+<use ../figures/t2.png>
+Package pdftex.def Info: ../figures/t2.png  used on input line 108.
+(pdftex.def)             Requested size: 409.71692pt x 478.0062pt.
+<../figures/t3.png, id=486, 584.1825pt x 708.39656pt>
+File: ../figures/t3.png Graphic file (type png)
+<use ../figures/t3.png>
+Package pdftex.def Info: ../figures/t3.png  used on input line 109.
+(pdftex.def)             Requested size: 409.71692pt x 496.84703pt.
+<../figures/t4.png, id=487, 569.87906pt x 699.36281pt>
+File: ../figures/t4.png Graphic file (type png)
+<use ../figures/t4.png>
+Package pdftex.def Info: ../figures/t4.png  used on input line 110.
+(pdftex.def)             Requested size: 409.71692pt x 502.8045pt.
+) (./bibliographie.tex
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[38 <../figures/E_u_t.png>]
+Overfull \vbox (1298.91512pt too high) has occurred while \output is active []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[39 <../figures/t1.png> <../figures/t2.png> <../figures/t3.png> <../figures/t4.
+png>]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.8 ...incipale. \textit{admission_rate_ver_1.csv}
+                                                  . Disponible sur : \url{ht...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<recently read> \egroup 
+                        
+l.8 ...incipale. \textit{admission_rate_ver_1.csv}
+                                                  . Disponible sur : \url{ht...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: Command $ invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ...//dr-raz.org/statistical-literacy-csv-data}
+                                                  . Consulté le 25 août 2025.
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ...//dr-raz.org/statistical-literacy-csv-data}
+                                                  . Consulté le 25 août 2025.
+
+Please use the math alphabet \mathtt instead of the \ttfamilyFB command. 
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.8 ...//dr-raz.org/statistical-literacy-csv-data}
+                                                  . Consulté le 25 août 2025.
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.8 ...//dr-raz.org/statistical-literacy-csv-data}
+                                                  . Consulté le 25 août 2025.
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.8 ...//dr-raz.org/statistical-literacy-csv-data}
+                                                  . Consulté le 25 août 2025.
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.8 ...//dr-raz.org/statistical-literacy-csv-data}
+                                                  . Consulté le 25 août 2025.
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Undefined control sequence.
+\Url@FormatString ...ndafter \UrlLeft \Url@String 
+                                                  \UrlRight \m@th $
+l.8 ...//dr-raz.org/statistical-literacy-csv-data}
+                                                  . Consulté le 25 août 2025.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Extra }, or forgotten $.
+<recently read> }
+                 
+l.8 ...//dr-raz.org/statistical-literacy-csv-data}
+                                                  . Consulté le 25 août 2025.
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.8 ...//dr-raz.org/statistical-literacy-csv-data}
+                                                  . Consulté le 25 août 2025.
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.8 ...//dr-raz.org/statistical-literacy-csv-data}
+                                                  . Consulté le 25 août 2025.
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra \endgroup.
+\Hy@endcolorlink ->\endgroup 
+                             
+l.8 ...//dr-raz.org/statistical-literacy-csv-data}
+                                                  . Consulté le 25 août 2025.
+Things are pretty mixed up, but I think the worst is over.
+
+! Extra \endgroup.
+\hyper@linkurl ...ce@end \close@pdflink \endgroup 
+                                                  
+l.8 ...//dr-raz.org/statistical-literacy-csv-data}
+                                                  . Consulté le 25 août 2025.
+Things are pretty mixed up, but I think the worst is over.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10     \item D
+                ataset test. \textit{gc_data.csv}. Disponible sur : \url{htt...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 10
+[][]
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.10     \item Dataset test. \textit{gc_data.csv}
+                                                 . Disponible sur : \url{htt...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<recently read> \egroup 
+                        
+l.10     \item Dataset test. \textit{gc_data.csv}
+                                                 . Disponible sur : \url{htt...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: Command $ invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 ...s/Grad%20Cafe%20Data/gc_data.csv/download}
+                                                  . Consulté le 20 août 2025.
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 ...s/Grad%20Cafe%20Data/gc_data.csv/download}
+                                                  . Consulté le 20 août 2025.
+
+Please use the math alphabet \mathtt instead of the \ttfamilyFB command. 
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.10 ...s/Grad%20Cafe%20Data/gc_data.csv/download}
+                                                  . Consulté le 20 août 2025.
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.10 ...s/Grad%20Cafe%20Data/gc_data.csv/download}
+                                                  . Consulté le 20 août 2025.
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.10 ...s/Grad%20Cafe%20Data/gc_data.csv/download}
+                                                  . Consulté le 20 août 2025.
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.10 ...s/Grad%20Cafe%20Data/gc_data.csv/download}
+                                                  . Consulté le 20 août 2025.
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Undefined control sequence.
+\Url@FormatString ...ndafter \UrlLeft \Url@String 
+                                                  \UrlRight \m@th $
+l.10 ...s/Grad%20Cafe%20Data/gc_data.csv/download}
+                                                  . Consulté le 20 août 2025.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Extra }, or forgotten $.
+<recently read> }
+                 
+l.10 ...s/Grad%20Cafe%20Data/gc_data.csv/download}
+                                                  . Consulté le 20 août 2025.
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.10 ...s/Grad%20Cafe%20Data/gc_data.csv/download}
+                                                  . Consulté le 20 août 2025.
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.10 ...s/Grad%20Cafe%20Data/gc_data.csv/download}
+                                                  . Consulté le 20 août 2025.
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.10 ...s/Grad%20Cafe%20Data/gc_data.csv/download}
+                                                  . Consulté le 20 août 2025.
+Things are pretty mixed up, but I think the worst is over.
+
+! Extra \endgroup.
+\Hy@endcolorlink ->\endgroup 
+                             
+l.10 ...s/Grad%20Cafe%20Data/gc_data.csv/download}
+                                                  . Consulté le 20 août 2025.
+Things are pretty mixed up, but I think the worst is over.
+
+! Extra \endgroup.
+\hyper@linkurl ...ce@end \close@pdflink \endgroup 
+                                                  
+l.10 ...s/Grad%20Cafe%20Data/gc_data.csv/download}
+                                                  . Consulté le 20 août 2025.
+Things are pretty mixed up, but I think the worst is over.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12     \item D
+                ataset test. \textit{Predict students dropout and academic s...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 12
+[][]
+ []
+
+
+Overfull \hbox (23.37788pt too wide) in paragraph at lines 12--13
+\T1/cmtt/m/n/12 archive . ics . uci . edu / dataset / 697 / predict + students 
++ dropout + and + academic + success$[]\T1/cmr/m/n/12 .
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14     \item D
+                ataset test. \textit{Graduate school admission datab}. Dispo...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 14
+[][]
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16     \item T
+                heGradCafe. \textit{How to scrape the website of thegradcafe...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 16
+[][]
+ []
+
+
+Overfull \hbox (17.61961pt too wide) in paragraph at lines 16--17
+[]\T1/cmr/m/n/12 TheGradCafe. \T1/cmr/m/it/12 How to scrape the web-site of the
+-grad-cafe\T1/cmr/m/n/12 . Dis-po-nible sur : []$\T1/cmtt/m/n/12 forum . thegra
+dcafe .
+ []
+
+
+! LaTeX Error: \begin{document} ended by \end{enumerate}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 \end{enumerate}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+\end  ...end#1\endcsname \@checkend {#1}\endgroup 
+                                                  \UseHook {env/#1/after}\if...
+l.18 \end{enumerate}
+                    
+Things are pretty mixed up, but I think the worst is over.
+
+) (./conclusion.tex
+
+[40
+
+]
 Chapitre 5.
 
 Overfull \hbox (1.20636pt too wide) in paragraph at lines 9--10
@@ -1078,7 +1684,7 @@ Overfull \hbox (1.20636pt too wide) in paragraph at lines 9--10
 
 )
 
-[31
+[41
 
 ] (./main.aux)
  ***********
@@ -1086,28 +1692,32 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-19>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 836375A10989F88CC3B11D31DE422347;4964.
+(rerunfilecheck)             Checksum: 1758BFA1F7C6568302F959F0C3274C67;5156.
  ) 
 Here is how much of TeX's memory you used:
- 15312 strings out of 467816
- 249994 string characters out of 5436431
- 757825 words of memory out of 5000000
- 43636 multiletter control sequences out of 15000+600000
- 642693 words of font info for 81 fonts, out of 8000000 for 9000
+ 15588 strings out of 467816
+ 256668 string characters out of 5436431
+ 757826 words of memory out of 5000000
+ 43879 multiletter control sequences out of 15000+600000
+ 643008 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,79p,607b,747s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texl
-ive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2025/t
-exmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2025/texmf-dist/
-fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2025/texmf-dist/fonts/type
-1/public/cm-super/sfcc1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/c
-m-super/sfrm1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sf
-rm1728.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb
-><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on main.pdf (33 pages, 1181358 bytes).
+<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/tex
+live/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type
+1/public/cm-super/sfbx1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/c
+m-super/sfbx1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sf
+bx1728.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb
+><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb><c:/texli
+ve/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2025/te
+xmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><c:/texlive/2025/texmf-dist/f
+onts/type1/public/cm-super/sfti1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1
+/public/cm-super/sftt1200.pfb>
+Output written on main.pdf (43 pages, 1636126 bytes).
 PDF statistics:
- 445 PDF objects out of 1000 (max. 8388607)
- 346 compressed objects within 4 object streams
- 86 named destinations out of 1000 (max. 500000)
- 370 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 611 PDF objects out of 1000 (max. 8388607)
+ 429 compressed objects within 5 object streams
+ 112 named destinations out of 1000 (max. 500000)
+ 546 words of extra memory for PDF output out of 10000 (max. 10000000)
 

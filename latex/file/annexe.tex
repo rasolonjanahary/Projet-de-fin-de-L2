@@ -1,0 +1,109 @@
+\chapter*{Annexes}
+\addcontentsline{toc}{chapter}{Annexes}
+
+\section*{Bibliothèques utilisées pour l'EDA}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{../figures/importation_01.png}
+\end{figure}
+\noindent \textbf{Explication :} Les bibliothèques \texttt{pandas} sont utilisées pour la manipulation et la visualisation des données, \texttt{matplotlib} et \texttt{seaborn} pour la création des graphiques, et \texttt{numpy} pour les calculs numériques.
+
+\section*{Chargement du dataset}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{../figures/load_dataset.png}
+\end{figure}
+\noindent \textbf{Explication :} La fonction \texttt{pd.read\_csv} permet de charger le dataset afin de pouvoir l’exploiter pour l’analyse et la modélisation.
+
+\section*{Affichage des premières lignes du dataset}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{../figures/head_5}
+\end{figure}
+\noindent \textbf{Explication :} La méthode \texttt{df.head()} affiche les cinq premières lignes du dataset pour une visualisation rapide de sa structure.
+
+\section*{Aperçu du type des données}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{../figures/info_dataset.png}
+\end{figure}
+\noindent \textbf{Explication :} La méthode \texttt{df.info()} fournit un résumé des types de données et du nombre de valeurs non nulles pour chaque colonne.
+
+\section*{Résumé statistique du dataset}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{../figures/describe_dataset.png}
+\end{figure}
+\noindent \textbf{Explication :} La méthode \texttt{df.describe()} fournit des statistiques descriptives pour les colonnes numériques, telles que la moyenne, l’écart-type, les valeurs minimales et maximales.
+
+\section*{Suppression des colonnes inutiles}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{../figures/remove_c.png}
+\end{figure}
+\noindent \textbf{Explication :} La colonne \texttt{Serial No.} a été supprimée car elle n’est pas pertinente pour l’entraînement du modèle. De même, le doublon de la colonne \texttt{LOR} a été retiré.
+
+\section*{Nettoyage des données}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{../figures/cleaning_d.png}
+\end{figure}
+\noindent \textbf{Explication :} Le nombre de valeurs manquantes a été évalué avec \texttt{df\_clean.isna().sum()}. Les lignes contenant des valeurs manquantes ont ensuite été supprimées à l’aide de \texttt{df\_clean.dropna()}.
+
+\section*{Visualisation univariée des données}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{../figures/v1.png}
+    \includegraphics[width=0.9\textwidth]{../figures/v2.png}
+    \includegraphics[width=0.9\textwidth]{../figures/v3.png}
+    \includegraphics[width=0.9\textwidth]{../figures/v4.png}
+    \includegraphics[width=0.9\textwidth]{../figures/v5.png}
+    \includegraphics[width=0.9\textwidth]{../figures/v6.png}
+\end{figure}
+\noindent \textbf{Explication :} Ces graphiques présentent la distribution de chaque variable individuelle du dataset.
+
+\section*{Visualisation bivariée des données}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{../figures/b1.png}
+    \includegraphics[width=0.9\textwidth]{../figures/b2.png}
+    \includegraphics[width=0.9\textwidth]{../figures/b3.png}
+    \includegraphics[width=0.9\textwidth]{../figures/b4.png}
+    \includegraphics[width=0.9\textwidth]{../figures/b5.png}
+    \includegraphics[width=0.9\textwidth]{../figures/b6.png}
+    \includegraphics[width=0.9\textwidth]{../figures/b7.png}
+    \includegraphics[width=0.9\textwidth]{../figures/b8.png}
+    \includegraphics[width=0.9\textwidth]{../figures/b9.png}
+    \includegraphics[width=0.9\textwidth]{../figures/b10.png}
+    \includegraphics[width=0.9\textwidth]{../figures/b11.png}
+    \includegraphics[width=0.9\textwidth]{../figures/b12.png}
+\end{figure}
+\noindent \textbf{Explication :} Ces graphiques montrent les relations entre deux variables du dataset, permettant d’identifier les corrélations et tendances.
+
+\section*{Variables utilisées pour l’entraînement du modèle}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{../figures/v_u.png}
+\end{figure}
+
+\section*{Bibliothèques utilisées pour l’entraînement du modèle}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{../figures/b_u.png}
+\end{figure}
+
+\section*{Exemple de code utilisé pour l’entraînement du modèle}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{../figures/E_u_t.png}
+\end{figure}
+
+\section*{Exemple de code utilisé pour tester le modèle}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{../figures/t1.png}
+    \includegraphics[width=0.9\textwidth]{../figures/t2.png}
+    \includegraphics[width=0.9\textwidth]{../figures/t3.png}
+    \includegraphics[width=0.9\textwidth]{../figures/t4.png}
+\end{figure}
+\noindent \textbf{Explication :} Ces extraits montrent l’évaluation du modèle sur le dataset de test, incluant la prédiction et l’analyse des résultats.
