@@ -1,4 +1,16 @@
-\section{Exploration des données}
+\chapter{Exploration des données}
+
+\section{Introduction}
+
+La visualisation des données constitue une étape cruciale dans l’analyse exploratoire. Elle permet de :
+\begin{itemize}
+	\item comprendre la distribution des variables,
+	\item détecter des tendances ou des regroupements,
+	\item observer les relations entre variables explicatives et la variable cible (\textit{Chance of Admit}),
+	\item orienter les choix de modélisation futurs.
+\end{itemize}
+
+Nous distinguons ici deux types d’analyse : univariée (étude d’une seule variable) et bivariée (étude de la relation entre deux variables).
 
 \subsection{Chargement du jeu de données}
 
@@ -9,13 +21,14 @@ import pandas as pd
 df = pd.read_csv("admission_data.csv")
 \end{verbatim}
 
-La commande \texttt{df.info()}permet de voir une partie des colonnes, de leurs types et du nombre de valeurs non nulles. On compte 9 colonnes et 550 lignes.
+La commande \texttt{df.info()} permet de voir une partie des colonnes, de leurs types et du nombre de valeurs non nulles. On compte 9 colonnes et 550 lignes.
 
 \subsection{Aperçu des données}
 
 \begin{itemize}
-    \item Le jeu de données contient des variables quantitatives comme par exemple (\textit{GRE Score}, \textit{TOEFL Score}, \textit{CGPA}, \textit{Chance of Admit}) et discrètes (\textit{University Rating}, \textit{SOP}, \textit{LOR}, \textit{Research}).
+    \item Le jeu de données contient des variables quantitatives comme  (\textit{GRE Score}, \textit{TOEFL Score}, \textit{CGPA}, \textit{Chance of Admit}) et discrètes (\textit{University Rating}, \textit{SOP}, \textit{LOR}, \textit{Research}).
     \item Ici \textit{Chance of Admit} est la variable cible. Elle indique la probabilité d’admission.
+    Source du dataset: \url{https://dr-raz.org/statistical-literacy-csv-data}
 \end{itemize}
 
 \subsection{Traitement des valeurs manquantes}
@@ -65,12 +78,17 @@ corr_matrix = df_clean.corr()
 \end{verbatim}
 
 Les coefficients de corrélation les plus élevés avec la variable cible \textit{Chance of Admit} sont :
-\begin{itemize}
-    \item \textbf{CGPA} : 0.87
-    \item \textbf{GRE Score} : 0.82
-    \item \textbf{TOEFL Score} : 0.79
-    \item \textbf{Research} : 0.55
-\end{itemize}
+
+\begin{tabular}{|l|c|}
+\hline
+Critère & Valeur \\ 
+\hline
+CGPA & 0.87 \\ 
+GRE Score & 0.82 \\ 
+TOEFL Score & 0.79 \\ 
+Research & 0.55 \\ 
+\hline
+\end{tabular}
 
 On voit que les performances académiques (CGPA, GRE, TOEFL) et l'expérience de recherche sont fortement corrélés aux chances d'admission.
 

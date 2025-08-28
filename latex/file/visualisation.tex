@@ -1,16 +1,99 @@
-\chapter{Visualisation des Données}
+\section{Présentation du Dataset}
 
-\section{Introduction}
+\textbf{Nom du Dataset :} gc\_data.csv
 
-La visualisation des données constitue une étape cruciale dans l’analyse exploratoire. Elle permet de :
+\vspace{0.5cm}
+\textbf{Les colonnes du le dataset :}
 \begin{itemize}
-	\item comprendre la distribution des variables,
-	\item détecter des tendances ou des regroupements,
-	\item observer les relations entre variables explicatives et la variable cible (\textit{Chance of Admit}),
-	\item orienter les choix de modélisation futurs.
+	\item School, Program, Result, Result\_Date, GPA, 
+	\item Verbal\_GRE, Quant\_GRE, Writing\_GRE, Subject\_GRE, 
+	\item Status, Submit\_Date, Degree\_Type
 \end{itemize}
 
-Nous distinguons ici deux types d’analyse : univariée (étude d’une seule variable) et bivariée (étude de la relation entre deux variables).
+
+\vspace{0.5cm}
+\textbf{Aperçu des 5 premières lignes du dataset :}
+
+\begin{center}
+	\includegraphics[width=0.9\textwidth]{../figures/head.png}
+	\captionof{figure}{Aperçu des 5 premières lignes du dataset}
+\end{center}
+
+\begin{center}
+	\includegraphics[width=0.9\textwidth]{../figures/corr.png}
+\end{center}
+
+\vspace{0.5cm}
+\textbf{Choix des variables explicatives (X) :} \\
+Nous avons sélectionné les variables suivantes comme variables explicatives :
+\begin{itemize}
+	\item Verbal\_GRE
+	\item Quant\_GRE
+	\item Writing\_GRE
+	\item GPA
+	\item Result
+\end{itemize}
+
+
+\vspace{0.3cm}
+\textbf{Variable cible (Y) :} \\
+La variable cible est \textbf{Admmited}. Cette variable correspond à notre objectif d'étude, car elle représente la classification binaire 1 pour admit et 0 pour le contraire qui sert à prédire si l'edutiant peut être passer ou pas.
+
+
+\textbf{Nom du Dataset :} \\
+Australian dataset c'est une donnée des étudiants de l'Australie
+
+\vspace{0.5cm}
+\textbf{Les colonnes dans le dataset :}
+\begin{itemize}
+	51 colonnes y compris :
+	\item GPA
+	\item High School GPA
+	\item Entrance Exam Score
+	\item Attendance
+	\item Family Income
+	\item Parental Education
+	\item Health
+	\item Mental Health
+	\item Exam Scores
+	\item Performance
+\end{itemize}
+
+
+\vspace{0.5cm}
+\textbf{Aperçu des 5 premières lignes du dataset :}
+
+\begin{center}
+	\includegraphics[width=0.9\textwidth]{../figures/head1.png}
+	\captionof{figure}{Les 5 premières lignes du dataset}
+\end{center}
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.9\textwidth]{../figures/corr1}
+	\caption{}
+	\label{fig:corr1}
+\end{figure}
+
+\vspace{0.5cm}
+\textbf{Choix des variables explicatives (X) :} \\
+Nous avons sélectionné les variables suivantes comme variables explicatives :
+\begin{itemize}
+	\item GPA
+	\item Final Exam Scores
+	\item Gender
+	\item Parental Education Level
+	\item Family Income
+	\item Hours of Study per Week
+\end{itemize}
+
+
+\vspace{0.3cm}
+\textbf{Variable cible (Y) :} \\
+La variable cible est \textbf{Performance}. Cette variable correspond mais pas à 100\% peut être à 70\% sur notre objectif d'étude, car elle représente la performance des étudiants mais pas le classifie.
+
+\section{Visualisation des Données}
 
 \section{Analyse univariée}
 
@@ -57,7 +140,7 @@ Les notes d’université sont principalement réparties entre 2 et 4. Très peu
 \subsection*{Research}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\textwidth]{../figures/pie_research.png}
+	\includegraphics[width=0.9\textwidth]{../figures/pie.png}
 	\caption{Répartition des candidats selon l’expérience de recherche}
 	\label{fig:pie_research}
 \end{figure}
@@ -105,11 +188,12 @@ Une forte corrélation est visible : plus le CGPA est élevé, plus la probabili
 \end{figure}
 
 La tendance est similaire : les meilleurs scores TOEFL correspondent à des probabilités d’admission plus élevées. La zone la plus dense concerne des scores TOEFL entre 100 et 110, avec des taux d’admission entre 0.6 et 0.8.
+Ces lignes verticales montrent la concenntration autour du point ayannt de même TOEFL, cela signifie simplement que plusieurs étudiants ont exactement le même score TOEFL.
 
 \subsection*{Chance of Admit par expérience de recherche}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\textwidth]{../figures/boxplot_research_admit.png}
+	\includegraphics[width=0.9\textwidth]{../figures/distribution_par_search.png}
 	\caption{Chance of Admit en fonction de l’expérience de recherche}
 	\label{fig:boxplot_research_admit}
 \end{figure}
@@ -124,7 +208,7 @@ Cela indique que l’expérience de recherche est clairement liée à une meille
 \subsection*{Nombre de candidats selon l’expérience de recherche}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\textwidth]{../figures/bar_research_counts.png}
+	\includegraphics[width=0.9\textwidth]{../figures/nbr_selon_search.png}
 	\caption{Répartition des candidats avec ou sans expérience de recherche}
 	\label{fig:bar_research_counts}
 \end{figure}
@@ -142,112 +226,3 @@ Cette exploration graphique met en évidence plusieurs éléments :
 
 Ces observations seront utilisées pour guider les choix de modélisation dans les prochaines sections.
 
-\section{Présentation du Dataset}
-
-\textbf{Nom du Dataset :} \\
-gc\_data.csv
-
-\vspace{0.3cm}
-\textbf{Source :} \\
-\url{https://sourceforge.net/projects/triangleinequal/files/Grad%20Cafe%20Data/gc_data.csv/download}
-
-\vspace{0.5cm}
-\textbf{Les colonnes qui contiennent dans le dataset :}
-\begin{itemize}
-	\item School, Program, Result, Result\_Date, GPA, 
-	\item Verbal\_GRE, Quant\_GRE, Writing\_GRE, Subject\_GRE, 
-	\item Status, Submit\_Date, Degree\_Type
-\end{itemize}
-
-
-\vspace{0.5cm}
-\textbf{Aperçu des 5 premières lignes du dataset :}
-
-\begin{center}
-	\includegraphics[width=0.9\textwidth]{../figures/head.png}
-	\captionof{figure}{Aperçu des 5 premières lignes du dataset}
-\end{center}
-
-\vspace{0.5cm}
-\textbf{Matrice de Corrélation :}
-
-\begin{center}
-	\includegraphics[width=0.9\textwidth]{../figures/corr.png}
-\end{center}
-
-\vspace{0.5cm}
-\textbf{Choix des variables explicatives (X) :} \\
-Nous avons sélectionné les variables suivantes comme variables explicatives :
-\begin{itemize}
-	\item Verbal\_GRE
-	\item Quant\_GRE
-	\item Writing\_GRE
-	\item GPA
-	\item Result
-\end{itemize}
-
-
-\vspace{0.3cm}
-\textbf{Variable cible (Y) :} \\
-La variable cible est \textbf{Admmited}. Cette variable correspond à notre objectif d'étude, car elle représente la classification binaire 1 pour admit et 0 pour le contraire qui sert à prédire si l'edutiant peut être passer ou pas.
-
-
-\textbf{Nom du Dataset :} \\
-Australian dataset
-
-\vspace{0.3cm}
-\textbf{Source :} \\
-\url{https://www.kaggle.com/datasets/nasirayub2/australian-student-performancedata-aspd24}
-
-\vspace{0.5cm}
-\textbf{Les colonnes qui contiennent dans le dataset :}
-\begin{itemize}
-	\item 51 colonnes dont :
-	\item GPA
-	\item High School GPA
-	\item Entrance Exam Score
-	\item Attendance
-	\item Family Income
-	\item Parental Education
-	\item Health
-	\item Mental Health
-	\item Exam Scores
-	\item Performance
-	\item ...
-\end{itemize}
-
-
-\vspace{0.5cm}
-\textbf{Aperçu des 5 premières lignes du dataset :}
-
-\begin{center}
-	\includegraphics[width=0.9\textwidth]{../figures/head1.png}
-	\captionof{figure}{Aperçu des 5 premières lignes du dataset}
-\end{center}
-
-\vspace{0.5cm}
-\textbf{Matrice de Corrélation :}
-
-\begin{figure}
-	\centering
-	\includegraphics[width=0.9\textwidth]{../figures/corr1}
-	\caption{}
-	\label{fig:corr1}
-\end{figure}
-
-\vspace{0.5cm}
-\textbf{Choix des variables explicatives (X) :} \\
-Nous avons sélectionné les variables suivantes comme variables explicatives :
-\begin{itemize}
-	\item GPA
-	\item Final Exam Scores
-	\item Gender
-	\item Parental Education Level
-	\item Family Income
-	\item Hours of Study per Week
-\end{itemize}
-
-
-\vspace{0.3cm}
-\textbf{Variable cible (Y) :} \\
-La variable cible est \textbf{Performance}. Cette variable correspond mais pas à 100\% peut être à 70\% sur notre objectif d'étude, car elle représente la performance des étudiants mais pas le classifie.

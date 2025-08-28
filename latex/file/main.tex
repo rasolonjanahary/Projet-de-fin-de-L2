@@ -26,6 +26,8 @@
 \fancyhf{}
 \rhead{\thepage}
 \lhead{\nouppercase{\leftmark}}
+%\renewcommand{\headrulewidth}{0pt} % supprime la ligne en haut novaiko
+%\renewcommand{\footrulewidth}{0pt} % (optionnel) supprime la ligne en bas   novaiko
 
 % ------------ Sections (titre stylisé) ------------
 \titleformat{\chapter}[display]
@@ -36,34 +38,48 @@
 \title{
     \vspace*{1cm}
     \includegraphics[width=0.35\textwidth]{insi.png} \\[1.5cm]  % <-- Ton logo
-    \textbf{\Huge Projet de Fin d'Études} \\[1cm]
-    \Large Analyse Prédictive sur des Données Réelles \\[0.5cm]
-    \normalsize Parcours Data Analyst \\[2cm]
+    \textbf{\Huge Prediciton du taux de reussite au concours d’entré école/université} \\[1cm]
+    \normalsize Parcours Intelligence Artificielle \\[2cm]
     \textbf{Année universitaire 2024–2025} \\[3cm]
-    \normalsize Réalisé par : Aritendry Ramahafeno \\
-    En collaboration avec : Bernardin RASOLONJANAHARY \\
-    Encadré par :Docteur Dimby  \\
+    \normalsize Réalisé par : Aritendry RAMAHAFENO \\
+    Et : Bernardin RASOLONJANAHARY \\
+    Encadré par :Dr ANDRIAMAHAZOSOA Dimbinantenaina Rabearivony  \\
     \vspace*{1cm}
 }
 \date{}
 
+
 \begin{document}
 
 \maketitle
+
+\renewcommand{\thepage}{\Roman{page}}
+
+\begin{titlepage}
+    \centering
+    \vspace*{\fill} % centre verticalement
+    {\Huge \textbf{Prediciton du taux de reussite au concours d’entré école/université} \par}
+    \vspace{2cm}
+    {\Large Auteur : Aritendry RAMAHAFENO et Bernardin RASOLONJANAHARY \par}
+    \vspace*{\fill}
+\end{titlepage}
+
+\input{remerciements}
+\input{resume}
+
+\clearpage
 \tableofcontents
 \newpage
 
 % ------------ Import des fichiers ------------
-\input{remerciements}
-\input{resume}
+\pagenumbering{arabic}
 \input{introduction}
 \input{exploration}         % EDA
 \input{visualisation}
 \input{modelisation}
 \input{deploiement}
+\input{conclusion}
 \input{annexe}
 \input{bibliographie}
-\input{conclusion}
-
 
 \end{document}
