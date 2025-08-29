@@ -1,9 +1,27 @@
 \chapter{Modélisation}
 
+<<<<<<< HEAD
 Ici, on a testé différents algorithmes de classification pour prédire les chances pour un étudiants d'entré dans les écoles aussi dans les universités. On a surtout utilisé : \textbf{SVM (SVC)}, \textbf{Decision Tree}, \textbf{Random Forest}, \textbf{Régression logistique} et \textbf{K Nearest Neighbours (KNN)}. Pour chaque modèle, on a normalisé les données avec \texttt{StandardScaler}.
 
 \section{Évaluation des modèles}
 Chaque modèle a été entraîné avec 80\% des dataset et testé sur les 20\% restants du dataset. Pour comparer leurs performances, on s'est basé sur les métriques suivantes :
+=======
+Nous avons testé différents algorithmes de classification pour prédire les chances pour un étudiant d'entré dans les écoles aussi dans les universités. On a surtout utilisé :  
+
+\begin{itemize}
+	\item \textbf{SVM (SVC)} ou \textbf{Support Vector Classifier} : c'est un algorithme qui cherche à séparer les données en traçant une frontière qui maximise la marge entre les différentes classes.
+	\item \textbf{Decision Tree} : construit un arbre de décisions en découpant les données selon les variables les plus discriminantes pour prédire la classe ou la valeur cible.
+	\item \textbf{Random Forest} : combine plusieurs arbres de décision entraînés sur des sous-échantillons aléatoires afin d’améliorer la précision et réduire le surapprentissage.
+	\item \textbf{Régression logistique} : qui modélise la probabilité qu’une observation appartienne à une classe en utilisant une fonction logistique.
+	\item \textbf{K Nearest Neighbours (KNN)} : c’est un algorithme qui classe un nouvel élément en regardant la majorité des classes parmi ses K voisins les plus proches.
+\end{itemize}
+
+Pour chaque modèle, on a normalisé les données avec \texttt{StandardScaler} son role est important les features de chaque modèle n'ont pas le meme échelle donc certains peuvent dominer les autres.
+
+
+\section{Évaluation des modèles}
+Chaque modèle a été entraîné avec 80\% des dataset et testé sur les 20\% . Pour comparer leurs performances, on s'est basé sur les métriques suivantes :
+>>>>>>> 7f1856b (Ajustement du livre)
 \begin{itemize}
 	\item \textbf{Accuracy} : le taux de bonnes réponses
 	\item \textbf{Precision} : la proportion de vrais positifs parmi les prédictions positives
@@ -18,7 +36,11 @@ Voici un tableau qui résume les performances de chaque modèle :
 	\centering
 	\begin{tabular}{lcccc}
 		\hline
+<<<<<<< HEAD
 		\textbf{Modèle} & \textbf{Accuracy} & \textbf{Précision} & \textbf{Rappel} & \textbf{F1-score} \\
+=======
+		\textbf{Modèle} & \textbf{Accuracy} & \textbf{Précision} & \textbf{Recall} & \textbf{F1-score} \\
+>>>>>>> 7f1856b (Ajustement du livre)
 		\hline
 		SVC & 0.90 & 0.94 & 0.91 & 0.92 \\
 		Arbre de décision & 0.76 & 0.82 & 0.82 & 0.82 \\
@@ -72,4 +94,9 @@ En regardant les résultats, on peut faire plusieurs constats intéressants :
 	\item La \textbf{régression logistique} se comporte bien et arrive surtout à généraliser : au lieu de juste mémoriser les données, elle apprend vraiment les relations entre les variables
 \end{itemize}
 
+<<<<<<< HEAD
 Finalement, même si SVC avait les meilleurs scores, on a choisi la régression logistique pour la suite parce qu'elle est plus stable et plus facile à interpréter. C'est ce modèle qu'on a décidé de sauvegarder pour les prédictions futures.
+=======
+Finalement, même si SVC avait les meilleurs scores, on a choisi la régression logistique pour la suite parce qu'elle est plus stable, c'est à dire moins sensible aux variations du jeu de données et aux valeurs extrêmes, et plus facile à interpréter. C'est ce modèle qu'on a décidé de sauvegarder pour les prédictions futures.
+
+>>>>>>> 7f1856b (Ajustement du livre)
