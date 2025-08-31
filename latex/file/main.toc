@@ -28,16 +28,17 @@
 \contentsline {section}{\numberline {2.6}Conclusion}{19}{section.2.6}%
 \contentsline {section}{\numberline {2.7}Conclusion de l'éxploration}{19}{section.2.7}%
 \contentsline {chapter}{\numberline {3}Modélisation}{20}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Évaluation des modèles}{20}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Évaluation des modèles}{20}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Résultats obtenus}{21}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Courbes d'apprentissage}{21}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Analyse des résultats}{23}{section.3.5}%
+\contentsline {section}{\numberline {3.1}Prédiction en pourcentage avec Régression linéaire}{20}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Autres modèles de classification}{20}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Évaluation des modèles}{21}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Résultats obtenus}{21}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Courbes d'apprentissage}{21}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Analyse des résultats}{24}{section.3.6}%
 \contentsline {chapter}{\numberline {4}Déploiement}{25}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Test interactif du modèle}{25}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Chargement du modèle}{25}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Chargement des modèles}{25}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Exemple d'utilisation}{26}{section.4.3}%
 \contentsline {chapter}{\numberline {5}Conclusion}{27}{chapter.5}%
-\contentsline {chapter}{Annexes}{28}{chapter*.24}%
-\contentsline {chapter}{Bibliographie}{38}{chapter*.38}%
-\contentsline {chapter}{Bibliographie}{39}{chapter*.39}%
+\contentsline {chapter}{Annexes}{29}{chapter*.24}%
+\contentsline {chapter}{Bibliographie}{39}{chapter*.38}%
+\contentsline {chapter}{Bibliographie}{40}{chapter*.39}%

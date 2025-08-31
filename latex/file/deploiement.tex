@@ -1,36 +1,55 @@
 \chapter{Déploiement}
 
-Dans ce chapitre, nous vous présentons comment nous avons rendu notre modèle entrainé accessible et utilisable , en mettant en place une interface simple permettant de tester les predictions de notre modèle.
+Dans ce chapitre, nous présentons comment nous avons rendu notre modèle entraîné accessible et utilisable, en mettant en place une interface simple permettant de tester les prédictions.
 
 \section{Test interactif du modèle}
-Afin de permettre une expérience utilisateur intuitive, nous avons développé un script en Python qui invite à saisir pas à pas les informations nécessaires. 
+Pour offrir une expérience utilisateur intuitive, nous avons développé un script Python qui invite l'utilisateur à saisir pas à pas les informations nécessaires.  
 
-Voici comment cela fonctionne :
+Voici le fonctionnement :
+
 \begin{itemize}
-    \item L'utilisateur doit renseigné ces notes académique comme : le \textbf{GRE Score}, le \textbf{TOEFL Score}, la \textbf{Note de l'université}, la force du \textbf{SOP} (Statement of Purpose) et du \textbf{LOR} (Letter of Recommendation), le \textbf{CGPA} (Grade Point Average cumulé), ainsi que son expérience en \textbf{recherche}.
-    \item Si une information n’est pas disponible,alors une valeur par défaut sera attribué,afin de garantir ainsi le bon fonctionnement du modèle même avec des données manquant.
-    \item Une fois toutes les entrées collectées, le script affiche clairement le résultat sous la forme : 
+    \item L'utilisateur renseigne ses notes académiques, à savoir : le \textbf{GRE Score}, le \textbf{TOEFL Score}, la \textbf{Note de l'université}, la force du \textbf{SOP} (Statement of Purpose) et du \textbf{LOR} (Letter of Recommendation), le \textbf{CGPA} (Grade Point Average cumulé), ainsi que son expérience en \textbf{recherche}.
+    \item Si une information n’est pas disponible, une valeur par défaut est attribuée, afin de garantir le bon fonctionnement du modèle même avec des données manquantes.
+    \item Une fois toutes les entrées collectées, le script affiche :
     \begin{itemize}
         \item \texttt{Candidat probablement admis} en cas de prédiction positive.
         \item \texttt{Candidat probablement non admis} dans le cas contraire.
+        \item De plus, grâce à la \textbf{régression linéaire}, le script affiche également le pourcentage estimé de chances d’admission du candidat. Ce pourcentage permet à l’utilisateur de mieux visualiser ses probabilités, même si la décision finale reste binaire selon un seuil prédéfini (ex : 0.69).
     \end{itemize}
 \end{itemize}
 
-\section{Chargement du modèle}
-<<<<<<< HEAD
-Pour pouvoir réutiliser le modèle entraîné sans avoir à le ré-entraîner, nous avons utilisé la bibliothèque \texttt{pickle}. Le modèle est donc sauvegardé dans un fichier \texttt{logistic.pkl}, ce qui permet de l'utiliser rapidement et de l’intégrer dans n’importe ou par exemple dans les site web , etc.
-=======
-Pour pouvoir réutiliser le modèle entraîné sans avoir à le ré-entraîner, nous avons utilisé la bibliothèque \texttt{pickle}. Le modèle est donc sauvegardé dans un fichier \texttt{logistic.pkl}, ce qui permet de l'utiliser rapidement et de l’intégrer n’importe ou par exemple dans les site web , etc.
->>>>>>> 7f1856b (Ajustement du livre)
+\section{Chargement des modèles}
+Pour réutiliser les modèles entraînés sans les réentraîner, nous avons utilisé la bibliothèque \texttt{pickle}.  
 
-\section{Exemple d'utilisation}
-Voici un extrait illustrant la simplicité avec laquelle le modèle peut être chargé et testé :
+\begin{itemize}
+    \item Le modèle de \textbf{régression logistique} est sauvegardé dans \texttt{logistic.pkl} et permet de prédire la classe binaire (admis/non admis).
+    \item Le modèle de \textbf{régression linéaire} est sauvegardé dans \texttt{linear.pkl} et permet d’estimer la probabilité d’admission en pourcentage.
+\end{itemize}
+
+Exemple de chargement :
 
 \begin{verbatim}
 import pickle as pkl
+
+# Chargement du modèle logistique
 with open('models/logistic.pkl', 'rb') as f:
     model_loaded = pkl.load(f)
-test_model_input(model_loaded)
+
+# Chargement du modèle linéaire
+with open('models/linear.pkl', 'rb') as f:
+    linear_model = pkl.load(f)
 \end{verbatim}
 
-Ce prototype nous permet de constituer la première étape essentielle vers un déploiement à plus grande échelle. 
+\section{Exemple d'utilisation}
+Une fois les modèles chargés, le script interagit avec l'utilisateur et réalise les prédictions :
+
+\begin{verbatim}
+# Appel de la fonction interactive pour la prédiction binaire
+test_model_input(model_loaded)
+
+# Estimation du pourcentage d'admission avec la régression linéaire
+pred_prob = linear_model.predict(new_data)
+print(f"Chances d'admission estimées : {pred_prob[0]*100:.2f}%")
+\end{verbatim}
+
+Ce prototype constitue une première étape essentielle vers un déploiement à plus grande échelle, permettant à tout utilisateur de tester facilement ses chances d’admission.

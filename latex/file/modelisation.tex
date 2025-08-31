@@ -1,12 +1,16 @@
 \chapter{Modélisation}
 
-<<<<<<< HEAD
-Ici, on a testé différents algorithmes de classification pour prédire les chances pour un étudiants d'entré dans les écoles aussi dans les universités. On a surtout utilisé : \textbf{SVM (SVC)}, \textbf{Decision Tree}, \textbf{Random Forest}, \textbf{Régression logistique} et \textbf{K Nearest Neighbours (KNN)}. Pour chaque modèle, on a normalisé les données avec \texttt{StandardScaler}.
+Nous avons testé différents algorithmes de classification pour prédire les chances pour un étudiant d'entrer dans les écoles et universités. Avant de présenter les modèles de classification, nous introduisons d'abord la \textbf{prédiction en pourcentage} avec la régression linéaire.
 
-\section{Évaluation des modèles}
-Chaque modèle a été entraîné avec 80\% des dataset et testé sur les 20\% restants du dataset. Pour comparer leurs performances, on s'est basé sur les métriques suivantes :
-=======
-Nous avons testé différents algorithmes de classification pour prédire les chances pour un étudiant d'entré dans les écoles aussi dans les universités. On a surtout utilisé :  
+\section{Prédiction en pourcentage avec Régression linéaire}
+En complément de la classification binaire, nous avons utilisé la \textbf{régression linéaire} pour prédire la \emph{probabilité d'admission} en pourcentage.  
+
+Cette approche permet de fournir non seulement si un candidat est admis ou non, mais aussi une estimation numérique de ses chances. Pour ce modèle, nous avons utilisé les variables explicatives : \texttt{GRE Score}, \texttt{TOEFL Score}, \texttt{University Rating}, \texttt{SOP}, \texttt{LOR}, \texttt{CGPA} et \texttt{Research}, avec pour variable cible \texttt{Chance of Admit}.
+
+Le modèle prédit ainsi un pourcentage compris entre 0 et 1.
+
+\section{Autres modèles de classification}
+On a ensuite évalué différents algorithmes de classification pour confirmer et comparer les performances :
 
 \begin{itemize}
 	\item \textbf{SVM (SVC)} ou \textbf{Support Vector Classifier} : c'est un algorithme qui cherche à séparer les données en traçant une frontière qui maximise la marge entre les différentes classes.
@@ -16,12 +20,10 @@ Nous avons testé différents algorithmes de classification pour prédire les ch
 	\item \textbf{K Nearest Neighbours (KNN)} : c’est un algorithme qui classe un nouvel élément en regardant la majorité des classes parmi ses K voisins les plus proches.
 \end{itemize}
 
-Pour chaque modèle, on a normalisé les données avec \texttt{StandardScaler} son role est important les features de chaque modèle n'ont pas le meme échelle donc certains peuvent dominer les autres.
-
+Pour chaque modèle, on a normalisé les données avec \texttt{StandardScaler}, son rôle est important car les features de chaque modèle n'ont pas la même échelle donc certains peuvent dominer les autres.
 
 \section{Évaluation des modèles}
-Chaque modèle a été entraîné avec 80\% des dataset et testé sur les 20\% . Pour comparer leurs performances, on s'est basé sur les métriques suivantes :
->>>>>>> 7f1856b (Ajustement du livre)
+Chaque modèle a été entraîné avec 80\% des dataset et testé sur les 20\% restants. Pour comparer leurs performances, on s'est basé sur les métriques suivantes :
 \begin{itemize}
 	\item \textbf{Accuracy} : le taux de bonnes réponses
 	\item \textbf{Precision} : la proportion de vrais positifs parmi les prédictions positives
@@ -36,11 +38,7 @@ Voici un tableau qui résume les performances de chaque modèle :
 	\centering
 	\begin{tabular}{lcccc}
 		\hline
-<<<<<<< HEAD
-		\textbf{Modèle} & \textbf{Accuracy} & \textbf{Précision} & \textbf{Rappel} & \textbf{F1-score} \\
-=======
 		\textbf{Modèle} & \textbf{Accuracy} & \textbf{Précision} & \textbf{Recall} & \textbf{F1-score} \\
->>>>>>> 7f1856b (Ajustement du livre)
 		\hline
 		SVC & 0.90 & 0.94 & 0.91 & 0.92 \\
 		Arbre de décision & 0.76 & 0.82 & 0.82 & 0.82 \\
@@ -94,9 +92,4 @@ En regardant les résultats, on peut faire plusieurs constats intéressants :
 	\item La \textbf{régression logistique} se comporte bien et arrive surtout à généraliser : au lieu de juste mémoriser les données, elle apprend vraiment les relations entre les variables
 \end{itemize}
 
-<<<<<<< HEAD
-Finalement, même si SVC avait les meilleurs scores, on a choisi la régression logistique pour la suite parce qu'elle est plus stable et plus facile à interpréter. C'est ce modèle qu'on a décidé de sauvegarder pour les prédictions futures.
-=======
 Finalement, même si SVC avait les meilleurs scores, on a choisi la régression logistique pour la suite parce qu'elle est plus stable, c'est à dire moins sensible aux variations du jeu de données et aux valeurs extrêmes, et plus facile à interpréter. C'est ce modèle qu'on a décidé de sauvegarder pour les prédictions futures.
-
->>>>>>> 7f1856b (Ajustement du livre)

@@ -1,21 +1,22 @@
 \chapter{Conclusion}
 
-Ce travail de recherche nous a permis d'aboutir à la création et à la validation d'un modèle prédictif dont l'objectif principale est d'évaluer les chances d’admission d’un étudiant=, en s’appuyant sur le dataset 
-La methodologie qu'on a adoptée repose sur ces successions d 'étapes clés comme :
+Ce travail de recherche nous a permis d'aboutir à la création et à la validation d'un modèle prédictif dont l'objectif principal est d'évaluer les chances d’admission d’un étudiant, en s’appuyant sur le dataset. La méthodologie adoptée repose sur une succession d'étapes clés :
 
 \begin{itemize}
-\item \textbf{Préparation des données} : Cette phase préliminaire, bien que souvent sous estimée, s’est avérée déterminant. Elle a inclus le nettoyage des données, leurs exploration approfondie, et la sélection des variables principale pour la prédiction.
-
-\item \textbf{Modélisation} : Une comparaison approfondie parmis plusieurs algorithmes d’apprentissage supervisé a été réalisée. Nous avons confronté leurs performances comme les performances du SVC, random forest, l’Arbre de Décision, la Régression Logistique et les K Nearest Neighbors,cherchant ainsi à trouverlequel de ces algorithmes est le plus precis pour ainsi pouvoir le prendre.
-
-\item \textbf{Évaluation} : Au-delà des métriques classiques de performance comme l’exactitude, la précision ou le score F1, nous avons analysé les courbes d’apprentissage pour détecter et comprendre les écueils classiques que sont le surajustement ou le sous-ajustement, garantissant ainsi la robustesse de notre modèle.
-
-\item \textbf{Déploiement} : Pour concrétiser cette étude, une application interactive a été développée. Elle permet à un utilisateur de saisir ses informations et d’obtenir une estimation personnalisée, matérialisant ainsi l’utilité pratique du modèle.
+	\item \textbf{Prédiction en pourcentage} : Avant toute classification binaire, nous avons utilisé la \textbf{régression linéaire} pour estimer la probabilité d’admission d’un étudiant. Cette approche fournit une valeur continue interprétable entre 0 et 1, offrant une vision quantitative des chances d’admission. Elle permet ainsi de mieux guider l’utilisateur et de compléter les décisions binaires.
+	
+	\item \textbf{Préparation des données} : Cette phase préliminaire, souvent sous-estimée, s’est avérée déterminante. Elle a inclus le nettoyage des données, leur exploration approfondie, et la sélection des variables principales pour la prédiction.
+	
+	\item \textbf{Modélisation et classification} : Une comparaison approfondie parmi plusieurs algorithmes d’apprentissage supervisé a été réalisée. Nous avons confronté les performances du \textbf{SVC}, \textbf{Random Forest}, \textbf{Arbre de Décision}, \textbf{Régression Logistique} et \textbf{K Nearest Neighbors}, afin de déterminer lequel de ces algorithmes était le plus précis et adapté à notre problématique. La régression logistique, en particulier, a été utilisée pour produire la décision binaire (admis / non admis).
+	
+	\item \textbf{Évaluation} : Au-delà des métriques classiques de performance comme l’exactitude, la précision ou le score F1, nous avons analysé les courbes d’apprentissage pour détecter et comprendre les écueils classiques que sont le surajustement ou le sous-ajustement, garantissant ainsi la robustesse de notre modèle.
+	
+	\item \textbf{Déploiement} : Pour concrétiser cette étude, une application interactive a été développée. Elle permet à un utilisateur de saisir ses informations et d’obtenir non seulement la décision binaire grâce à la régression logistique, mais également une estimation du \textbf{pourcentage de chances d’admission} fournie par la régression linéaire. Cette double approche offre à l’utilisateur une vision plus complète et personnalisée.
 \end{itemize}
 
-L’examen méticuleux des performances a révélé que la \textbf{Régression Logistique} s’est imposée comme l’approche la plus pertinente pour notre jeu de données. Son excellence ne réside pas dans une complexité algorithmique supérieure, mais plutôt dans son équilibre et sa remarquable capacité à généraliser, évitant ainsi les pièges du surajustement dans lesquels sont tombés certains de ses concurrents. Elle a su capturer avec finesse les relations fondamentales liant les variables explicatives au résultat à prédire.
+L’examen méticuleux des performances a révélé que la \textbf{Régression Logistique} s’est imposée comme l’approche la plus pertinente pour notre jeu de données. Son excellence réside dans son équilibre et sa remarquable capacité à généraliser, évitant ainsi les pièges du surajustement dans lesquels certains concurrents sont tombés. Parallèlement, le modèle de \textbf{régression linéaire} a permis de quantifier les probabilités d’admission, donnant un indicateur continu et interprétable.
 
-Enfin, ce mémoire ne se contente pas de présenter un modèle opérationnel ; il ouvre la voie à de multiples prolongements. Le développement d’une interface web intuitive ou la publication sous forme d’API constituent des évolutions naturelles pour étendre la portée de cet outil.
+Enfin, ce mémoire ne se contente pas de présenter un modèle opérationnel ; il ouvre la voie à de multiples prolongements. Le développement d’une interface web intuitive ou la publication sous forme d’API constituent des évolutions naturelles pour étendre la portée de cet outil.  
 
 \bigskip
-Par ailleurs, cette recherche vient rappeler, s’il le fallait encore, que la performance d’un modèle de machine learning ne naît pas de la sophistication de son algorithme, mais bien de la qualité du travail en amont : la préparation des données et leur analyse critique restent la pierre angulaire de tout projet réussi en science des données.
+Cette recherche rappelle également que la performance d’un modèle de machine learning ne naît pas de la sophistication de l’algorithme, mais bien de la qualité du travail en amont : la préparation des données et leur analyse critique restent la pierre angulaire de tout projet réussi en science des données.
