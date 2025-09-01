@@ -1,4 +1,4 @@
-\section{Présentation du Dataset}
+\section{Présentation des dataset secondaires}
 
 \textbf{Nom du Dataset :} gc\_data.csv
 
@@ -98,7 +98,7 @@ Parmi les variables ci-dessus nous avons sélectionné les variables suivantes c
 \textbf{Variable cible (Y) :} \\
 La variable cible est \textbf{Performance} ou encore \textbf{P\_encoded}. Cette variable correspond mais pas à 100\% peut être à 70\% sur notre objectif d'étude, car elle représente la performance des étudiants mais pas le classifie.
 
-\section{Visualisation des Données}
+\section{Visualisation des données du dataset principale}
 
 \section{Analyse univariée}
 
@@ -219,7 +219,15 @@ On note une nette différence entre les deux groupes :
 	\item Ceux ayant une expérience de recherche (1) ont une médiane proche de 0.8 et un troisième quartile autour de 0.89.
 \end{itemize}
 Cela indique que l’expérience de recherche est clairement liée à une meilleure chance d’admission.
-
+\subsection{Distribution du TOEFL selon University rating}
+Nous allons voir ci dessous pourquoi le niveau d'anglais pourrais influencer notre chance d'integrer une université
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{../figures/TU.png}
+	\caption{Distribution du TOEFL selon l'university}
+	\label{fig:TOEFLtoUR}
+\end{figure}
+ce graphique montre que les universités les mieux classées (ratings 4 et 5) ont tendance à exiger et à recevoir des candidats avec des scores au TOEFL considérablement plus élevés, ce qui suggère une forte corrélation positive entre le score TOEFL et le classement de l'université.
 \subsection{Nombre de candidats selon l’expérience de recherche}
 Ici, on a encore utilisé la visualisation par histogramme pour mieux voir la distribution des nombres des candidats selon l’expérience de recherche comme on peut voir sur l'image ci-dessous.
 \begin{figure}[H]

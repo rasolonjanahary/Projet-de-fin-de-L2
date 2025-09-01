@@ -1,0 +1,60 @@
+\babel@toc {french}{}\relax 
+\contentsline {chapter}{Introduction Générale}{I}{chapter*.1}%
+\contentsline {section}{\numberline {0.1}Contexte}{I}{section.0.1}%
+\contentsline {section}{\numberline {0.2}Problématique}{I}{section.0.2}%
+\contentsline {section}{\numberline {0.3}Objectifs}{I}{section.0.3}%
+\contentsline {section}{\numberline {0.4}Démarche suivie}{I}{section.0.4}%
+\contentsline {section}{\numberline {0.5}Structure du rapport}{II}{section.0.5}%
+\contentsline {paragraph}{\textbf {Conditions d'éligibilité}}{VI}{Item.8}%
+\contentsline {subparagraph}{Parcours Ingénierie logicielle, réseaux et systèmes :}{VIII}{Item.12}%
+\contentsline {subparagraph}{Parcours Cybersécurité :}{VIII}{Item.12}%
+\contentsline {subparagraph}{Parcours Intelligence Artificielle et Data :}{VIII}{Item.12}%
+\contentsline {chapter}{Remerciements}{X}{chapter*.3}%
+\contentsline {chapter}{Résumé}{XI}{chapter*.4}%
+\contentsline {chapter}{Abstract}{XII}{chapter*.5}%
+\contentsline {chapter}{\numberline {1}Exploration des données}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Chargement du jeu de données}{1}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Aperçu des données du dataset principale}{1}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Traitement des valeurs manquantes}{2}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}Détection de doublons}{2}{subsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.1.5}Étude des valeurs aberrantes}{2}{subsection.1.1.5}%
+\contentsline {subsection}{\numberline {1.1.6}Étude des corrélations}{2}{subsection.1.1.6}%
+\contentsline {subsection}{\numberline {1.1.7}Conclusion de l'exploration}{3}{subsection.1.1.7}%
+\contentsline {section}{\numberline {1.2}Présentation des dataset secondaires}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Visualisation des données du dataset principale}{7}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Analyse univariée}{7}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}GRE Score}{7}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}CGPA}{7}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}TOEFL Score}{8}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.4}University Rating}{9}{subsection.1.4.4}%
+\contentsline {subsection}{\numberline {1.4.5}Research}{10}{subsection.1.4.5}%
+\contentsline {subsection}{\numberline {1.4.6}Chance of Admit}{11}{subsection.1.4.6}%
+\contentsline {section}{\numberline {1.5}Analyse bivariée}{12}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}GRE Score vs Chance of Admit}{12}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}CGPA vs Chance of Admit}{13}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {1.5.3}TOEFL Score vs Chance of Admit}{14}{subsection.1.5.3}%
+\contentsline {subsection}{\numberline {1.5.4}Chance of Admit par expérience de recherche}{15}{subsection.1.5.4}%
+\contentsline {subsection}{\numberline {1.5.5}Distribution du TOEFL selon University rating}{16}{subsection.1.5.5}%
+\contentsline {subsection}{\numberline {1.5.6}Nombre de candidats selon l’expérience de recherche}{17}{subsection.1.5.6}%
+\contentsline {section}{\numberline {1.6}Conclusion de l'éxploration}{18}{section.1.6}%
+\contentsline {chapter}{\numberline {2}Modélisation}{19}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Prédiction en pourcentage avec Régression linéaire}{19}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Autres modèles de classification}{19}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Évaluation des modèles}{20}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}SVC}{20}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Decision tree}{21}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Random forest}{22}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Logistic regression}{23}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}K nearest neighbors}{24}{subsection.2.3.5}%
+\contentsline {section}{\numberline {2.4}Résultats obtenus}{24}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Courbes d'apprentissage}{25}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Analyse des résultats}{28}{section.2.6}%
+\contentsline {chapter}{\numberline {3}Déploiement}{30}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Test interactif du modèle}{30}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Chargement des modèles}{30}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Exemple d'utilisation}{31}{section.3.3}%
+\contentsline {chapter}{Conclusion}{32}{chapter*.30}%
+\contentsline {chapter}{Glossaire}{36}{chapter*.32}%
+\contentsline {chapter}{Annexes}{38}{chapter*.33}%
+\contentsline {chapter}{Bibliographie}{48}{chapter*.47}%

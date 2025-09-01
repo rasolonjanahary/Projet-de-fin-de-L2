@@ -23,7 +23,7 @@ df = pd.read_csv("admission_data.csv")
 
 La commande \texttt{df.info()} permet de voir une partie des colonnes, de leurs types et du nombre de valeurs non nulles. On compte 9 colonnes et 550 lignes.
 
-\subsection{Aperçu des données}
+\subsection{Aperçu des données du dataset principale}
 
 \begin{itemize}
     \item Le jeu de données contient des variables quantitatives comme  (\textit{GRE Score}, \textit{TOEFL Score}, \textit{CGPA}, \textit{Chance of Admit}) et discrètes (\textit{University Rating}, \textit{SOP}, \textit{LOR}, \textit{Research}).
@@ -81,7 +81,9 @@ Une matrice de corrélation a été générée pour évaluer les relations entre
 \begin{verbatim}
 corr_matrix = df_clean.corr()
 \end{verbatim}
-
+\begin{center}
+	\includegraphics[width=0.9\textwidth]{../figures/corr_o.png}
+\end{center}
 Les coefficients de corrélation les plus élevés avec la variable cible \textit{Chance of Admit} sont :
 
 \begin{tabular}{|l|c|}
