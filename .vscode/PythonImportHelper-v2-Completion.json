@@ -109,18 +109,18 @@
     },
     {
         "label": "StudentInput",
-        "importPath": "schemas",
-        "description": "schemas",
+        "importPath": "other.schemas",
+        "description": "other.schemas",
         "isExtraImport": true,
-        "detail": "schemas",
+        "detail": "other.schemas",
         "documentation": {}
     },
     {
         "label": "UniversityAdmissionInput",
-        "importPath": "schemas",
-        "description": "schemas",
+        "importPath": "other.schemas",
+        "description": "other.schemas",
         "isExtraImport": true,
-        "detail": "schemas",
+        "detail": "other.schemas",
         "documentation": {}
     },
     {

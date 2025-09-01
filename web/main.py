@@ -13,8 +13,8 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
 
 # Charger le pipeline
-model_gpa = joblib.load("models/model_gpa.pkl")
-model_hsgpa = joblib.load("models/model_hsgpa.pkl")
+model_gpa = joblib.load("../models/model_gpa.pkl")
+model_hsgpa = joblib.load("../models/model_hsgpa.pkl")
 
 @app.get("/", response_class=HTMLResponse)
 async def home(request: Request):
