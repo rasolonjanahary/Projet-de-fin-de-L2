@@ -23,6 +23,8 @@
 	\includegraphics[width=0.9\textwidth]{../figures/corr.png}
 \end{center}
 
+Les variables principales du dataset secondaire gc\_data.csv(Verbal\_GRE, Quant\_GRE, Writing\_GRE et GPA) sont faiblement corrélées à la variable cible(Admitted). Cette faiblesse de corrélation est peut être du à une falcification de donnés.
+
 \vspace{0.5cm}
 \textbf{Choix des variables explicatives (X) :} \\
 Nous avons sélectionné les variables suivantes comme variables explicatives :
@@ -31,7 +33,7 @@ Nous avons sélectionné les variables suivantes comme variables explicatives :
 	\item Quant\_GRE
 	\item Writing\_GRE
 	\item GPA
-	\item Result
+	\item Admitted
 \end{itemize}
 
 
@@ -40,8 +42,8 @@ Nous avons sélectionné les variables suivantes comme variables explicatives :
 La variable cible est \textbf{Admmited}. Cette variable correspond à notre objectif d'étude, car elle représente la classification binaire 1 pour admit et 0 pour le contraire qui sert à prédire si l'edutiant peut être passer ou pas.
 
 
-\textbf{Nom du Dataset :} \\
-Australian dataset c'est une donnée des étudiants de l'Australie
+\textbf{Nom du Dataset :} Australian\_Student\_PerformanceData (ASPD24).csv\\
+Australian dataset c'est une donnée de performance des étudiants de l'Australie.
 
 \vspace{0.5cm}
 \textbf{Les colonnes dans le dataset :}
@@ -56,9 +58,11 @@ Australian dataset c'est une donnée des étudiants de l'Australie
 	\item Health
 	\item Mental Health
 	\item Exam Scores
-	\item Performance
+        \item Final Exam Scores
+	\item Gender
+        \item Hours of Study per Week
+	\item Performance ou P\_encoded aprés l'encodage du variable cible
 \end{itemize}
-
 
 \vspace{0.5cm}
 \textbf{Aperçu des 5 premières lignes du dataset :}
@@ -67,7 +71,8 @@ Australian dataset c'est une donnée des étudiants de l'Australie
 	\includegraphics[width=0.9\textwidth]{../figures/head1.png}
 	\captionof{figure}{Les 5 premières lignes du dataset}
 \end{center}
-
+Les variables independants suivants : GPA, High School GPA, Entrance Exam Score, Attendance, Family Income, Parental Education, Health, Mental Health, 
+Exam Scores sont incorrélées aux variable cible qui est  Performance ou P\_encoded comme montrer la figure ci-dessous.
 
 \begin{figure}
 	\centering
@@ -78,7 +83,7 @@ Australian dataset c'est une donnée des étudiants de l'Australie
 
 \vspace{0.5cm}
 \textbf{Choix des variables explicatives (X) :} \\
-Nous avons sélectionné les variables suivantes comme variables explicatives :
+Parmi les variables ci-dessus nous avons sélectionné les variables suivantes comme variables explicatives :
 \begin{itemize}
 	\item GPA
 	\item Final Exam Scores
@@ -91,13 +96,14 @@ Nous avons sélectionné les variables suivantes comme variables explicatives :
 
 \vspace{0.3cm}
 \textbf{Variable cible (Y) :} \\
-La variable cible est \textbf{Performance}. Cette variable correspond mais pas à 100\% peut être à 70\% sur notre objectif d'étude, car elle représente la performance des étudiants mais pas le classifie.
+La variable cible est \textbf{Performance} ou encore \textbf{P\_encoded}. Cette variable correspond mais pas à 100\% peut être à 70\% sur notre objectif d'étude, car elle représente la performance des étudiants mais pas le classifie.
 
 \section{Visualisation des Données}
 
 \section{Analyse univariée}
 
-\subsection*{GRE Score}
+\subsection{GRE Score}
+Pour pouvoir analysé la distribution du variable GRE Score, on a utilisé la visualisation par histogramme pour mieux voir sa distribution comme on voit sur la figure ci-dessous.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\textwidth]{../figures/hist_gre_score.png}
@@ -107,7 +113,8 @@ La variable cible est \textbf{Performance}. Cette variable correspond mais pas �
 
 La majorité des scores GRE se situe entre 300 et 335. Cela montre une répartition relativement homogène avec une concentration autour de scores élevés, ce qui peut refléter un ensemble de candidats compétitifs.
 
-\subsection*{CGPA}
+\subsection{CGPA}
+Pour pouvoir voir la distribution du variable CGPA, on a utilisé la visualisation par histogramme comme on voit sur la figure ci-dessous.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\textwidth]{../figures/hist_cgpa.png}
@@ -117,7 +124,8 @@ La majorité des scores GRE se situe entre 300 et 335. Cela montre une répartit
 
 On observe une forte concentration des CGPA entre 8.0 et 9.5. Très peu de candidats ont un CGPA inférieur à 7.5. Entre 9.5 et 10, on note aussi une densité significative, indiquant que de nombreux candidats obtiennent des résultats académiques très solides.
 
-\subsection*{TOEFL Score}
+\subsection{TOEFL Score}
+Pour pouvoir analysé la distribution du variable TOEFL Score, on a utilisé la visualisation par histogramme pour mieux voir sa distribution comme on peut constater sur la figure ci-dessous.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\textwidth]{../figures/hist_toefl_score.png}
@@ -127,7 +135,8 @@ On observe une forte concentration des CGPA entre 8.0 et 9.5. Très peu de candi
 
 Les scores TOEFL se concentrent principalement entre 100 et 110, ce qui est typique d’étudiants internationaux préparés. Quelques candidats atteignent même des scores supérieurs à 115.
 
-\subsection*{University Rating}
+\subsection{University Rating}
+Pour pouvoir analysé la distribution du variable University Rating, on a encore utilisé la visualisation par histogramme pour mieux voir sa distribution comme on voit sur la figure ci-dessous.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\textwidth]{../figures/hist_university_rating.png}
@@ -137,7 +146,8 @@ Les scores TOEFL se concentrent principalement entre 100 et 110, ce qui est typi
 
 Les notes d’université sont principalement réparties entre 2 et 4. Très peu de candidats proviennent d’universités notées 1 ou 5, ce qui suggère une tendance vers des établissements modérément bien classés.
 
-\subsection*{Research}
+\subsection{Research}
+Pour mieux voir la répartition des étudiants qui ont fait de recherche et ce qui n'ont pas fait en pourcentage, on utilise un diagramme circulaire comme on voit sur la figure ci-dessous.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\textwidth]{../figures/pie.png}
@@ -147,7 +157,8 @@ Les notes d’université sont principalement réparties entre 2 et 4. Très peu
 
 57.1\% des candidats ont une expérience de recherche contre 42.9\% qui n’en ont pas. Cela souligne que l’expérience de recherche est un critère courant parmi les postulants, possiblement lié à de meilleures chances d’admission.
 
-\subsection*{Chance of Admit}
+\subsection{Chance of Admit}
+Ici, on a encore utilisé la visualisation par histogramme pour mieux voir sa distribution comme on peut voir sur l'image ci-dessous.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\textwidth]{../figures/hist_chance_admit.png}
@@ -159,7 +170,8 @@ La majorité des valeurs de \textit{Chance of Admit} se situe entre 0.6 et 0.8, 
 
 \section{Analyse bivariée}
 
-\subsection*{GRE Score vs Chance of Admit}
+\subsection{GRE Score vs Chance of Admit}
+Pour mieux analyser la relation entre la variable GRE Score et Chance of Admit, on a utilisé la visulaisation par nuage de point comme on peut le voir sur la figure ci-dessous.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\textwidth]{../figures/scatter_gre_admit.png}
@@ -169,7 +181,8 @@ La majorité des valeurs de \textit{Chance of Admit} se situe entre 0.6 et 0.8, 
 
 La relation est globalement croissante : les candidats ayant un GRE supérieur à 320 ont davantage de chances d’admission. La concentration est maximale pour des GRE compris entre 300 et 330 et des probabilités d’admission entre 0.6 et 0.8.
 
-\subsection*{CGPA vs Chance of Admit}
+\subsection{CGPA vs Chance of Admit}
+Pour mieux analyser la relation entre la variable CGPA et Chance of Admit, on a utilisé la visulaisation par nuage de point comme on peut le voir sur la figure ci-dessous.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\textwidth]{../figures/scatter_cgpa_admit.png}
@@ -179,7 +192,8 @@ La relation est globalement croissante : les candidats ayant un GRE supérieur �
 
 Une forte corrélation est visible : plus le CGPA est élevé, plus la probabilité d’admission augmente. L’essentiel des données est concentré entre un CGPA de 8 à 9 et un taux d’admission de 0.6 à 0.8.
 
-\subsection*{TOEFL Score vs Chance of Admit}
+\subsection{TOEFL Score vs Chance of Admit}
+Pour mieux analyser la relation entre la variable TOEFL Score et Chance of Admit, on a utilisé la visulaisation par nuage de point comme on peut le voir sur la figure ci-dessous.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\textwidth]{../figures/scatter_toefl_admit.png}
@@ -190,7 +204,8 @@ Une forte corrélation est visible : plus le CGPA est élevé, plus la probabili
 La tendance est similaire : les meilleurs scores TOEFL correspondent à des probabilités d’admission plus élevées. La zone la plus dense concerne des scores TOEFL entre 100 et 110, avec des taux d’admission entre 0.6 et 0.8.
 Ces lignes verticales montrent la concenntration autour du point ayannt de même TOEFL, cela signifie simplement que plusieurs étudiants ont exactement le même score TOEFL.
 
-\subsection*{Chance of Admit par expérience de recherche}
+\subsection{Chance of Admit par expérience de recherche}
+Pour mieux analyser la relation Chance of Admit et expérience de recherche, on a utilisé la visualisation par boîte à moustaches car on peut voir la résumé de la ditribution, la médiane et les valeurs extrêmes comme on peut voir ci-dessous.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\textwidth]{../figures/distribution_par_search.png}
@@ -205,7 +220,8 @@ On note une nette différence entre les deux groupes :
 \end{itemize}
 Cela indique que l’expérience de recherche est clairement liée à une meilleure chance d’admission.
 
-\subsection*{Nombre de candidats selon l’expérience de recherche}
+\subsection{Nombre de candidats selon l’expérience de recherche}
+Ici, on a encore utilisé la visualisation par histogramme pour mieux voir la distribution des nombres des candidats selon l’expérience de recherche comme on peut voir sur l'image ci-dessous.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\textwidth]{../figures/nbr_selon_search.png}
@@ -215,11 +231,7 @@ Cela indique que l’expérience de recherche est clairement liée à une meille
 
 Environ 250 à 300 candidats n’ont pas d’expérience de recherche, tandis que 200 à 250 en ont une. Bien que la majorité ait une expérience, l’écart reste relativement modéré.
 
-<<<<<<< HEAD
-\section{Conclusion}
-=======
 \section{Conclusion de l'éxploration}
->>>>>>> 7f1856b (Ajustement du livre)
 
 Cette exploration graphique met en évidence plusieurs éléments :
 \begin{itemize}
