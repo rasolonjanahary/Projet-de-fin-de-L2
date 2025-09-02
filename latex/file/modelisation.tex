@@ -30,6 +30,124 @@ Chaque modèle a été entraîné avec 80\% des dataset et testé sur les 20\% r
 	\item \textbf{Recall} : la capacité à trouver tous les vrais positifs
 	\item \textbf{F1-score} : une moyenne entre la précision et le rappel
 \end{itemize}
+\subsection{SVC}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{../figures/svc.png}
+\end{figure}
+
+La matrice de confusion, représentée par [[30 \; 4] [6 \; 61]], est le fondement de cette évaluation. Elle se lit comme suit :
+\begin{itemize}
+	\item \textbf{Vrais négatifs (TN)} : Le modèle a correctement prédit 30 cas négatifs.
+	\item \textbf{Faux positifs (FP)} : Le modèle a incorrectement prédit 4 cas positifs.
+	\item \textbf{Faux négatifs (FN)} : Le modèle a incorrectement prédit 6 cas négatifs.
+	\item \textbf{Vrais positifs (TP)} : Le modèle a correctement prédit 61 cas positifs.
+\end{itemize}
+
+Voici un résumé de la classification :
+\begin{itemize}
+	\item \textbf{Accuracy} : Avec un score global de 0.90, le modèle a bien prédit 90\% des cas. Il a fait 91 prédictions justes sur 101 au total.
+	\item \textbf{Précision} : Pour la classe 1, la précision est de 0.94, ce qui signifie que lorsque le modèle prédit la classe 1, il a raison 94\% du temps. Pour la classe 0, la précision est de 0.83.
+	\item \textbf{Rappel} : Pour la classe 1, le rappel est de 0.91, ce qui signifie que le modèle a identifié 91\% des cas réels de la classe 1. Pour la classe 0, il a identifié 88\% des cas réels.
+	\item \textbf{F1-score} : C'est la moyenne harmonique de la précision et du rappel. Un F1-score élevé (0.92 pour la classe 1) indique un bon équilibre entre précision et rappel, montrant la fiabilité du modèle pour cette classe.
+	\item \textbf{Support} : Indique le nombre d'occurrences réelles de chaque classe : 34 pour la classe 0 et 67 pour la classe 1.
+\end{itemize}
+
+
+\subsection{Decision tree}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{../figures/dt.png}
+\end{figure}
+
+La matrice de confusion, représentée par [[22 \; 12] [12 \; 55]], est le fondement de cette évaluation. Elle se lit comme suit :
+\begin{itemize}
+	\item \textbf{Vrais négatifs (TN)} : Le modèle a correctement prédit 22 cas négatifs.
+	\item \textbf{Faux positifs (FP)} : Le modèle a incorrectement prédit 12 cas positifs.
+	\item \textbf{Faux négatifs (FN)} : Le modèle a incorrectement prédit 12 cas négatifs.
+	\item \textbf{Vrais positifs (TP)} : Le modèle a correctement prédit 55 cas positifs.
+\end{itemize}
+
+Voici un résumé de la classification :
+\begin{itemize}
+	\item \textbf{Accuracy} : Avec un score global de 0.76, le modèle a bien prédit 76\% des cas. Il a fait 76 prédictions justes sur 101 au total.
+	\item \textbf{Précision} : Pour la classe 1, la précision est de 0.82, ce qui signifie que lorsque le modèle prédit la classe 1, il a raison 82\% du temps. Pour la classe 0, la précision est de 0.65.
+	\item \textbf{Rappel} : Pour la classe 1, le rappel est de 0.82, ce qui signifie que le modèle a identifié 82\% des cas réels de la classe 1. Pour la classe 0, il a identifié 65\% des cas réels.
+	\item \textbf{F1-score} : C'est la moyenne harmonique de la précision et du rappel. Un F1-score élevé (0.82 pour la classe 1) indique un bon équilibre entre précision et rappel, montrant la fiabilité du modèle pour cette classe.
+	\item \textbf{Support} : Indique le nombre d'occurrences réelles de chaque classe : 34 pour la classe 0 et 67 pour la classe 1.
+\end{itemize}
+
+\subsection{Random forest}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{../figures/rf.png}
+\end{figure}
+
+La matrice de confusion, représentée par [[26 \; 8] [5 \; 62]], est le fondement de cette évaluation. Elle se lit comme suit :
+\begin{itemize}
+	\item \textbf{Vrais négatifs (TN)} : Le modèle a correctement prédit 26 cas négatifs.
+	\item \textbf{Faux positifs (FP)} : Le modèle a incorrectement prédit 8 cas positifs.
+	\item \textbf{Faux négatifs (FN)} : Le modèle a incorrectement prédit 5 cas négatifs.
+	\item \textbf{Vrais positifs (TP)} : Le modèle a correctement prédit 62 cas positifs.
+\end{itemize}
+
+Voici un résumé de la classification :
+\begin{itemize}
+	\item \textbf{Accuracy} : Avec un score global de 0.87, le modèle a bien prédit 87\% des cas. Il a fait 87 prédictions justes sur 101 au total.
+	\item \textbf{Précision} : Pour la classe 1, la précision est de 0.89, ce qui signifie que lorsque le modèle prédit la classe 1, il a raison 82\% du temps. Pour la classe 0, la précision est de 0.84.
+	\item \textbf{Recalll} : Pour la classe 1, le recall est de 0.93, ce qui signifie que le modèle a identifié 93\% des cas réels de la classe 1. Pour la classe 0, il a identifié 76\% des cas réels.
+	\item \textbf{F1-score} : C'est la moyenne harmonique de la précision et du rappel. Un F1-score élevé (0.91 pour la classe 1) indique un bon équilibre entre précision et rappel
+	\item \textbf{Support} : Indique le nombre d'occurrences réelles de chaque classe : 34 pour la classe 0 et 67 pour la classe 1.
+\end{itemize}
+
+\subsection{Logistic regression}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{../figures/lr.png}
+\end{figure}
+
+La matrice de confusion, représentée par [[29 \; 5] [8 \; 59]], est le fondement de cette évaluation. Elle se lit comme suit :
+\begin{itemize}
+	\item \textbf{Vrais négatifs (TN)} : Le modèle a correctement prédit 29 cas négatifs.
+	\item \textbf{Faux positifs (FP)} : Le modèle a incorrectement prédit 5 cas positifs.
+	\item \textbf{Faux négatifs (FN)} : Le modèle a incorrectement prédit 8 cas négatifs.
+	\item \textbf{Vrais positifs (TP)} : Le modèle a correctement prédit 59 cas positifs.
+\end{itemize}
+
+Voici un résumé de la classification :
+\begin{itemize}
+	\item \textbf{Accuracy} : Avec un score global de 0.87, le modèle a bien prédit 87\% des cas. Il a fait 87 prédictions justes sur 101 au total.
+	\item \textbf{Précision} : Pour la classe 1, la précision est de 0.92, ce qui signifie que lorsque le modèle prédit la classe 1, il a raison 92\% du temps. Pour la classe 0, la précision est de 0.92.
+	\item \textbf{Recall} : Pour la classe 1, le recall est de 0.88, ce qui signifie que le modèle a identifié 88\% des cas réels de la classe 1. Pour la classe 0, il a identifié 85\% des cas réels.
+	\item \textbf{F1-score} : C'est la moyenne harmonique de la précision et du rappel. Un F1-score élevé (0.88 pour la classe 1) indique un bon équilibre entre précision et rappel
+\end{itemize}
+
+\subsection{K nearest neighbors}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{../figures/knn.png}
+\end{figure}
+
+La matrice de confusion, représentée par [[26 \; 8] [3 \; 64]], est le fondement de cette évaluation. Elle se lit comme suit :
+\begin{itemize}
+	\item \textbf{Vrais négatifs (TN)} : Le modèle a correctement prédit 26 cas négatifs.
+	\item \textbf{Faux positifs (FP)} : Le modèle a incorrectement prédit 8 cas positifs.
+	\item \textbf{Faux négatifs (FN)} : Le modèle a incorrectement prédit 3 cas négatifs.
+	\item \textbf{Vrais positifs (TP)} : Le modèle a correctement prédit 64 cas positifs.
+\end{itemize}
+
+Voici un résumé de la classification :
+\begin{itemize}
+	\item \textbf{Accuracy} : Avec un score global de 0.89, le modèle a bien prédit 90\% des cas. Il a fait 89 prédictions justes sur 101 au total.
+	\item \textbf{Précision} : Pour la classe 1, la précision est de 0.89, ce qui signifie que lorsque le modèle prédit la classe 1, il a raison 89\% du temps. Pour la classe 0, la précision est de 0.90.
+	\item \textbf{Recall} : Pour la classe 1, le rappel est de 0.96, ce qui signifie que le modèle a identifié 96\% des cas réels de la classe 1. Pour la classe 0, il a identifié 76\% des cas réels.
+	\item \textbf{F1-score} : C'est la moyenne harmonique de la précision et du rappel. Un F1-score élevé (0.92 pour la classe 1) indique un bon équilibre entre précision et rappel
+	\item \textbf{Support} : Indique le nombre d'occurrences réelles de chaque classe : 34 pour la classe 0 et 67 pour la classe 1.
+\end{itemize}
+
+
+
 
 \section{Résultats obtenus}
 Voici un tableau qui résume les performances de chaque modèle :
@@ -52,24 +170,29 @@ Voici un tableau qui résume les performances de chaque modèle :
 
 \section{Courbes d'apprentissage}
 Pour mieux comprendre le comportement des modèles, on a tracé des courbes d'apprentissage qui montrent comment les performances évoluent avec la quantité de données :
-
+Ici par exemple on peut voir que plus la taille des données sont importantes plus la performance sont faibles qui est une chose anormale.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{../figures/learning_curve_svc.png}
 	\caption{Courbe d'apprentissage pour SVC}
 \end{figure}
-
+Comme on peut le voir, le score d'entraînement est élevé au début et diminue légèrement à mesure que la taille de l'ensemble d'entraînement augmente. Cela s'explique par le fait que le modèle a plus de difficultés à mémoriser parfaitement toutes les données à mesure que leur quantité augmente.
+La courbe de validation montre la performance du modèle sur de nouvelles données, qu'il n'a pas vues pendant l'entraînemen 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{../figures/learning_curve_rf.png}
-	\caption{Courbe d'apprentissage pour Forêt aléatoire}
+	\caption{Courbe d'apprentissage pour Random Forest}
 \end{figure}
-
+Ici, le score d'entraînement est de 1.0 (ou très proche) et reste constant, quelle que soit la taille de l'échantillon. Cela indique que le modèle a mémorisé parfaitement l'ensemble des données d'entraînement, ce qui est un signe de surapprentissage (overfitting).Le score de validation montre la performance du modèle sur des données nouvelles. Le score de validation se situe entre 0.82 et 0.86 et stagne ou diminue légèrement à mesure que l'échantillon d'entraînement augmente. L'écart important entre le score d'entraînement (1.0) et le score de validation (environ 0.85) confirme le problème de surapprentissage. 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{../figures/learning_curve_dtc.png}
 	\caption{Courbe d'apprentissage pour Arbre de décision}
 \end{figure}
+
+ Le score d'entraînement est à 1.0 (100\% d'exactitude) et reste parfait, quelle que soit la taille de l'échantillon. Cela signifie que le modèle a mémorisé parfaitement toutes les données d'entraînement.Le score de validation est beaucoup plus bas, oscillant autour de 0.75 à 0.80. Cet écart important entre la performance d'entraînement (parfaite) et la performance de validation (médiocre) confirme le surapprentissage.
+ 
+ 
 
 \begin{figure}[H]
 	\centering
@@ -77,17 +200,20 @@ Pour mieux comprendre le comportement des modèles, on a tracé des courbes d'ap
 	\caption{Courbe d'apprentissage pour Régression logistique}
 \end{figure}
 
+Au début, avec un petit échantillon de données, l'exactitude est élevée (plus de 0.90) car le modèle peut facilement mémoriser les exemples. Au fur et à mesure que l'ensemble d'entraînement grandit, le score d'entraînement diminue légèrement car le modèle a plus de difficulté à s'adapter parfaitement à toutes les données, ce qui est un comportement normal et sain. La courbe se stabilise autour de 0.85 Le score de validation augmente avec la taille de l'échantillon d'entraînement. C'est un signe positif, car cela signifie que plus le modèle voit de données, plus il apprend à généraliser correctement. Le score se stabilise autour de 0.84.
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{../figures/learning_curve_knn.png}
 	\caption{Courbe d'apprentissage pour KNN}
 \end{figure}
-
+ Le score d'entraînement augmente au début, puis se stabilise autour de 0.88-0.89.
+ La courbe a tendance à s'améliorer puis à stagner avec plus de données d'entraînement. Le score de validation augmente avec la taille de l'échantillon d'entraînement, ce qui est une bonne chose car cela indique que le modèle apprend à mieux généraliser. Cependant, il se stabilise à un niveau relativement bas, autour de 0.82. Il y a un écart significatif et persistant entre les deux courbes, et elles ne se rejoignent pas. Cet écart suggère que le modèle est sous-ajusté (underfitting), même avec un grand nombre de données d'entraînement.
 \section{Analyse des résultats}
 En regardant les résultats, on peut faire plusieurs constats intéressants :
 \begin{itemize}
 	\item Le modèle \textbf{SVC} donne les meilleurs résultats globaux avec un F1-score de 0.92
-	\item Les modèles \textbf{Forêt aléatoire} et \textbf{KNN} ont des performances assez similaires
+	\item Les modèles \textbf{Random Forest} et \textbf{KNN} ont des performances assez similaires
 	\item L'\textbf{arbre de décision} semble sur-apprendre et a des scores plus bas
 	\item La \textbf{régression logistique} se comporte bien et arrive surtout à généraliser : au lieu de juste mémoriser les données, elle apprend vraiment les relations entre les variables
 \end{itemize}

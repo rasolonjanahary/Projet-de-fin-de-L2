@@ -7,23 +7,38 @@ L’entrée à l’université représente un enjeu important pour beaucoup d’
 
 \section{Problématique}
 
-Prédire si un candidat va réussir son concours d’entrée est un vrai défi : les données sont nombreuses par exemple dans Kaggle  sur \url{https://www.kaggle.com/datasets/samsonqian/college-admissions} . Difficile, dans ces conditions, de bâtir un modèle fiable. Il fallait donc trouver une manière efficace de traiter ces informations pour en tirer des prédictions utiles.
+Prédire si un candidat va réussir son concours d’entrée est un vrai défi : les données sont nombreuses par exemple dans Kaggle sur \url{https://www.kaggle.com/datasets/samsonqian/college-admissions}. Difficile, dans ces conditions, de bâtir un modèle fiable. Il fallait donc trouver une manière efficace de traiter ces informations pour en tirer des prédictions utiles.
 
 \section{Objectifs}
 
-L’objectif de ce projet est de développer un modèle capable d’estimer les probabilités de réussite au concours, en se basant sur des données académiques et les variables pertinents comme les scores au GRE ou au TOEFL, la moyenne générale.
+L’objectif de ce projet est de développer un modèle capable d’estimer les probabilités de réussite au concours, en se basant sur des données académiques et des variables pertinentes comme les scores au GRE ou au TOEFL, la moyenne générale (CGPA), ainsi que d’autres critères qualitatifs (SOP, LOR, expérience de recherche).  
+Deux approches complémentaires ont été mises en place :  
+\begin{itemize}
+	\item la \textbf{régression linéaire}, qui fournit une estimation continue du pourcentage de chances d’admission ;
+	\item des modèles de classification supervisée (Logistic Regression, Random Forest, SVC, etc.), qui permettent de donner une décision binaire (admis / non admis).
+\end{itemize}
 
 \section{Démarche suivie}
 
-Pour y parvenir, on a commencé par rassembler plusieurs jeux de données, puis on en a choisi un — le plus complet et fiable c'est à dire ce qui corresponds le plus au sujet. Ensuite, on a nettoyé et préparé les données, avant de les explorer pour bien comprendre ce qu’elles contenaient. Plusieurs algorithmes de machine learning ont été testés et comparés pour sélectionner celui qui donnait les meilleurs résultats comme la LogisticRegresion avec le resultat de 87\%, 90\% avec SVC, 76\% avec Decision Tree, 87\% avec Random Forests et 89\% avec K-Nearest Neighbors .
-Pour y parvenir, on a commencé par rassembler plusieurs jeux de données, puis on en a choisi un — le plus complet dont les variables dans les jeux de donnés sont tous utile et fiable dont chaque jeux de donnés n'a pas été falsifié. Ensuite, on a nettoyé et préparé les données, avant de les explorer pour bien comprendre ce qu’elles contenaient. Plusieurs algorithmes de machine learning ont été testés et comparés pour sélectionner celui qui donnait les meilleurs résultats comme la LogisticRegresion avec le resultat de 87\%, 90\% avec SVC, 76\% avec Decision Tree, 87\% avec Random Forests et 89\% avec K-Nearest Neighbors .
+Pour y parvenir, nous avons commencé par rassembler plusieurs jeux de données, puis nous avons choisi le plus complet et le plus fiable, correspondant le mieux à notre sujet. Ensuite, les données ont été nettoyées et préparées, avant une phase d’exploration pour mieux comprendre leur contenu.  
+
+Plusieurs algorithmes de machine learning ont été testés et comparés pour sélectionner celui qui donnait les meilleurs résultats :  
+\begin{itemize}
+	\item Régression Logistique : 87\%  
+	\item SVC : 90\%  
+	\item Decision Tree : 76\%  
+	\item Random Forest : 87\%  
+	\item K-Nearest Neighbors : 89\%  
+\end{itemize}  
+
+La \textbf{régression linéaire}, quant à elle, a été utilisée en parallèle pour fournir une estimation en pourcentage, complétant ainsi les résultats issus de la classification binaire.
 
 \section{Structure du rapport}
 
 Ce mémoire est organisé en quatre parties : 
 \begin{itemize}
-    \item La première partie présente la collecte et le prétraitement des données.
-    \item La deuxième détaille la modélisation et l’évaluation des différents algorithmes.
-    \item La troisième analyse les résultats et les performances du modèle retenu.
-    \item Enfin, la dernière partie discute des limitations et propose des pistes d’amélioration pour aller plus loin.
+	\item La première partie présente la collecte et le prétraitement des données.
+	\item La deuxième détaille la modélisation et l’évaluation des différents algorithmes.
+	\item La troisième analyse les résultats et les performances du modèle retenu.
+	\item Enfin, la dernière partie discute des limitations et propose des pistes d’amélioration pour aller plus loin.
 \end{itemize}
