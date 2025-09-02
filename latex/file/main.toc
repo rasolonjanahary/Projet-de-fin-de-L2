@@ -9,9 +9,9 @@
 \contentsline {subparagraph}{Parcours Ingénierie logicielle, réseaux et systèmes :}{VIII}{Item.12}%
 \contentsline {subparagraph}{Parcours Cybersécurité :}{VIII}{Item.12}%
 \contentsline {subparagraph}{Parcours Intelligence Artificielle et Data :}{VIII}{Item.12}%
-\contentsline {chapter}{Remerciements}{X}{chapter*.3}%
-\contentsline {chapter}{Résumé}{XI}{chapter*.4}%
-\contentsline {chapter}{Abstract}{XII}{chapter*.5}%
+\contentsline {chapter}{Remerciements}{X}{chapter*.4}%
+\contentsline {chapter}{Résumé}{XI}{chapter*.5}%
+\contentsline {chapter}{Abstract}{XII}{chapter*.6}%
 \contentsline {chapter}{\numberline {1}Exploration des données}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Chargement du jeu de données}{1}{subsection.1.1.1}%
@@ -54,7 +54,7 @@
 \contentsline {section}{\numberline {3.1}Test interactif du modèle}{30}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Chargement des modèles}{30}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Exemple d'utilisation}{31}{section.3.3}%
-\contentsline {chapter}{Conclusion}{32}{chapter*.30}%
-\contentsline {chapter}{Glossaire}{36}{chapter*.32}%
-\contentsline {chapter}{Annexes}{38}{chapter*.33}%
-\contentsline {chapter}{Bibliographie}{48}{chapter*.48}%
+\contentsline {chapter}{Conclusion}{32}{chapter*.31}%
+\contentsline {chapter}{Glossaire}{36}{chapter*.33}%
+\contentsline {chapter}{Annexes}{38}{chapter*.34}%
+\contentsline {chapter}{Bibliographie}{48}{chapter*.49}%

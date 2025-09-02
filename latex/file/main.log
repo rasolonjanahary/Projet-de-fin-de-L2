@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.7.28)  2 SEP 2025 09:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.7.28)  2 SEP 2025 09:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -628,137 +628,9 @@ and I'll forget about whatever was undefined.
 
 
 [5]
-
-! LaTeX Error: Environment longtable undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.285 \begin{longtable}
-                       []{@{}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Undefined control sequence.
-l.286 ...sh}p{(\columnwidth - 2\tabcolsep) * \real
-                                                  {0.5021}}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.287 ...sh}p{(\columnwidth - 2\tabcolsep) * \real
-                                                  {0.4979}}@{}}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Misplaced \noalign.
-\toprule ->\noalign 
-                    {\ifnum 0=`}\fi \@aboverulesep =\abovetopsep \global \@b...
-l.288 	\toprule
-               ()
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced alignment tab character &.
-l.291 	\end{minipage} &
-                        \begin{minipage}[b]{\linewidth}\raggedright
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced \noalign.
-\midrule ->\noalign 
-                    {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global \@...
-l.294 	\midrule
-               ()
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-
-Overfull \hbox (29.37196pt too wide) in paragraph at lines 288--294
-[]\T1/cmr/m/n/12 () []
+Underfull \hbox (badness 4316) in paragraph at lines 295--296
+[]|\T1/cmr/m/n/12 Intelligence Ar-ti-fi-cielle, Ana-lyse de
  []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 288--294
-
- []
-
-! Undefined control sequence.
-l.295 	\endhead
-               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Misplaced alignment tab character &.
-l.296 	Génie Logiciel (GL) &
-                              Management des Systèmes d'Information (MSI) \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.297 ..., Systèmes et Bases de données (ARSB) &
-                                                  
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.299 ...ence Artificielle et Data Science (IAD) &
-                                                   Intelligence
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced \noalign.
-\bottomrule ->\noalign 
-                       {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global...
-l.301 	\bottomrule
-                  ()
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 294--301
-
- []
-
-
-! LaTeX Error: \begin{document} ended by \end{longtable}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.302 \end{longtable}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
 
 
 
@@ -873,7 +745,7 @@ l.37 \end{itemize}
                   
 Things are pretty mixed up, but I think the worst is over.
 
-<../figures/corr_o.png, id=322, 581.17125pt x 490.08093pt>
+<../figures/corr_o.png, id=325, 581.17125pt x 490.08093pt>
 File: ../figures/corr_o.png Graphic file (type png)
 <use ../figures/corr_o.png>
 Package pdftex.def Info: ../figures/corr_o.png  used on input line 85.
@@ -883,7 +755,7 @@ Package pdftex.def Info: ../figures/corr_o.png  used on input line 85.
 [2]) (./visualisation.tex
 
 [3 <../figures/corr_o.png>]
-<../figures/head.png, id=336, 326.4195pt x 139.11975pt>
+<../figures/head.png, id=339, 326.4195pt x 139.11975pt>
 File: ../figures/head.png Graphic file (type png)
 <use ../figures/head.png>
 Package pdftex.def Info: ../figures/head.png  used on input line 18.
@@ -894,7 +766,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 19.
 See the caption package documentation for explanation.
 
-<../figures/corr.png, id=337, 549.9747pt x 492.8814pt>
+<../figures/corr.png, id=340, 549.9747pt x 492.8814pt>
 File: ../figures/corr.png Graphic file (type png)
 <use ../figures/corr.png>
 Package pdftex.def Info: ../figures/corr.png  used on input line 23.
@@ -920,7 +792,7 @@ l.52 	\item G
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<../figures/head1.png, id=346, 513.71925pt x 225.84375pt>
+<../figures/head1.png, id=348, 513.71925pt x 225.84375pt>
 File: ../figures/head1.png Graphic file (type png)
 <use ../figures/head1.png>
 Package pdftex.def Info: ../figures/head1.png  used on input line 71.
@@ -933,12 +805,12 @@ See the caption package documentation for explanation.
 
 
 [5 <../figures/head1.PNG>]
-<../figures/corr1.png, id=353, 667.0521pt x 605.6226pt>
+<../figures/corr1.png, id=355, 667.0521pt x 605.6226pt>
 File: ../figures/corr1.png Graphic file (type png)
 <use ../figures/corr1.png>
 Package pdftex.def Info: ../figures/corr1.png  used on input line 79.
 (pdftex.def)             Requested size: 409.71692pt x 371.98901pt.
-<../figures/hist_gre_score.png, id=354, 516.42938pt x 389.95688pt>
+<../figures/hist_gre_score.png, id=356, 516.42938pt x 389.95688pt>
 File: ../figures/hist_gre_score.png Graphic file (type png)
 <use ../figures/hist_gre_score.png>
 Package pdftex.def Info: ../figures/hist_gre_score.png  used on input line 109.
@@ -947,7 +819,7 @@ Package pdftex.def Info: ../figures/hist_gre_score.png  used on input line 109.
 
 
 [6 <../figures/corr1.png>]
-<../figures/hist_cgpa.png, id=362, 517.935pt x 390.70969pt>
+<../figures/hist_cgpa.png, id=364, 517.935pt x 390.70969pt>
 File: ../figures/hist_cgpa.png Graphic file (type png)
 <use ../figures/hist_cgpa.png>
 Package pdftex.def Info: ../figures/hist_cgpa.png  used on input line 120.
@@ -955,7 +827,7 @@ Package pdftex.def Info: ../figures/hist_cgpa.png  used on input line 120.
 
 
 [7 <../figures/hist_gre_score.png>]
-<../figures/hist_toefl_score.png, id=369, 517.935pt x 386.19281pt>
+<../figures/hist_toefl_score.png, id=371, 517.935pt x 386.19281pt>
 File: ../figures/hist_toefl_score.png Graphic file (type png)
 <use ../figures/hist_toefl_score.png>
 Package pdftex.def Info: ../figures/hist_toefl_score.png  used on input line 13
@@ -964,7 +836,7 @@ Package pdftex.def Info: ../figures/hist_toefl_score.png  used on input line 13
 
 
 [8 <../figures/hist_cgpa.png>]
-<../figures/hist_university_rating.png, id=376, 516.42938pt x 387.69844pt>
+<../figures/hist_university_rating.png, id=378, 516.42938pt x 387.69844pt>
 File: ../figures/hist_university_rating.png Graphic file (type png)
 <use ../figures/hist_university_rating.png>
 Package pdftex.def Info: ../figures/hist_university_rating.png  used on input l
@@ -973,7 +845,7 @@ ine 142.
 
 
 [9 <../figures/hist_toefl_score.png>]
-<../figures/pie.png, id=383, 380.92313pt x 361.35pt>
+<../figures/pie.png, id=385, 380.92313pt x 361.35pt>
 File: ../figures/pie.png Graphic file (type png)
 <use ../figures/pie.png>
 Package pdftex.def Info: ../figures/pie.png  used on input line 153.
@@ -981,7 +853,7 @@ Package pdftex.def Info: ../figures/pie.png  used on input line 153.
 
 
 [10 <../figures/hist_university_rating.png>]
-<../figures/hist_chance_admit.png, id=390, 526.96875pt x 386.19281pt>
+<../figures/hist_chance_admit.png, id=392, 526.96875pt x 386.19281pt>
 File: ../figures/hist_chance_admit.png Graphic file (type png)
 <use ../figures/hist_chance_admit.png>
 Package pdftex.def Info: ../figures/hist_chance_admit.png  used on input line 1
@@ -990,7 +862,7 @@ Package pdftex.def Info: ../figures/hist_chance_admit.png  used on input line 1
 
 
 [11 <../figures/pie.png>]
-<../figures/scatter_gre_admit.png, id=397, 532.99126pt x 412.54124pt>
+<../figures/scatter_gre_admit.png, id=399, 532.99126pt x 412.54124pt>
 File: ../figures/scatter_gre_admit.png Graphic file (type png)
 <use ../figures/scatter_gre_admit.png>
 Package pdftex.def Info: ../figures/scatter_gre_admit.png  used on input line 1
@@ -999,7 +871,7 @@ Package pdftex.def Info: ../figures/scatter_gre_admit.png  used on input line 1
 
 
 [12 <../figures/hist_chance_admit.png>]
-<../figures/scatter_cgpa_admit.png, id=405, 531.48563pt x 408.77719pt>
+<../figures/scatter_cgpa_admit.png, id=407, 531.48563pt x 408.77719pt>
 File: ../figures/scatter_cgpa_admit.png Graphic file (type png)
 <use ../figures/scatter_cgpa_admit.png>
 Package pdftex.def Info: ../figures/scatter_cgpa_admit.png  used on input line 
@@ -1008,7 +880,7 @@ Package pdftex.def Info: ../figures/scatter_cgpa_admit.png  used on input line
 
 
 [13 <../figures/scatter_gre_admit.png>]
-<../figures/scatter_toefl_admit.png, id=412, 527.72156pt x 408.02437pt>
+<../figures/scatter_toefl_admit.png, id=414, 527.72156pt x 408.02437pt>
 File: ../figures/scatter_toefl_admit.png Graphic file (type png)
 <use ../figures/scatter_toefl_admit.png>
 Package pdftex.def Info: ../figures/scatter_toefl_admit.png  used on input line
@@ -1017,7 +889,7 @@ Package pdftex.def Info: ../figures/scatter_toefl_admit.png  used on input line
 
 
 [14 <../figures/scatter_cgpa_admit.png>]
-<../figures/distribution_par_search.png, id=419, 629.4717pt x 385.1991pt>
+<../figures/distribution_par_search.png, id=421, 629.4717pt x 385.1991pt>
 File: ../figures/distribution_par_search.png Graphic file (type png)
 <use ../figures/distribution_par_search.png>
 Package pdftex.def Info: ../figures/distribution_par_search.png  used on input 
@@ -1026,7 +898,7 @@ line 211.
 
 
 [15 <../figures/scatter_toefl_admit.png>]
-<../figures/TU.png, id=426, 535.2497pt x 426.84468pt>
+<../figures/TU.png, id=428, 535.2497pt x 426.84468pt>
 File: ../figures/TU.png Graphic file (type png)
 <use ../figures/TU.png>
 Package pdftex.def Info: ../figures/TU.png  used on input line 226.
@@ -1034,7 +906,7 @@ Package pdftex.def Info: ../figures/TU.png  used on input line 226.
 
 
 [16 <../figures/distribution_par_search.png>]
-<../figures/nbr_selon_search.png, id=433, 412.6617pt x 315.0972pt>
+<../figures/nbr_selon_search.png, id=435, 412.6617pt x 315.0972pt>
 File: ../figures/nbr_selon_search.png Graphic file (type png)
 <use ../figures/nbr_selon_search.png>
 Package pdftex.def Info: ../figures/nbr_selon_search.png  used on input line 23
@@ -1057,7 +929,7 @@ Overfull \hbox (15.51279pt too wide) in paragraph at lines 18--19
 [19
 
 ]
-<../figures/svc.png, id=451, 402.75468pt x 272.51813pt>
+<../figures/svc.png, id=453, 402.75468pt x 272.51813pt>
 File: ../figures/svc.png Graphic file (type png)
 <use ../figures/svc.png>
 Package pdftex.def Info: ../figures/svc.png  used on input line 36.
@@ -1065,7 +937,7 @@ Package pdftex.def Info: ../figures/svc.png  used on input line 36.
 
 
 [20 <../figures/svc.png>]
-<../figures/dt.png, id=458, 411.78844pt x 272.51813pt>
+<../figures/dt.png, id=460, 411.78844pt x 272.51813pt>
 File: ../figures/dt.png Graphic file (type png)
 <use ../figures/dt.png>
 Package pdftex.def Info: ../figures/dt.png  used on input line 61.
@@ -1073,12 +945,12 @@ Package pdftex.def Info: ../figures/dt.png  used on input line 61.
 
 
 [21 <../figures/dt.png>]
-<../figures/rf.png, id=465, 402.75468pt x 271.76532pt>
+<../figures/rf.png, id=467, 402.75468pt x 271.76532pt>
 File: ../figures/rf.png Graphic file (type png)
 <use ../figures/rf.png>
 Package pdftex.def Info: ../figures/rf.png  used on input line 84.
 (pdftex.def)             Requested size: 455.24411pt x 307.18245pt.
-<../figures/lr.png, id=466, 406.51875pt x 273.27094pt>
+<../figures/lr.png, id=468, 406.51875pt x 273.27094pt>
 File: ../figures/lr.png Graphic file (type png)
 <use ../figures/lr.png>
 Package pdftex.def Info: ../figures/lr.png  used on input line 107.
@@ -1086,7 +958,7 @@ Package pdftex.def Info: ../figures/lr.png  used on input line 107.
 
 
 [22 <../figures/rf.png>]
-<../figures/knn.png, id=474, 394.47375pt x 271.76532pt>
+<../figures/knn.png, id=476, 394.47375pt x 271.76532pt>
 File: ../figures/knn.png Graphic file (type png)
 <use ../figures/knn.png>
 Package pdftex.def Info: ../figures/knn.png  used on input line 129.
@@ -1096,13 +968,13 @@ Package pdftex.def Info: ../figures/knn.png  used on input line 129.
 [23 <../figures/lr.png>]
 
 [24 <../figures/knn.png>]
-<../figures/learning_curve_svc.png, id=488, 694.84593pt x 420.06938pt>
+<../figures/learning_curve_svc.png, id=490, 694.84593pt x 420.06938pt>
 File: ../figures/learning_curve_svc.png Graphic file (type png)
 <use ../figures/learning_curve_svc.png>
 Package pdftex.def Info: ../figures/learning_curve_svc.png  used on input line 
 176.
 (pdftex.def)             Requested size: 455.24411pt x 275.21477pt.
-<../figures/learning_curve_rf.png, id=489, 574.39594pt x 344.78813pt>
+<../figures/learning_curve_rf.png, id=491, 574.39594pt x 344.78813pt>
 File: ../figures/learning_curve_rf.png Graphic file (type png)
 <use ../figures/learning_curve_rf.png>
 Package pdftex.def Info: ../figures/learning_curve_rf.png  used on input line 1
@@ -1111,7 +983,7 @@ Package pdftex.def Info: ../figures/learning_curve_rf.png  used on input line 1
 
 
 [25 <../figures/learning_curve_svc.png>]
-<../figures/learning_curve_dtc.png, id=497, 574.39594pt x 344.78813pt>
+<../figures/learning_curve_dtc.png, id=499, 574.39594pt x 344.78813pt>
 File: ../figures/learning_curve_dtc.png Graphic file (type png)
 <use ../figures/learning_curve_dtc.png>
 Package pdftex.def Info: ../figures/learning_curve_dtc.png  used on input line 
@@ -1120,7 +992,7 @@ Package pdftex.def Info: ../figures/learning_curve_dtc.png  used on input line
 
 
 [26 <../figures/learning_curve_rf.png>]
-<../figures/learning_curve_lr.png, id=504, 572.89032pt x 338.76563pt>
+<../figures/learning_curve_lr.png, id=506, 572.89032pt x 338.76563pt>
 File: ../figures/learning_curve_lr.png Graphic file (type png)
 <use ../figures/learning_curve_lr.png>
 Package pdftex.def Info: ../figures/learning_curve_lr.png  used on input line 1
@@ -1129,7 +1001,7 @@ Package pdftex.def Info: ../figures/learning_curve_lr.png  used on input line 1
 
 
 [27 <../figures/learning_curve_dtc.png> <../figures/learning_curve_lr.png>]
-<../figures/learning_curve_knn.png, id=513, 566.115pt x 338.76563pt>
+<../figures/learning_curve_knn.png, id=515, 566.115pt x 338.76563pt>
 File: ../figures/learning_curve_knn.png Graphic file (type png)
 <use ../figures/learning_curve_knn.png>
 Package pdftex.def Info: ../figures/learning_curve_knn.png  used on input line 
@@ -1184,17 +1056,17 @@ You may provide a definition with
 ]) (./annexe.tex
 
 [37]
-<../figures/importation_01.png, id=615, 306.39468pt x 103.88812pt>
+<../figures/importation_01.png, id=617, 306.39468pt x 103.88812pt>
 File: ../figures/importation_01.png Graphic file (type png)
 <use ../figures/importation_01.png>
 Package pdftex.def Info: ../figures/importation_01.png  used on input line 7.
 (pdftex.def)             Requested size: 318.66948pt x 108.05536pt.
-<../figures/load_dataset.png, id=616, 423.08063pt x 53.44969pt>
+<../figures/load_dataset.png, id=618, 423.08063pt x 53.44969pt>
 File: ../figures/load_dataset.png Graphic file (type png)
 <use ../figures/load_dataset.png>
 Package pdftex.def Info: ../figures/load_dataset.png  used on input line 17.
 (pdftex.def)             Requested size: 318.66948pt x 40.26006pt.
-<../figures/head_5.png, id=617, 751.30687pt x 222.07968pt>
+<../figures/head_5.png, id=619, 751.30687pt x 222.07968pt>
 File: ../figures/head_5.png Graphic file (type png)
 <use ../figures/head_5.png>
 Package pdftex.def Info: ../figures/head_5.png  used on input line 25.
@@ -1205,12 +1077,12 @@ Package pdftex.def Info: ../figures/head_5.png  used on input line 25.
 
  <../figures/importation_01.png> <../figures/load_dataset.png> <../figures/head
 _5.png>]
-<../figures/info_dataset.png, id=628, 697.10437pt x 587.94656pt>
+<../figures/info_dataset.png, id=631, 697.10437pt x 587.94656pt>
 File: ../figures/info_dataset.png Graphic file (type png)
 <use ../figures/info_dataset.png>
 Package pdftex.def Info: ../figures/info_dataset.png  used on input line 33.
 (pdftex.def)             Requested size: 409.71692pt x 345.55771pt.
-<../figures/describe_dataset.png, id=629, 928.21782pt x 288.3272pt>
+<../figures/describe_dataset.png, id=632, 928.21782pt x 288.3272pt>
 File: ../figures/describe_dataset.png Graphic file (type png)
 <use ../figures/describe_dataset.png>
 Package pdftex.def Info: ../figures/describe_dataset.png  used on input line 41
@@ -1219,12 +1091,12 @@ Package pdftex.def Info: ../figures/describe_dataset.png  used on input line 41
 
 
 [39 <../figures/info_dataset.png> <../figures/describe_dataset.png>]
-<../figures/remove_c.png, id=638, 549.55313pt x 51.94406pt>
+<../figures/remove_c.png, id=641, 549.55313pt x 51.94406pt>
 File: ../figures/remove_c.png Graphic file (type png)
 <use ../figures/remove_c.png>
 Package pdftex.def Info: ../figures/remove_c.png  used on input line 49.
 (pdftex.def)             Requested size: 409.71692pt x 38.72809pt.
-<../figures/cleaning_d.png, id=639, 245.41687pt x 308.65312pt>
+<../figures/cleaning_d.png, id=642, 245.41687pt x 308.65312pt>
 File: ../figures/cleaning_d.png Graphic file (type png)
 <use ../figures/cleaning_d.png>
 Package pdftex.def Info: ../figures/cleaning_d.png  used on input line 57.
@@ -1232,32 +1104,32 @@ Package pdftex.def Info: ../figures/cleaning_d.png  used on input line 57.
 
 
 [40 <../figures/remove_c.png>]
-<../figures/v1.png, id=646, 280.04625pt x 48.93282pt>
+<../figures/v1.png, id=649, 280.04625pt x 48.93282pt>
 File: ../figures/v1.png Graphic file (type png)
 <use ../figures/v1.png>
 Package pdftex.def Info: ../figures/v1.png  used on input line 66.
 (pdftex.def)             Requested size: 409.71692pt x 71.5936pt.
-<../figures/v2.png, id=647, 221.32687pt x 51.19125pt>
+<../figures/v2.png, id=650, 221.32687pt x 51.19125pt>
 File: ../figures/v2.png Graphic file (type png)
 <use ../figures/v2.png>
 Package pdftex.def Info: ../figures/v2.png  used on input line 67.
 (pdftex.def)             Requested size: 409.71692pt x 94.77026pt.
-<../figures/v3.png, id=648, 292.09125pt x 50.43843pt>
+<../figures/v3.png, id=651, 292.09125pt x 50.43843pt>
 File: ../figures/v3.png Graphic file (type png)
 <use ../figures/v3.png>
 Package pdftex.def Info: ../figures/v3.png  used on input line 68.
 (pdftex.def)             Requested size: 409.71692pt x 70.75644pt.
-<../figures/v4.png, id=649, 344.78813pt x 50.43843pt>
+<../figures/v4.png, id=652, 344.78813pt x 50.43843pt>
 File: ../figures/v4.png Graphic file (type png)
 <use ../figures/v4.png>
 Package pdftex.def Info: ../figures/v4.png  used on input line 69.
 (pdftex.def)             Requested size: 409.71692pt x 59.93703pt.
-<../figures/v5.png, id=650, 322.20375pt x 52.69687pt>
+<../figures/v5.png, id=653, 322.20375pt x 52.69687pt>
 File: ../figures/v5.png Graphic file (type png)
 <use ../figures/v5.png>
 Package pdftex.def Info: ../figures/v5.png  used on input line 70.
 (pdftex.def)             Requested size: 409.71692pt x 67.01271pt.
-<../figures/v6.png, id=651, 562.35094pt x 54.2025pt>
+<../figures/v6.png, id=654, 562.35094pt x 54.2025pt>
 File: ../figures/v6.png Graphic file (type png)
 <use ../figures/v6.png>
 Package pdftex.def Info: ../figures/v6.png  used on input line 71.
@@ -1265,62 +1137,62 @@ Package pdftex.def Info: ../figures/v6.png  used on input line 71.
 
 
 [41 <../figures/cleaning_d.png>]
-<../figures/b1.png, id=658, 692.5875pt x 53.44969pt>
+<../figures/b1.png, id=661, 692.5875pt x 53.44969pt>
 File: ../figures/b1.png Graphic file (type png)
 <use ../figures/b1.png>
 Package pdftex.def Info: ../figures/b1.png  used on input line 79.
 (pdftex.def)             Requested size: 409.71692pt x 31.61984pt.
-<../figures/b2.png, id=659, 468.24937pt x 46.67438pt>
+<../figures/b2.png, id=662, 468.24937pt x 46.67438pt>
 File: ../figures/b2.png Graphic file (type png)
 <use ../figures/b2.png>
 Package pdftex.def Info: ../figures/b2.png  used on input line 80.
 (pdftex.def)             Requested size: 409.71692pt x 40.84209pt.
-<../figures/b3.png, id=660, 654.19406pt x 51.19125pt>
+<../figures/b3.png, id=663, 654.19406pt x 51.19125pt>
 File: ../figures/b3.png Graphic file (type png)
 <use ../figures/b3.png>
 Package pdftex.def Info: ../figures/b3.png  used on input line 81.
 (pdftex.def)             Requested size: 409.71692pt x 32.06084pt.
-<../figures/b4.png, id=661, 438.8897pt x 50.43843pt>
+<../figures/b4.png, id=664, 438.8897pt x 50.43843pt>
 File: ../figures/b4.png Graphic file (type png)
 <use ../figures/b4.png>
 Package pdftex.def Info: ../figures/b4.png  used on input line 82.
 (pdftex.def)             Requested size: 409.71692pt x 47.08656pt.
-<../figures/b5.png, id=662, 701.62125pt x 47.42719pt>
+<../figures/b5.png, id=665, 701.62125pt x 47.42719pt>
 File: ../figures/b5.png Graphic file (type png)
 <use ../figures/b5.png>
 Package pdftex.def Info: ../figures/b5.png  used on input line 83.
 (pdftex.def)             Requested size: 409.71692pt x 27.69594pt.
-<../figures/b6.png, id=663, 465.99094pt x 51.94406pt>
+<../figures/b6.png, id=666, 465.99094pt x 51.94406pt>
 File: ../figures/b6.png Graphic file (type png)
 <use ../figures/b6.png>
 Package pdftex.def Info: ../figures/b6.png  used on input line 84.
 (pdftex.def)             Requested size: 409.71692pt x 45.67285pt.
-<../figures/b7.png, id=664, 579.66562pt x 50.43843pt>
+<../figures/b7.png, id=667, 579.66562pt x 50.43843pt>
 File: ../figures/b7.png Graphic file (type png)
 <use ../figures/b7.png>
 Package pdftex.def Info: ../figures/b7.png  used on input line 85.
 (pdftex.def)             Requested size: 409.71692pt x 35.65067pt.
-<../figures/b8.png, id=665, 450.9347pt x 51.19125pt>
+<../figures/b8.png, id=668, 450.9347pt x 51.19125pt>
 File: ../figures/b8.png Graphic file (type png)
 <use ../figures/b8.png>
 Package pdftex.def Info: ../figures/b8.png  used on input line 86.
 (pdftex.def)             Requested size: 409.71692pt x 46.51457pt.
-<../figures/b9.png, id=666, 380.17032pt x 68.50594pt>
+<../figures/b9.png, id=669, 380.17032pt x 68.50594pt>
 File: ../figures/b9.png Graphic file (type png)
 <use ../figures/b9.png>
 Package pdftex.def Info: ../figures/b9.png  used on input line 87.
 (pdftex.def)             Requested size: 409.71692pt x 73.83269pt.
-<../figures/b10.png, id=667, 690.32906pt x 140.77594pt>
+<../figures/b10.png, id=670, 690.32906pt x 140.77594pt>
 File: ../figures/b10.png Graphic file (type png)
 <use ../figures/b10.png>
 Package pdftex.def Info: ../figures/b10.png  used on input line 88.
 (pdftex.def)             Requested size: 409.71692pt x 83.55327pt.
-<../figures/b11.png, id=668, 563.10374pt x 100.87688pt>
+<../figures/b11.png, id=671, 563.10374pt x 100.87688pt>
 File: ../figures/b11.png Graphic file (type png)
 <use ../figures/b11.png>
 Package pdftex.def Info: ../figures/b11.png  used on input line 89.
 (pdftex.def)             Requested size: 409.71692pt x 73.39937pt.
-<../figures/b12.png, id=669, 662.475pt x 88.07906pt>
+<../figures/b12.png, id=672, 662.475pt x 88.07906pt>
 File: ../figures/b12.png Graphic file (type png)
 <use ../figures/b12.png>
 Package pdftex.def Info: ../figures/b12.png  used on input line 90.
@@ -1329,7 +1201,7 @@ Package pdftex.def Info: ../figures/b12.png  used on input line 90.
 
 [42 <../figures/v1.png> <../figures/v2.png> <../figures/v3.png> <../figures/v4.
 png> <../figures/v5.png> <../figures/v6.png>]
-<../figures/regression.png, id=682, 688.82344pt x 55.70813pt>
+<../figures/regression.png, id=685, 688.82344pt x 55.70813pt>
 File: ../figures/regression.png Graphic file (type png)
 <use ../figures/regression.png>
 Package pdftex.def Info: ../figures/regression.png  used on input line 98.
@@ -1340,12 +1212,12 @@ Package pdftex.def Info: ../figures/regression.png  used on input line 98.
 png> <../figures/b5.png> <../figures/b6.png> <../figures/b7.png> <../figures/b8
 .png> <../figures/b9.png> <../figures/b10.png> <../figures/b11.png> <../figures
 /b12.png>]
-<../figures/v_u.png, id=700, 730.22812pt x 107.65219pt>
+<../figures/v_u.png, id=703, 730.22812pt x 107.65219pt>
 File: ../figures/v_u.png Graphic file (type png)
 <use ../figures/v_u.png>
 Package pdftex.def Info: ../figures/v_u.png  used on input line 104.
 (pdftex.def)             Requested size: 409.71692pt x 60.40143pt.
-<../figures/b_u.png, id=701, 667.74469pt x 258.9675pt>
+<../figures/b_u.png, id=704, 667.74469pt x 258.9675pt>
 File: ../figures/b_u.png Graphic file (type png)
 <use ../figures/b_u.png>
 Package pdftex.def Info: ../figures/b_u.png  used on input line 110.
@@ -1511,7 +1383,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-<../figures/E_u_t.png, id=702, 575.14874pt x 632.3625pt>
+<../figures/E_u_t.png, id=705, 575.14874pt x 632.3625pt>
 File: ../figures/E_u_t.png Graphic file (type png)
 <use ../figures/E_u_t.png>
 Package pdftex.def Info: ../figures/E_u_t.png  used on input line 128.
@@ -1519,22 +1391,22 @@ Package pdftex.def Info: ../figures/E_u_t.png  used on input line 128.
 
 
 [44 <../figures/regression.png> <../figures/v_u.png> <../figures/b_u.png>]
-<../figures/t1.png, id=716, 608.2725pt x 706.89093pt>
+<../figures/t1.png, id=719, 608.2725pt x 706.89093pt>
 File: ../figures/t1.png Graphic file (type png)
 <use ../figures/t1.png>
 Package pdftex.def Info: ../figures/t1.png  used on input line 134.
 (pdftex.def)             Requested size: 409.71692pt x 476.16002pt.
-<../figures/t2.png, id=717, 614.295pt x 716.6775pt>
+<../figures/t2.png, id=720, 614.295pt x 716.6775pt>
 File: ../figures/t2.png Graphic file (type png)
 <use ../figures/t2.png>
 Package pdftex.def Info: ../figures/t2.png  used on input line 135.
 (pdftex.def)             Requested size: 409.71692pt x 478.0062pt.
-<../figures/t3.png, id=718, 584.1825pt x 708.39656pt>
+<../figures/t3.png, id=721, 584.1825pt x 708.39656pt>
 File: ../figures/t3.png Graphic file (type png)
 <use ../figures/t3.png>
 Package pdftex.def Info: ../figures/t3.png  used on input line 136.
 (pdftex.def)             Requested size: 409.71692pt x 496.84703pt.
-<../figures/t4.png, id=719, 569.87906pt x 699.36281pt>
+<../figures/t4.png, id=722, 569.87906pt x 699.36281pt>
 File: ../figures/t4.png Graphic file (type png)
 <use ../figures/t4.png>
 Package pdftex.def Info: ../figures/t4.png  used on input line 137.
@@ -1673,33 +1545,55 @@ https : / / fr . wikipedia . org / wiki / Pr % C3 % A9cision _ et _ rappel$[]\T
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-19>
  ***********
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 121FC15AC74AE69741EFBA08A12A7DB3;9162.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 121FC15AC74AE69741EFBA08A12A7DB3;9162
+(rerunfilecheck)             After:  EAD959A84AD427FD1ACD3C21D41481FD;9162.
  ) 
 Here is how much of TeX's memory you used:
- 15753 strings out of 467816
- 259595 string characters out of 5436431
+ 15752 strings out of 467816
+ 259509 string characters out of 5436431
  761882 words of memory out of 5000000
- 43971 multiletter control sequences out of 15000+600000
+ 43966 multiletter control sequences out of 15000+600000
  641398 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,8n,79p,730b,748s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/tex
-live/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist
-/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2025/texmf-dist/fonts/typ
-e1/public/cm-super/sfbx1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/
-cm-super/sfbx1728.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/s
-fbx2074.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pf
-b><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb><c:/texl
-ive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2025/t
-exmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><c:/texlive/2025/texmf-dist/
-fonts/type1/public/cm-super/sfti1200.pfb><c:/texlive/2025/texmf-dist/fonts/type
-1/public/cm-super/sftt1200.pfb>
-Output written on main.pdf (62 pages, 1968987 bytes).
+ 75i,10n,79p,730b,748s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{chapter*.48} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{chapter*.30} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{chapter*.3} has been referenced but does not exist,
+ replaced by a fixed one
+
+<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texli
+ve/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/f
+onts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1
+/public/cm-super/sfbx1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm
+-super/sfbx1728.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfb
+x2074.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb>
+<c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb><c:/texliv
+e/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2025/tex
+mf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><c:/texlive/2025/texmf-dist/fo
+nts/type1/public/cm-super/sfti1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/
+public/cm-super/sftt1200.pfb>
+Output written on main.pdf (62 pages, 1968725 bytes).
 PDF statistics:
- 907 PDF objects out of 1000 (max. 8388607)
- 685 compressed objects within 7 object streams
- 176 named destinations out of 1000 (max. 500000)
+ 911 PDF objects out of 1000 (max. 8388607)
+ 689 compressed objects within 7 object streams
+ 180 named destinations out of 1000 (max. 500000)
  751 words of extra memory for PDF output out of 10000 (max. 10000000)
 
