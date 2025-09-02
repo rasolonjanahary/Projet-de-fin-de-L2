@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.7.28)  1 SEP 2025 22:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.7.28)  2 SEP 2025 09:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -554,7 +554,7 @@ Package caption Info: End \AtBeginDocument code.
 File: insi.png Graphic file (type png)
 <use insi.png>
 Package pdftex.def Info: insi.png  used on input line 44.
-(pdftex.def)             Requested size: 159.33821pt x 159.1527pt.
+(pdftex.def)             Requested size: 136.57462pt x 136.42058pt.
 
 
 [1
@@ -1192,7 +1192,7 @@ Package pdftex.def Info: ../figures/importation_01.png  used on input line 7.
 <../figures/load_dataset.png, id=616, 423.08063pt x 53.44969pt>
 File: ../figures/load_dataset.png Graphic file (type png)
 <use ../figures/load_dataset.png>
-Package pdftex.def Info: ../figures/load_dataset.png  used on input line 14.
+Package pdftex.def Info: ../figures/load_dataset.png  used on input line 17.
 (pdftex.def)             Requested size: 318.66948pt x 40.26006pt.
 <../figures/head_5.png, id=617, 751.30687pt x 222.07968pt>
 File: ../figures/head_5.png Graphic file (type png)
@@ -1203,68 +1203,64 @@ Package pdftex.def Info: ../figures/head_5.png  used on input line 25.
 
 [38
 
- <../figures/importation_01.png> <../figures/load_dataset.png>]
-<../figures/info_dataset.png, id=626, 697.10437pt x 587.94656pt>
+ <../figures/importation_01.png> <../figures/load_dataset.png> <../figures/head
+_5.png>]
+<../figures/info_dataset.png, id=628, 697.10437pt x 587.94656pt>
 File: ../figures/info_dataset.png Graphic file (type png)
 <use ../figures/info_dataset.png>
-Package pdftex.def Info: ../figures/info_dataset.png  used on input line 32.
+Package pdftex.def Info: ../figures/info_dataset.png  used on input line 33.
 (pdftex.def)             Requested size: 409.71692pt x 345.55771pt.
-<../figures/describe_dataset.png, id=627, 928.21782pt x 288.3272pt>
+<../figures/describe_dataset.png, id=629, 928.21782pt x 288.3272pt>
 File: ../figures/describe_dataset.png Graphic file (type png)
 <use ../figures/describe_dataset.png>
-Package pdftex.def Info: ../figures/describe_dataset.png  used on input line 39
+Package pdftex.def Info: ../figures/describe_dataset.png  used on input line 41
 .
 (pdftex.def)             Requested size: 409.71692pt x 127.2691pt.
 
 
-[39 <../figures/head_5.png> <../figures/info_dataset.png>]
-<../figures/remove_c.png, id=636, 549.55313pt x 51.94406pt>
+[39 <../figures/info_dataset.png> <../figures/describe_dataset.png>]
+<../figures/remove_c.png, id=638, 549.55313pt x 51.94406pt>
 File: ../figures/remove_c.png Graphic file (type png)
 <use ../figures/remove_c.png>
-Package pdftex.def Info: ../figures/remove_c.png  used on input line 46.
+Package pdftex.def Info: ../figures/remove_c.png  used on input line 49.
 (pdftex.def)             Requested size: 409.71692pt x 38.72809pt.
-<../figures/cleaning_d.png, id=637, 245.41687pt x 308.65312pt>
+<../figures/cleaning_d.png, id=639, 245.41687pt x 308.65312pt>
 File: ../figures/cleaning_d.png Graphic file (type png)
 <use ../figures/cleaning_d.png>
-Package pdftex.def Info: ../figures/cleaning_d.png  used on input line 53.
+Package pdftex.def Info: ../figures/cleaning_d.png  used on input line 57.
 (pdftex.def)             Requested size: 409.71692pt x 515.30757pt.
 
 
-[40 <../figures/describe_dataset.png> <../figures/remove_c.png>]
-Overfull \hbox (11.23073pt too wide) in paragraph at lines 55--56
-\T1/cmr/bx/n/12 Explication : \T1/cmr/m/n/12 Le nombre de va-leurs man-quantes 
-a �t� �va-lu� avec \T1/cmtt/m/n/12 df_clean.isna().sum()\T1/cmr/m/n/12 .
- []
-
+[40 <../figures/remove_c.png>]
 <../figures/v1.png, id=646, 280.04625pt x 48.93282pt>
 File: ../figures/v1.png Graphic file (type png)
 <use ../figures/v1.png>
-Package pdftex.def Info: ../figures/v1.png  used on input line 60.
+Package pdftex.def Info: ../figures/v1.png  used on input line 66.
 (pdftex.def)             Requested size: 409.71692pt x 71.5936pt.
 <../figures/v2.png, id=647, 221.32687pt x 51.19125pt>
 File: ../figures/v2.png Graphic file (type png)
 <use ../figures/v2.png>
-Package pdftex.def Info: ../figures/v2.png  used on input line 61.
+Package pdftex.def Info: ../figures/v2.png  used on input line 67.
 (pdftex.def)             Requested size: 409.71692pt x 94.77026pt.
 <../figures/v3.png, id=648, 292.09125pt x 50.43843pt>
 File: ../figures/v3.png Graphic file (type png)
 <use ../figures/v3.png>
-Package pdftex.def Info: ../figures/v3.png  used on input line 62.
+Package pdftex.def Info: ../figures/v3.png  used on input line 68.
 (pdftex.def)             Requested size: 409.71692pt x 70.75644pt.
 <../figures/v4.png, id=649, 344.78813pt x 50.43843pt>
 File: ../figures/v4.png Graphic file (type png)
 <use ../figures/v4.png>
-Package pdftex.def Info: ../figures/v4.png  used on input line 63.
+Package pdftex.def Info: ../figures/v4.png  used on input line 69.
 (pdftex.def)             Requested size: 409.71692pt x 59.93703pt.
 <../figures/v5.png, id=650, 322.20375pt x 52.69687pt>
 File: ../figures/v5.png Graphic file (type png)
 <use ../figures/v5.png>
-Package pdftex.def Info: ../figures/v5.png  used on input line 64.
+Package pdftex.def Info: ../figures/v5.png  used on input line 70.
 (pdftex.def)             Requested size: 409.71692pt x 67.01271pt.
 <../figures/v6.png, id=651, 562.35094pt x 54.2025pt>
 File: ../figures/v6.png Graphic file (type png)
 <use ../figures/v6.png>
-Package pdftex.def Info: ../figures/v6.png  used on input line 65.
+Package pdftex.def Info: ../figures/v6.png  used on input line 71.
 (pdftex.def)             Requested size: 409.71692pt x 39.49057pt.
 
 
@@ -1272,110 +1268,276 @@ Package pdftex.def Info: ../figures/v6.png  used on input line 65.
 <../figures/b1.png, id=658, 692.5875pt x 53.44969pt>
 File: ../figures/b1.png Graphic file (type png)
 <use ../figures/b1.png>
-Package pdftex.def Info: ../figures/b1.png  used on input line 72.
+Package pdftex.def Info: ../figures/b1.png  used on input line 79.
 (pdftex.def)             Requested size: 409.71692pt x 31.61984pt.
 <../figures/b2.png, id=659, 468.24937pt x 46.67438pt>
 File: ../figures/b2.png Graphic file (type png)
 <use ../figures/b2.png>
-Package pdftex.def Info: ../figures/b2.png  used on input line 73.
+Package pdftex.def Info: ../figures/b2.png  used on input line 80.
 (pdftex.def)             Requested size: 409.71692pt x 40.84209pt.
 <../figures/b3.png, id=660, 654.19406pt x 51.19125pt>
 File: ../figures/b3.png Graphic file (type png)
 <use ../figures/b3.png>
-Package pdftex.def Info: ../figures/b3.png  used on input line 74.
+Package pdftex.def Info: ../figures/b3.png  used on input line 81.
 (pdftex.def)             Requested size: 409.71692pt x 32.06084pt.
 <../figures/b4.png, id=661, 438.8897pt x 50.43843pt>
 File: ../figures/b4.png Graphic file (type png)
 <use ../figures/b4.png>
-Package pdftex.def Info: ../figures/b4.png  used on input line 75.
+Package pdftex.def Info: ../figures/b4.png  used on input line 82.
 (pdftex.def)             Requested size: 409.71692pt x 47.08656pt.
 <../figures/b5.png, id=662, 701.62125pt x 47.42719pt>
 File: ../figures/b5.png Graphic file (type png)
 <use ../figures/b5.png>
-Package pdftex.def Info: ../figures/b5.png  used on input line 76.
+Package pdftex.def Info: ../figures/b5.png  used on input line 83.
 (pdftex.def)             Requested size: 409.71692pt x 27.69594pt.
 <../figures/b6.png, id=663, 465.99094pt x 51.94406pt>
 File: ../figures/b6.png Graphic file (type png)
 <use ../figures/b6.png>
-Package pdftex.def Info: ../figures/b6.png  used on input line 77.
+Package pdftex.def Info: ../figures/b6.png  used on input line 84.
 (pdftex.def)             Requested size: 409.71692pt x 45.67285pt.
 <../figures/b7.png, id=664, 579.66562pt x 50.43843pt>
 File: ../figures/b7.png Graphic file (type png)
 <use ../figures/b7.png>
-Package pdftex.def Info: ../figures/b7.png  used on input line 78.
+Package pdftex.def Info: ../figures/b7.png  used on input line 85.
 (pdftex.def)             Requested size: 409.71692pt x 35.65067pt.
 <../figures/b8.png, id=665, 450.9347pt x 51.19125pt>
 File: ../figures/b8.png Graphic file (type png)
 <use ../figures/b8.png>
-Package pdftex.def Info: ../figures/b8.png  used on input line 79.
+Package pdftex.def Info: ../figures/b8.png  used on input line 86.
 (pdftex.def)             Requested size: 409.71692pt x 46.51457pt.
 <../figures/b9.png, id=666, 380.17032pt x 68.50594pt>
 File: ../figures/b9.png Graphic file (type png)
 <use ../figures/b9.png>
-Package pdftex.def Info: ../figures/b9.png  used on input line 80.
+Package pdftex.def Info: ../figures/b9.png  used on input line 87.
 (pdftex.def)             Requested size: 409.71692pt x 73.83269pt.
 <../figures/b10.png, id=667, 690.32906pt x 140.77594pt>
 File: ../figures/b10.png Graphic file (type png)
 <use ../figures/b10.png>
-Package pdftex.def Info: ../figures/b10.png  used on input line 81.
+Package pdftex.def Info: ../figures/b10.png  used on input line 88.
 (pdftex.def)             Requested size: 409.71692pt x 83.55327pt.
 <../figures/b11.png, id=668, 563.10374pt x 100.87688pt>
 File: ../figures/b11.png Graphic file (type png)
 <use ../figures/b11.png>
-Package pdftex.def Info: ../figures/b11.png  used on input line 82.
+Package pdftex.def Info: ../figures/b11.png  used on input line 89.
 (pdftex.def)             Requested size: 409.71692pt x 73.39937pt.
 <../figures/b12.png, id=669, 662.475pt x 88.07906pt>
 File: ../figures/b12.png Graphic file (type png)
 <use ../figures/b12.png>
-Package pdftex.def Info: ../figures/b12.png  used on input line 83.
+Package pdftex.def Info: ../figures/b12.png  used on input line 90.
 (pdftex.def)             Requested size: 409.71692pt x 54.47404pt.
 
 
 [42 <../figures/v1.png> <../figures/v2.png> <../figures/v3.png> <../figures/v4.
 png> <../figures/v5.png> <../figures/v6.png>]
-<../figures/v_u.png, id=682, 730.22812pt x 107.65219pt>
-File: ../figures/v_u.png Graphic file (type png)
-<use ../figures/v_u.png>
-Package pdftex.def Info: ../figures/v_u.png  used on input line 90.
-(pdftex.def)             Requested size: 409.71692pt x 60.40143pt.
+<../figures/regression.png, id=682, 688.82344pt x 55.70813pt>
+File: ../figures/regression.png Graphic file (type png)
+<use ../figures/regression.png>
+Package pdftex.def Info: ../figures/regression.png  used on input line 98.
+(pdftex.def)             Requested size: 409.71692pt x 33.13525pt.
 
 
 [43 <../figures/b1.png> <../figures/b2.png> <../figures/b3.png> <../figures/b4.
 png> <../figures/b5.png> <../figures/b6.png> <../figures/b7.png> <../figures/b8
 .png> <../figures/b9.png> <../figures/b10.png> <../figures/b11.png> <../figures
 /b12.png>]
-<../figures/b_u.png, id=700, 650.43pt x 194.22563pt>
+<../figures/v_u.png, id=700, 730.22812pt x 107.65219pt>
+File: ../figures/v_u.png Graphic file (type png)
+<use ../figures/v_u.png>
+Package pdftex.def Info: ../figures/v_u.png  used on input line 104.
+(pdftex.def)             Requested size: 409.71692pt x 60.40143pt.
+<../figures/b_u.png, id=701, 667.74469pt x 258.9675pt>
 File: ../figures/b_u.png Graphic file (type png)
 <use ../figures/b_u.png>
-Package pdftex.def Info: ../figures/b_u.png  used on input line 95.
-(pdftex.def)             Requested size: 409.71692pt x 122.34796pt.
-<../figures/E_u_t.png, id=701, 575.14874pt x 632.3625pt>
+Package pdftex.def Info: ../figures/b_u.png  used on input line 110.
+(pdftex.def)             Requested size: 409.71692pt x 158.90248pt.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.117 ...ort LogisticRegression, LinearRegression}
+                                                   : Régression logistique ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<recently read> \egroup 
+                        
+l.117 ...ort LogisticRegression, LinearRegression}
+                                                   : Régression logistique ...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 117.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 117.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.118 	\item
+             \texttt{from sklearn.neighbors import KNeighborsClassifier} : K...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.118 	\item \texttt
+                    {from sklearn.neighbors import KNeighborsClassifier} : K...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+
+Overfull \hbox (110.98097pt too wide) in paragraph at lines 117--118
+[]\T1/cmtt/m/n/12 from sklearn.linear$[]\OML/cmm/m/it/12 odelimportLogisticRegr
+ession; LinearRegression \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 Rgressionlogistique
+etlinaire:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
+
+ []
+
+
+Overfull \hbox (31.56339pt too wide) in paragraph at lines 118--119
+[]\T1/cmtt/m/n/12 from sklearn.neighbors import KNeighborsClassifier : K plus p
+roches voisins. 
+ []
+
+
+Overfull \hbox (37.73688pt too wide) in paragraph at lines 119--120
+[]\T1/cmtt/m/n/12 from sklearn.preprocessing import StandardScaler : Normalisat
+ion des donn�es. 
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.120 ...plit, learning\_curve, cross\_val\_score}
+                                                   : Division données et va...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<recently read> \egroup 
+                        
+l.120 ...plit, learning\_curve, cross\_val\_score}
+                                                   : Division données et va...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 120.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 120.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.121 	\item
+             \texttt{from sklearn.metrics import classification\_report, con...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.121 	\item \texttt
+                    {from sklearn.metrics import classification\_report, con...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+
+Overfull \hbox (16.97542pt too wide) in paragraph at lines 120--121
+[]\T1/cmtt/m/n/12 from sklearn.model$[]\OML/cmm/m/it/12 electionimporttrain[]te
+st[]split; learning[]curve; cross[]val[]score \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (74.77783pt too wide) in paragraph at lines 121--122
+[]\T1/cmtt/m/n/12 from sklearn.metrics import classification_report, confusion_
+matrix, accuracy_score
+ []
+
+
+Overfull \hbox (6.86942pt too wide) in paragraph at lines 122--123
+[]\T1/cmtt/m/n/12 from sklearn.pipeline import Pipeline : Cha�ne de traitement 
+compl�te. s 
+ []
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.123 s\end{itemize}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.123 s\end{itemize}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+<../figures/E_u_t.png, id=702, 575.14874pt x 632.3625pt>
 File: ../figures/E_u_t.png Graphic file (type png)
 <use ../figures/E_u_t.png>
-Package pdftex.def Info: ../figures/E_u_t.png  used on input line 101.
+Package pdftex.def Info: ../figures/E_u_t.png  used on input line 128.
 (pdftex.def)             Requested size: 409.71692pt x 450.48578pt.
 
 
-[44 <../figures/v_u.png> <../figures/b_u.png>]
-<../figures/t1.png, id=710, 608.2725pt x 706.89093pt>
+[44 <../figures/regression.png> <../figures/v_u.png> <../figures/b_u.png>]
+<../figures/t1.png, id=716, 608.2725pt x 706.89093pt>
 File: ../figures/t1.png Graphic file (type png)
 <use ../figures/t1.png>
-Package pdftex.def Info: ../figures/t1.png  used on input line 107.
+Package pdftex.def Info: ../figures/t1.png  used on input line 134.
 (pdftex.def)             Requested size: 409.71692pt x 476.16002pt.
-<../figures/t2.png, id=711, 614.295pt x 716.6775pt>
+<../figures/t2.png, id=717, 614.295pt x 716.6775pt>
 File: ../figures/t2.png Graphic file (type png)
 <use ../figures/t2.png>
-Package pdftex.def Info: ../figures/t2.png  used on input line 108.
+Package pdftex.def Info: ../figures/t2.png  used on input line 135.
 (pdftex.def)             Requested size: 409.71692pt x 478.0062pt.
-<../figures/t3.png, id=712, 584.1825pt x 708.39656pt>
+<../figures/t3.png, id=718, 584.1825pt x 708.39656pt>
 File: ../figures/t3.png Graphic file (type png)
 <use ../figures/t3.png>
-Package pdftex.def Info: ../figures/t3.png  used on input line 109.
+Package pdftex.def Info: ../figures/t3.png  used on input line 136.
 (pdftex.def)             Requested size: 409.71692pt x 496.84703pt.
-<../figures/t4.png, id=713, 569.87906pt x 699.36281pt>
+<../figures/t4.png, id=719, 569.87906pt x 699.36281pt>
 File: ../figures/t4.png Graphic file (type png)
 <use ../figures/t4.png>
-Package pdftex.def Info: ../figures/t4.png  used on input line 110.
+Package pdftex.def Info: ../figures/t4.png  used on input line 137.
 (pdftex.def)             Requested size: 409.71692pt x 502.8045pt.
 
 
@@ -1388,447 +1550,156 @@ Overfull \vbox (1298.91512pt too high) has occurred while \output is active []
 png>]) (./bibliographie.tex
 
 [47]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.6 ...incipale. \textit{admission_rate_ver_1.csv}
-                                                  . Disponible sur : \url{ht...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<recently read> \egroup 
-                        
-l.6 ...incipale. \textit{admission_rate_ver_1.csv}
-                                                  . Disponible sur : \url{ht...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-
-! LaTeX Error: Command $ invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.6 ...//dr-raz.org/statistical-literacy-csv-data}
-                                                  . Consulté le 25 août 2025.
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Command \ttfamily invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.6 ...//dr-raz.org/statistical-literacy-csv-data}
-                                                  . Consulté le 25 août 2025.
-
-Please use the math alphabet \mathtt instead of the \ttfamilyFB command. 
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.6 ...//dr-raz.org/statistical-literacy-csv-data}
-                                                  . Consulté le 25 août 2025.
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.6 ...//dr-raz.org/statistical-literacy-csv-data}
-                                                  . Consulté le 25 août 2025.
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.6 ...//dr-raz.org/statistical-literacy-csv-data}
-                                                  . Consulté le 25 août 2025.
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.6 ...//dr-raz.org/statistical-literacy-csv-data}
-                                                  . Consulté le 25 août 2025.
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Undefined control sequence.
-\Url@FormatString ...ndafter \UrlLeft \Url@String 
-                                                  \UrlRight \m@th $
-l.6 ...//dr-raz.org/statistical-literacy-csv-data}
-                                                  . Consulté le 25 août 2025.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Extra }, or forgotten $.
-<recently read> }
-                 
-l.6 ...//dr-raz.org/statistical-literacy-csv-data}
-                                                  . Consulté le 25 août 2025.
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.6 ...//dr-raz.org/statistical-literacy-csv-data}
-                                                  . Consulté le 25 août 2025.
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.6 ...//dr-raz.org/statistical-literacy-csv-data}
-                                                  . Consulté le 25 août 2025.
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Extra \endgroup.
-\Hy@endcolorlink ->\endgroup 
-                             
-l.6 ...//dr-raz.org/statistical-literacy-csv-data}
-                                                  . Consulté le 25 août 2025.
-Things are pretty mixed up, but I think the worst is over.
-
-! Extra \endgroup.
-\hyper@linkurl ...ce@end \close@pdflink \endgroup 
-                                                  
-l.6 ...//dr-raz.org/statistical-literacy-csv-data}
-                                                  . Consulté le 25 août 2025.
-Things are pretty mixed up, but I think the worst is over.
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8     \item D
-               ataset test. \textit{gc_data.csv}. Disponible sur : \url{http...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 8
-[][]
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.8     \item Dataset test. \textit{gc_data.csv}
-                                                . Disponible sur : \url{http...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<recently read> \egroup 
-                        
-l.8     \item Dataset test. \textit{gc_data.csv}
-                                                . Disponible sur : \url{http...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-
-! LaTeX Error: Command $ invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8 ...es/Grad%20Cafe%20Data/gc_data.csv/download}
-                                                  . Consulté le 20 août 2025.
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Command \ttfamily invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8 ...es/Grad%20Cafe%20Data/gc_data.csv/download}
-                                                  . Consulté le 20 août 2025.
-
-Please use the math alphabet \mathtt instead of the \ttfamilyFB command. 
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.8 ...es/Grad%20Cafe%20Data/gc_data.csv/download}
-                                                  . Consulté le 20 août 2025.
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.8 ...es/Grad%20Cafe%20Data/gc_data.csv/download}
-                                                  . Consulté le 20 août 2025.
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.8 ...es/Grad%20Cafe%20Data/gc_data.csv/download}
-                                                  . Consulté le 20 août 2025.
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.8 ...es/Grad%20Cafe%20Data/gc_data.csv/download}
-                                                  . Consulté le 20 août 2025.
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Undefined control sequence.
-\Url@FormatString ...ndafter \UrlLeft \Url@String 
-                                                  \UrlRight \m@th $
-l.8 ...es/Grad%20Cafe%20Data/gc_data.csv/download}
-                                                  . Consulté le 20 août 2025.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Extra }, or forgotten $.
-<recently read> }
-                 
-l.8 ...es/Grad%20Cafe%20Data/gc_data.csv/download}
-                                                  . Consulté le 20 août 2025.
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.8 ...es/Grad%20Cafe%20Data/gc_data.csv/download}
-                                                  . Consulté le 20 août 2025.
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.8 ...es/Grad%20Cafe%20Data/gc_data.csv/download}
-                                                  . Consulté le 20 août 2025.
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.8 ...es/Grad%20Cafe%20Data/gc_data.csv/download}
-                                                  . Consulté le 20 août 2025.
-Things are pretty mixed up, but I think the worst is over.
-
-! Extra \endgroup.
-\Hy@endcolorlink ->\endgroup 
-                             
-l.8 ...es/Grad%20Cafe%20Data/gc_data.csv/download}
-                                                  . Consulté le 20 août 2025.
-Things are pretty mixed up, but I think the worst is over.
-
-! Extra \endgroup.
-\hyper@linkurl ...ce@end \close@pdflink \endgroup 
-                                                  
-l.8 ...es/Grad%20Cafe%20Data/gc_data.csv/download}
-                                                  . Consulté le 20 août 2025.
-Things are pretty mixed up, but I think the worst is over.
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.10     \item D
-                ataset test. \textit{Predict students dropout and academic s...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 10
-[][]
+Overfull \hbox (7.83415pt too wide) in paragraph at lines 10--13
+\T1/cmr/m/n/12 Disponible sur : []$\T1/cmtt/m/n/12 http : / / sourceforge . net
+ / projects / triangleinequal / files / Grad %
  []
 
 
-Overfull \hbox (23.37788pt too wide) in paragraph at lines 10--11
-\T1/cmtt/m/n/12 archive . ics . uci . edu / dataset / 697 / predict + students 
-+ dropout + and + academic + success$[]\T1/cmr/m/n/12 .
+Overfull \hbox (38.70161pt too wide) in paragraph at lines 18--21
+\T1/cmr/m/n/12 Disponible sur : []$\T1/cmtt/m/n/12 https : / / figshare . com /
+ articles / dataset / Graduate _ school _ admission _
  []
 
 
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.12     \item D
-                ataset test. \textit{Graduate school admission datab}. Dispo...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 12
-[][]
+Overfull \hbox (49.63818pt too wide) in paragraph at lines 22--25
+\T1/cmr/m/n/12 Disponible sur : []$\T1/cmtt/m/n/12 https : / / forum . thegradc
+afe . com / topic / 51483-[]scraped-[]admissions-[]data$[]\T1/cmr/m/n/12 . 
  []
 
 
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.14     \item T
-                heGradCafe. \textit{How to scrape the website of thegradcafe...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 14
-[][]
+Overfull \hbox (42.88191pt too wide) in paragraph at lines 27--28
+[]\T1/cmr/bx/n/12 R�gression li-n�aire\T1/cmr/m/n/12 . Dis-po-nible sur : []$\T
+1/cmtt/m/n/12 https : / / fr . wikipedia . org / wiki / R % C3 % A9gression _
  []
 
 
-Overfull \hbox (17.61961pt too wide) in paragraph at lines 14--15
-[]\T1/cmr/m/n/12 TheGradCafe. \T1/cmr/m/it/12 How to scrape the web-site of the
--grad-cafe\T1/cmr/m/n/12 . Dis-po-nible sur : []$\T1/cmtt/m/n/12 forum . thegra
-dcafe .
+Overfull \hbox (5.04263pt too wide) in paragraph at lines 29--30
+[]\T1/cmr/bx/n/12 Classification\T1/cmr/m/n/12 . Dis-po-nible sur : []$\T1/cmtt
+/m/n/12 https : / / fr . wikipedia . org / wiki / Classification _
  []
 
 
-! LaTeX Error: \begin{document} ended by \end{enumerate}.
+Overfull \hbox (3.7493pt too wide) in paragraph at lines 37--38
+[]\T1/cmr/bx/n/12 Hyperplan\T1/cmr/m/n/12 . Dis-po-nible sur : []$\T1/cmtt/m/n/
+12 https : / / fr . wikipedia . org / wiki / Hyperplan$[]\T1/cmr/m/n/12 . Consu
+lt�
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.16 \end{enumerate}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
 
-! Extra \endgroup.
-\end  ...end#1\endcsname \@checkend {#1}\endgroup 
-                                                  \UseHook {env/#1/after}\if...
-l.16 \end{enumerate}
-                    
-Things are pretty mixed up, but I think the worst is over.
+Overfull \hbox (1.72087pt too wide) in paragraph at lines 39--40
+[]\T1/cmr/bx/n/12 KNN (K Nea-rest Neigh-bors)\T1/cmr/m/n/12 . Dis-po-nible sur 
+: []$\T1/cmtt/m/n/12 https : / / fr . wikipedia . org / wiki /
+ []
 
-)
+
+Overfull \hbox (19.80426pt too wide) in paragraph at lines 41--42
+[]\T1/cmr/bx/n/12 Valeurs man-quantes\T1/cmr/m/n/12 . Dis-po-nible sur : []$\T1
+/cmtt/m/n/12 https : / / fr . wikipedia . org / wiki / Imputation _
+ []
+
+
+Overfull \hbox (7.01474pt too wide) in paragraph at lines 43--44
+\T1/cmtt/m/n/12 org / wiki / Validation _ crois % C3 % A9e _ (statistiques)$[]\
+T1/cmr/m/n/12 . Consult� le 1 sep-tembre 2025. 
+ []
+
+
+Overfull \hbox (13.1184pt too wide) in paragraph at lines 45--46
+[]\T1/cmr/bx/n/12 Variable quan-ti-ta-tive\T1/cmr/m/n/12 . Dis-po-nible sur : [
+]$\T1/cmtt/m/n/12 https : / / fr . wikipedia . org / wiki / Variable _
+ []
+
+
 
 [48
 
-] (./main.aux)
+]
+Overfull \hbox (27.49402pt too wide) in paragraph at lines 54--55
+[]\T1/cmr/bx/n/12 Courbe d'ap-pren-tis-sage\T1/cmr/m/n/12 . Dis-po-nible sur : 
+[]$\T1/cmtt/m/n/12 https : / / en . wikipedia . org / wiki / Learning _
+ []
+
+
+Overfull \hbox (4.79123pt too wide) in paragraph at lines 56--57
+[]\T1/cmr/bx/n/12 Mod�le pr�-dic-tif\T1/cmr/m/n/12 . Dis-po-nible sur : []$\T1/
+cmtt/m/n/12 https : / / fr . wikipedia . org / wiki / Mod % C3 % A8le _
+ []
+
+
+Overfull \hbox (36.69594pt too wide) in paragraph at lines 58--59
+[]\T1/cmr/bx/n/12 Surapprentissage\T1/cmr/m/n/12 . Dis-po-nible sur : []$\T1/cm
+tt/m/n/12 https : / / fr . wikipedia . org / wiki / Surapprentissage$[]\T1/cmr/
+m/n/12 .
+ []
+
+
+Overfull \hbox (10.24913pt too wide) in paragraph at lines 63--64
+[]\T1/cmr/bx/n/12 Matplotlib\T1/cmr/m/n/12 . Dis-po-nible sur : []$\T1/cmtt/m/n
+/12 https : / / fr . wikipedia . org / wiki / Matplotlib$[]\T1/cmr/m/n/12 . Con
+sult�
+ []
+
+
+Overfull \hbox (27.58806pt too wide) in paragraph at lines 69--70
+[]\T1/cmr/bx/n/12 Scikit-learn\T1/cmr/m/n/12 . Dis-po-nible sur : []$\T1/cmtt/m
+/n/12 https : / / fr . wikipedia . org / wiki / Scikit-[]learn$[]\T1/cmr/m/n/12
+ . Consult�
+ []
+
+
+Overfull \hbox (2.34088pt too wide) in paragraph at lines 71--72
+\T1/cmtt/m/n/12 generated / sklearn . preprocessing . StandardScaler . html$[]\
+T1/cmr/m/n/12 . Consult� le 1 sep-tembre
+ []
+
+
+Overfull \hbox (0.3146pt too wide) in paragraph at lines 76--77
+[]\T1/cmr/bx/n/12 Accuracy\T1/cmr/m/n/12 . Dis-po-nible sur : []$\T1/cmtt/m/n/1
+2 https : / / fr . wikipedia . org / wiki / Pr % C3 % A9cision _ et _
+ []
+
+
+Overfull \hbox (22.39392pt too wide) in paragraph at lines 80--81
+[]\T1/cmr/bx/n/12 Recall\T1/cmr/m/n/12 . Dis-po-nible sur : []$\T1/cmtt/m/n/12 
+https : / / fr . wikipedia . org / wiki / Pr % C3 % A9cision _ et _ rappel$[]\T
+1/cmr/m/n/12 .
+ []
+
+)
+
+[49] (./main.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-19>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 1ACE0FC130CDC10D85671FF49557243D;9162.
+(rerunfilecheck)             Checksum: 121FC15AC74AE69741EFBA08A12A7DB3;9162.
  ) 
 Here is how much of TeX's memory you used:
- 15742 strings out of 467816
- 259322 string characters out of 5436431
- 759882 words of memory out of 5000000
- 43961 multiletter control sequences out of 15000+600000
- 641087 words of font info for 73 fonts, out of 8000000 for 9000
+ 15753 strings out of 467816
+ 259595 string characters out of 5436431
+ 761882 words of memory out of 5000000
+ 43971 multiletter control sequences out of 15000+600000
+ 641398 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,8n,79p,730b,748s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/tex
 live/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type
-1/public/cm-super/sfbx1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/c
-m-super/sfbx1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sf
-bx1728.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb
-><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texli
-ve/2025/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb><c:/texlive/2025/te
-xmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2025/texmf-dist/f
-onts/type1/public/cm-super/sfrm1728.pfb><c:/texlive/2025/texmf-dist/fonts/type1
-/public/cm-super/sfti1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm
--super/sftt1200.pfb>
-Output written on main.pdf (61 pages, 1948951 bytes).
+/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2025/texmf-dist/fonts/typ
+e1/public/cm-super/sfbx1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/
+cm-super/sfbx1728.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/s
+fbx2074.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pf
+b><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb><c:/texl
+ive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2025/t
+exmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><c:/texlive/2025/texmf-dist/
+fonts/type1/public/cm-super/sfti1200.pfb><c:/texlive/2025/texmf-dist/fonts/type
+1/public/cm-super/sftt1200.pfb>
+Output written on main.pdf (62 pages, 1960713 bytes).
 PDF statistics:
- 858 PDF objects out of 1000 (max. 8388607)
- 637 compressed objects within 7 object streams
- 175 named destinations out of 1000 (max. 500000)
- 746 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 907 PDF objects out of 1000 (max. 8388607)
+ 685 compressed objects within 7 object streams
+ 176 named destinations out of 1000 (max. 500000)
+ 751 words of extra memory for PDF output out of 10000 (max. 10000000)
 
