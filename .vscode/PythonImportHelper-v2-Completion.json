@@ -1,13 +1,5 @@
 [
     {
-        "label": "BaseModel",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
         "label": "requests",
         "kind": 6,
         "isExtraImport": true,
@@ -67,11 +59,51 @@
         "documentation": {}
     },
     {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Form",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "APIRouter",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
         "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Jinja2Templates",
+        "importPath": "fastapi.templating",
+        "description": "fastapi.templating",
+        "isExtraImport": true,
+        "detail": "fastapi.templating",
+        "documentation": {}
+    },
+    {
+        "label": "Jinja2Templates",
+        "importPath": "fastapi.templating",
+        "description": "fastapi.templating",
+        "isExtraImport": true,
+        "detail": "fastapi.templating",
         "documentation": {}
     },
     {
@@ -83,19 +115,27 @@
         "documentation": {}
     },
     {
-        "label": "StaticFiles",
-        "importPath": "fastapi.staticfiles",
-        "description": "fastapi.staticfiles",
+        "label": "HTMLResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
         "isExtraImport": true,
-        "detail": "fastapi.staticfiles",
+        "detail": "fastapi.responses",
         "documentation": {}
     },
     {
-        "label": "Jinja2Templates",
-        "importPath": "fastapi.templating",
-        "description": "fastapi.templating",
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
         "isExtraImport": true,
-        "detail": "fastapi.templating",
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
         "documentation": {}
     },
     {
@@ -108,37 +148,36 @@
         "documentation": {}
     },
     {
-        "label": "StudentInput",
-        "importPath": "other.schemas",
-        "description": "other.schemas",
+        "label": "numpy",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "other.schemas",
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "StaticFiles",
+        "importPath": "fastapi.staticfiles",
+        "description": "fastapi.staticfiles",
+        "isExtraImport": true,
+        "detail": "fastapi.staticfiles",
+        "documentation": {}
+    },
+    {
+        "label": "StudentInput",
+        "importPath": "schemas",
+        "description": "schemas",
+        "isExtraImport": true,
+        "detail": "schemas",
         "documentation": {}
     },
     {
         "label": "UniversityAdmissionInput",
-        "importPath": "other.schemas",
-        "description": "other.schemas",
+        "importPath": "schemas",
+        "description": "schemas",
         "isExtraImport": true,
-        "detail": "other.schemas",
-        "documentation": {}
-    },
-    {
-        "label": "StudentInput",
-        "kind": 6,
-        "importPath": "other.schemas",
-        "description": "other.schemas",
-        "peekOfCode": "class StudentInput(BaseModel):\n    GPA: float\n    Final_Exam_Scores: float\n    Hours_of_Study_per_Week: float\n    Attendance_Rate: float\n    Mental_Health_Status: str \n    Participation_in_Extracurricular_Activities: int\n    Family_Income: float\nclass UniversityAdmissionInput(BaseModel):\n    High_School_GPA: float",
-        "detail": "other.schemas",
-        "documentation": {}
-    },
-    {
-        "label": "UniversityAdmissionInput",
-        "kind": 6,
-        "importPath": "other.schemas",
-        "description": "other.schemas",
-        "peekOfCode": "class UniversityAdmissionInput(BaseModel):\n    High_School_GPA: float\n    Final_Exam_Scores: float\n    Hours_of_Study_per_Week: float\n    Attendance_Rate: float\n    Mental_Health_Status: str\n    Participation_in_Extracurricular_Activities: int\n    Family_Income: float",
-        "detail": "other.schemas",
+        "detail": "schemas",
         "documentation": {}
     },
     {
@@ -169,11 +208,47 @@
         "documentation": {}
     },
     {
+        "label": "Etudiant",
+        "kind": 6,
+        "importPath": "web.app",
+        "description": "web.app",
+        "peekOfCode": "class Etudiant(BaseModel):\n    GRE_Score: float\n    TOEFL_Score: float\n    University_Rating: int\n    SOP: float\n    LOR : float\n    CGPA: float\n    Research: int\napp = FastAPI(title=\"Prédicteur de chance d'admission des étudiants\")\ntemplates = Jinja2Templates(directory=\"templates\")",
+        "detail": "web.app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "web.app",
+        "description": "web.app",
+        "peekOfCode": "app = FastAPI(title=\"Prédicteur de chance d'admission des étudiants\")\ntemplates = Jinja2Templates(directory=\"templates\")\nmodel = joblib.load(\"../models/logistic.pkl\")\n@app.get(\"/\", response_class=HTMLResponse)\nasync def form_page(request: Request):\n    return templates.TemplateResponse(\"form.html\", {\"request\": request})\n@app.post(\"/predict\", response_class=HTMLResponse)\nasync def predire_chance_admission(\n    request: Request,\n    GRE_Score: float = Form(...),",
+        "detail": "web.app",
+        "documentation": {}
+    },
+    {
+        "label": "templates",
+        "kind": 5,
+        "importPath": "web.app",
+        "description": "web.app",
+        "peekOfCode": "templates = Jinja2Templates(directory=\"templates\")\nmodel = joblib.load(\"../models/logistic.pkl\")\n@app.get(\"/\", response_class=HTMLResponse)\nasync def form_page(request: Request):\n    return templates.TemplateResponse(\"form.html\", {\"request\": request})\n@app.post(\"/predict\", response_class=HTMLResponse)\nasync def predire_chance_admission(\n    request: Request,\n    GRE_Score: float = Form(...),\n    TOEFL_Score: float = Form(...),",
+        "detail": "web.app",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "web.app",
+        "description": "web.app",
+        "peekOfCode": "model = joblib.load(\"../models/logistic.pkl\")\n@app.get(\"/\", response_class=HTMLResponse)\nasync def form_page(request: Request):\n    return templates.TemplateResponse(\"form.html\", {\"request\": request})\n@app.post(\"/predict\", response_class=HTMLResponse)\nasync def predire_chance_admission(\n    request: Request,\n    GRE_Score: float = Form(...),\n    TOEFL_Score: float = Form(...),\n    University_Rating: int = Form(...),",
+        "detail": "web.app",
+        "documentation": {}
+    },
+    {
         "label": "app",
         "kind": 5,
         "importPath": "web.main",
         "description": "web.main",
-        "peekOfCode": "app = FastAPI(title=\"Student Performance Predictor\")\napp.mount(\"/static\", StaticFiles(directory=\"static\"), name=\"static\")\ntemplates = Jinja2Templates(directory=\"templates\")\n# Charger le pipeline\nmodel_gpa = joblib.load(\"models/model_gpa.pkl\")\nmodel_hsgpa = joblib.load(\"models/model_hsgpa.pkl\")\n@app.get(\"/\", response_class=HTMLResponse)\nasync def home(request: Request):\n    return templates.TemplateResponse(\"base.html\", {\"request\": request})\n@app.get(\"/about\", response_class=HTMLResponse)",
+        "peekOfCode": "app = FastAPI(title=\"Student Performance Predictor\")\napp.mount(\"/static\", StaticFiles(directory=\"static\"), name=\"static\")\ntemplates = Jinja2Templates(directory=\"templates\")\n# Charger le pipeline\nmodel_gpa = joblib.load(\"../models/model_gpa.pkl\")\nmodel_hsgpa = joblib.load(\"../models/model_hsgpa.pkl\")\n@app.get(\"/\", response_class=HTMLResponse)\nasync def home(request: Request):\n    return templates.TemplateResponse(\"base.html\", {\"request\": request})\n@app.get(\"/about\", response_class=HTMLResponse)",
         "detail": "web.main",
         "documentation": {}
     },
@@ -182,7 +257,7 @@
         "kind": 5,
         "importPath": "web.main",
         "description": "web.main",
-        "peekOfCode": "templates = Jinja2Templates(directory=\"templates\")\n# Charger le pipeline\nmodel_gpa = joblib.load(\"models/model_gpa.pkl\")\nmodel_hsgpa = joblib.load(\"models/model_hsgpa.pkl\")\n@app.get(\"/\", response_class=HTMLResponse)\nasync def home(request: Request):\n    return templates.TemplateResponse(\"base.html\", {\"request\": request})\n@app.get(\"/about\", response_class=HTMLResponse)\nasync def home(request: Request):\n    return templates.TemplateResponse(\"about.html\", {\"request\": request})",
+        "peekOfCode": "templates = Jinja2Templates(directory=\"templates\")\n# Charger le pipeline\nmodel_gpa = joblib.load(\"../models/model_gpa.pkl\")\nmodel_hsgpa = joblib.load(\"../models/model_hsgpa.pkl\")\n@app.get(\"/\", response_class=HTMLResponse)\nasync def home(request: Request):\n    return templates.TemplateResponse(\"base.html\", {\"request\": request})\n@app.get(\"/about\", response_class=HTMLResponse)\nasync def home(request: Request):\n    return templates.TemplateResponse(\"about.html\", {\"request\": request})",
         "detail": "web.main",
         "documentation": {}
     },
@@ -191,7 +266,7 @@
         "kind": 5,
         "importPath": "web.main",
         "description": "web.main",
-        "peekOfCode": "model_gpa = joblib.load(\"models/model_gpa.pkl\")\nmodel_hsgpa = joblib.load(\"models/model_hsgpa.pkl\")\n@app.get(\"/\", response_class=HTMLResponse)\nasync def home(request: Request):\n    return templates.TemplateResponse(\"base.html\", {\"request\": request})\n@app.get(\"/about\", response_class=HTMLResponse)\nasync def home(request: Request):\n    return templates.TemplateResponse(\"about.html\", {\"request\": request})\n@app.get(\"/feature\", response_class=HTMLResponse)\nasync def home(request: Request):",
+        "peekOfCode": "model_gpa = joblib.load(\"../models/model_gpa.pkl\")\nmodel_hsgpa = joblib.load(\"../models/model_hsgpa.pkl\")\n@app.get(\"/\", response_class=HTMLResponse)\nasync def home(request: Request):\n    return templates.TemplateResponse(\"base.html\", {\"request\": request})\n@app.get(\"/about\", response_class=HTMLResponse)\nasync def home(request: Request):\n    return templates.TemplateResponse(\"about.html\", {\"request\": request})\n@app.get(\"/feature\", response_class=HTMLResponse)\nasync def home(request: Request):",
         "detail": "web.main",
         "documentation": {}
     },
@@ -200,8 +275,26 @@
         "kind": 5,
         "importPath": "web.main",
         "description": "web.main",
-        "peekOfCode": "model_hsgpa = joblib.load(\"models/model_hsgpa.pkl\")\n@app.get(\"/\", response_class=HTMLResponse)\nasync def home(request: Request):\n    return templates.TemplateResponse(\"base.html\", {\"request\": request})\n@app.get(\"/about\", response_class=HTMLResponse)\nasync def home(request: Request):\n    return templates.TemplateResponse(\"about.html\", {\"request\": request})\n@app.get(\"/feature\", response_class=HTMLResponse)\nasync def home(request: Request):\n    return templates.TemplateResponse(\"feature.html\", {\"request\": request})",
+        "peekOfCode": "model_hsgpa = joblib.load(\"../models/model_hsgpa.pkl\")\n@app.get(\"/\", response_class=HTMLResponse)\nasync def home(request: Request):\n    return templates.TemplateResponse(\"base.html\", {\"request\": request})\n@app.get(\"/about\", response_class=HTMLResponse)\nasync def home(request: Request):\n    return templates.TemplateResponse(\"about.html\", {\"request\": request})\n@app.get(\"/feature\", response_class=HTMLResponse)\nasync def home(request: Request):\n    return templates.TemplateResponse(\"feature.html\", {\"request\": request})",
         "detail": "web.main",
+        "documentation": {}
+    },
+    {
+        "label": "StudentInput",
+        "kind": 6,
+        "importPath": "web.schemas",
+        "description": "web.schemas",
+        "peekOfCode": "class StudentInput(BaseModel):\n    GPA: float\n    Final_Exam_Scores: float\n    Hours_of_Study_per_Week: float\n    Attendance_Rate: float\n    Mental_Health_Status: str \n    Participation_in_Extracurricular_Activities: int\n    Family_Income: float\nclass UniversityAdmissionInput(BaseModel):\n    High_School_GPA: float",
+        "detail": "web.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "UniversityAdmissionInput",
+        "kind": 6,
+        "importPath": "web.schemas",
+        "description": "web.schemas",
+        "peekOfCode": "class UniversityAdmissionInput(BaseModel):\n    High_School_GPA: float\n    Final_Exam_Scores: float\n    Hours_of_Study_per_Week: float\n    Attendance_Rate: float\n    Mental_Health_Status: str\n    Participation_in_Extracurricular_Activities: int\n    Family_Income: float",
+        "detail": "web.schemas",
         "documentation": {}
     }
 ]

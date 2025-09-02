@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prédiction Admission</title>
+</head>
+<body>
+    <h2>Entrer les informations</h2>
+    <form action="/predict" method="post">
+        GRE Score: <input type="number" name="GRE_Score"><br>
+        TOEFL Score: <input type="number" name="TOEFL_Score"><br>
+        University Rating: <input type="number" name="University_Rating"><br>
+        SOP: <input type="text" name="SOP"><br>
+        LOR: <input type="text" name="LOR"><br>
+        CGPA: <input type="text" name="CGPA"><br>
+        Research (0 ou 1): <input type="number" name="Research"><br>
+        <button type="submit">Prédire</button>
+    </form>
+</body>
+</html>
