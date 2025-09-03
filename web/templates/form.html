@@ -14,37 +14,37 @@
       <form action="/predict_cla" method="post" class="row g-3">
         
         <div class="col-md-6">
-          <label class="form-label">Graduate Record Examination Score</label>
+          <label class="form-label">Graduate Record Examination Score (260-340 ou 'aucun')</label>
           <input type="number" name="GRE_Score" class="form-control" required>
         </div>
         
         <div class="col-md-6">
-          <label class="form-label">Test of English as a Foreign Language Score</label>
+          <label class="form-label">Test of English as a Foreign Language Score (0-120 ou 'aucun')</label>
           <input type="number" name="TOEFL_Score" class="form-control" required>
         </div>
         
         <div class="col-md-6">
-          <label class="form-label">University Rating</label>
+          <label class="form-label">University Rating (1 à 5 ou 'aucun')</label>
           <input type="number" name="University_Rating" class="form-control" required>
         </div>
         
         <div class="col-md-6">
-          <label class="form-label">Statement of Purpose</label>
+          <label class="form-label">Statement of Purpose (0.0 à 5.0 ou 'aucun')</label>
           <input type="text" name="SOP" class="form-control" placeholder="Ex: 3.5" required>
         </div>
         
         <div class="col-md-6">
-          <label class="form-label">Letter of Recommendation</label>
+          <label class="form-label">Letter of Recommendation (0.0 à 5.0 ou 'aucun')</label>
           <input type="text" name="LOR" class="form-control" placeholder="Ex: 4.0" required>
         </div>
         
         <div class="col-md-6">
-          <label class="form-label">Cumulative Grade Point Average</label>
+          <label class="form-label">Cumulative Grade Point Average (Sur 10 ou 'aucun')</label>
           <input type="text" name="CGPA" class="form-control" placeholder="Ex: 9.2" required>
         </div>
         
         <div class="col-md-6">
-          <label class="form-label">Research</label>
+          <label class="form-label">Research (Yes / No)</label>
           <select name="Research" class="form-select" required>
             <option value="">-- Choice --</option>
             <option value="0">No</option>

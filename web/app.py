@@ -43,14 +43,22 @@ async def predire_chance_admission(
     Research: int = Form(...)
     ):
 
+    gre = GRE_Score if GRE_Score is not None and 260 <= GRE_Score <= 340 else 300
+    toefl = TOEFL_Score if TOEFL_Score is not None and 0 <= TOEFL_Score <= 120 else 90
+    ur = University_Rating if University_Rating is not None and 1 <= University_Rating <= 5 else 3
+    sop = SOP if SOP is not None and 0.0 <= SOP <= 5.0 else 3.0
+    lor = LOR if LOR is not None and 0.0 <= LOR <= 5.0 else 3.0
+    cgpa = CGPA if CGPA is not None and 0.0 <= CGPA <= 10.0 else 7.5
+    research = Research if Research in [0, 1] else 0
+
     input_data = {
-        "GRE Score": GRE_Score,
-        "TOEFL Score": TOEFL_Score,
-        "University Rating": University_Rating,
-        "SOP": SOP,
-        "LOR ": LOR,
-        "CGPA": CGPA,
-        "Research": Research
+        "GRE Score": gre,
+        "TOEFL Score": toefl,
+        "University Rating": ur,
+        "SOP": sop,
+        "LOR ": sop,
+        "CGPA": cgpa,
+        "Research": research
     }
     
     input_df = pd.DataFrame([input_data])
@@ -82,14 +90,22 @@ async def predire_chance_admission_reg(
     Research: int = Form(...)
     ):
 
+    gre = GRE_Score if GRE_Score is not None and 260 <= GRE_Score <= 340 else 300
+    toefl = TOEFL_Score if TOEFL_Score is not None and 0 <= TOEFL_Score <= 120 else 90
+    ur = University_Rating if University_Rating is not None and 1 <= University_Rating <= 5 else 3
+    sop = SOP if SOP is not None and 0.0 <= SOP <= 5.0 else 3.0
+    lor = LOR if LOR is not None and 0.0 <= LOR <= 5.0 else 3.0
+    cgpa = CGPA if CGPA is not None and 0.0 <= CGPA <= 10.0 else 7.5
+    research = Research if Research in [0, 1] else 0
+
     input_data = {
-        "GRE Score": GRE_Score,
-        "TOEFL Score": TOEFL_Score,
-        "University Rating": University_Rating,
-        "SOP": SOP,
-        "LOR ": LOR,
-        "CGPA": CGPA,
-        "Research": Research
+        "GRE Score": gre,
+        "TOEFL Score": toefl,
+        "University Rating": ur,
+        "SOP": sop,
+        "LOR ": sop,
+        "CGPA": cgpa,
+        "Research": research
     }
     
     input_df = pd.DataFrame([input_data])
