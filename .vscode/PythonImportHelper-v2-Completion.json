@@ -221,7 +221,7 @@
         "kind": 5,
         "importPath": "web.app",
         "description": "web.app",
-        "peekOfCode": "app = FastAPI(title=\"Prédicteur de chance d'admission des étudiants\")\ntemplates = Jinja2Templates(directory=\"templates\")\nmodel = joblib.load(\"../models/logistic.pkl\")\n@app.get(\"/\", response_class=HTMLResponse)\nasync def form_page(request: Request):\n    return templates.TemplateResponse(\"form.html\", {\"request\": request})\n@app.post(\"/predict\", response_class=HTMLResponse)\nasync def predire_chance_admission(\n    request: Request,\n    GRE_Score: float = Form(...),",
+        "peekOfCode": "app = FastAPI(title=\"Prédicteur de chance d'admission des étudiants\")\ntemplates = Jinja2Templates(directory=\"templates\")\nmodel = joblib.load(\"../models/logistic.pkl\")\nmodel_reg = joblib.load(\"../models/linear.pkl\")\n@app.get(\"/form_cla\", response_class=HTMLResponse)\nasync def form_page(request: Request):\n    return templates.TemplateResponse(\"form.html\", {\"request\": request})\n@app.get(\"/form_reg\", response_class=HTMLResponse)\nasync def form_page(request: Request):\n    return templates.TemplateResponse(\"form1.html\", {\"request\": request})",
         "detail": "web.app",
         "documentation": {}
     },
@@ -230,7 +230,7 @@
         "kind": 5,
         "importPath": "web.app",
         "description": "web.app",
-        "peekOfCode": "templates = Jinja2Templates(directory=\"templates\")\nmodel = joblib.load(\"../models/logistic.pkl\")\n@app.get(\"/\", response_class=HTMLResponse)\nasync def form_page(request: Request):\n    return templates.TemplateResponse(\"form.html\", {\"request\": request})\n@app.post(\"/predict\", response_class=HTMLResponse)\nasync def predire_chance_admission(\n    request: Request,\n    GRE_Score: float = Form(...),\n    TOEFL_Score: float = Form(...),",
+        "peekOfCode": "templates = Jinja2Templates(directory=\"templates\")\nmodel = joblib.load(\"../models/logistic.pkl\")\nmodel_reg = joblib.load(\"../models/linear.pkl\")\n@app.get(\"/form_cla\", response_class=HTMLResponse)\nasync def form_page(request: Request):\n    return templates.TemplateResponse(\"form.html\", {\"request\": request})\n@app.get(\"/form_reg\", response_class=HTMLResponse)\nasync def form_page(request: Request):\n    return templates.TemplateResponse(\"form1.html\", {\"request\": request})\n@app.post(\"/predict_cla\", response_class=HTMLResponse)",
         "detail": "web.app",
         "documentation": {}
     },
@@ -239,7 +239,16 @@
         "kind": 5,
         "importPath": "web.app",
         "description": "web.app",
-        "peekOfCode": "model = joblib.load(\"../models/logistic.pkl\")\n@app.get(\"/\", response_class=HTMLResponse)\nasync def form_page(request: Request):\n    return templates.TemplateResponse(\"form.html\", {\"request\": request})\n@app.post(\"/predict\", response_class=HTMLResponse)\nasync def predire_chance_admission(\n    request: Request,\n    GRE_Score: float = Form(...),\n    TOEFL_Score: float = Form(...),\n    University_Rating: int = Form(...),",
+        "peekOfCode": "model = joblib.load(\"../models/logistic.pkl\")\nmodel_reg = joblib.load(\"../models/linear.pkl\")\n@app.get(\"/form_cla\", response_class=HTMLResponse)\nasync def form_page(request: Request):\n    return templates.TemplateResponse(\"form.html\", {\"request\": request})\n@app.get(\"/form_reg\", response_class=HTMLResponse)\nasync def form_page(request: Request):\n    return templates.TemplateResponse(\"form1.html\", {\"request\": request})\n@app.post(\"/predict_cla\", response_class=HTMLResponse)\nasync def predire_chance_admission(",
+        "detail": "web.app",
+        "documentation": {}
+    },
+    {
+        "label": "model_reg",
+        "kind": 5,
+        "importPath": "web.app",
+        "description": "web.app",
+        "peekOfCode": "model_reg = joblib.load(\"../models/linear.pkl\")\n@app.get(\"/form_cla\", response_class=HTMLResponse)\nasync def form_page(request: Request):\n    return templates.TemplateResponse(\"form.html\", {\"request\": request})\n@app.get(\"/form_reg\", response_class=HTMLResponse)\nasync def form_page(request: Request):\n    return templates.TemplateResponse(\"form1.html\", {\"request\": request})\n@app.post(\"/predict_cla\", response_class=HTMLResponse)\nasync def predire_chance_admission(\n    request: Request,",
         "detail": "web.app",
         "documentation": {}
     },
