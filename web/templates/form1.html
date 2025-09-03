@@ -16,32 +16,32 @@
         
         <div class="col-md-6">
           <label class="form-label">Graduate Record Examination Score (260-340 ou 'aucun')</label>
-          <input type="number" name="GRE_Score" class="form-control" required>
+          <input type="number" name="GRE_Score" min="260" max="340" class="form-control" required>
         </div>
         
         <div class="col-md-6">
           <label class="form-label">Test of English as a Foreign Language Score (0-120 ou 'aucun')</label>
-          <input type="number" name="TOEFL_Score" class="form-control" required>
+          <input type="number" name="TOEFL_Score" min="0" max="120" class="form-control" required>
         </div>
         
         <div class="col-md-6">
           <label class="form-label">University Rating (1 à 5 ou 'aucun')</label>
-          <input type="number" name="University_Rating" class="form-control" required>
+          <input type="number" name="University_Rating" min="1" max="5" class="form-control" required>
         </div>
         
         <div class="col-md-6">
           <label class="form-label">Statement of Purpose (0.0 à 5.0 ou 'aucun')</label>
-          <input type="text" name="SOP" class="form-control" placeholder="Ex: 3.5" required>
+          <input type="text" name="SOP" class="form-control" min="0.0" max="5.0" placeholder="Ex: 3.5" required>
         </div>
         
         <div class="col-md-6">
           <label class="form-label">Letter of Recommendation (0.0 à 5.0 ou 'aucun')</label>
-          <input type="text" name="LOR" class="form-control" placeholder="Ex: 4.0" required>
+          <input type="text" name="LOR" class="form-control" min="0.0" max="5.0" placeholder="Ex: 4.0" required>
         </div>
         
         <div class="col-md-6">
           <label class="form-label">Cumulative Grade Point Average (Sur 10 ou 'aucun')</label>
-          <input type="text" name="CGPA" class="form-control" placeholder="Ex: 9.2" required>
+          <input type="text" name="CGPA" class="form-control" min="0.0" max="10.0" placeholder="Ex: 9.2" required>
         </div>
         
         <div class="col-md-6">
