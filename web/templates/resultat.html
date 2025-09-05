@@ -10,35 +10,27 @@
 
   <div class="container mt-5">
     <div class="card shadow-lg p-4 rounded-4 text-center">
-      <h2 class="mb-4 text-primary">Résultat de prédiction avec un modéle de classification</h2>
-      
+      <h2 class="mb-4 text-primary">Résultat de prédiction</h2>
+
+      <!-- Classification -->
       <p class="fs-5">
         {% if prediction == 1 %}
-        <span class="fw-bold text-success">{{ message }}</span>.
+          <span class="fw-bold text-success">{{ message }}</span>.
         {% else %}
-        <span class="fw-bold text-danger">{{ message }}</span>.
+          <span class="fw-bold text-danger">{{ message }}</span>.
         {% endif %}
       </p>
 
-  </div>
-
-  <div class="container mt-5">
-    <div class="card shadow-lg p-4 rounded-4 text-center">
-      <h2 class="mb-4 text-primary">Résultat de prédiction avec un modéle de regression</h2>
-      
+      <!-- Régression -->
       <p class="fs-5">
-        Vous avez
-        <span class="fw-bold text-success">{{ prediction_reg }} %</span> de chance d'être admis
-        and  
-        <span class="fw-bold text-warning">{{ prediction_reg_c }} %</span> non admis.
+        Vous avez <span class="fw-bold text-success">{{ prediction_reg|abs }} %</span> de chance d'être admis.
       </p>
-  </div>
+    </div>
 
-  <div class="text-center mt-4">
+    <div class="text-center mt-4">
       <a href="/" class="btn btn-primary btn-lg px-4">Faire une autre prédiction</a>
+    </div>
   </div>
-
-
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

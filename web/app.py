@@ -20,7 +20,7 @@ class Etudiant(BaseModel):
 app = FastAPI(title="Prédicteur de chance d'admission des étudiants")
 templates = Jinja2Templates(directory="templates")
 
-model = joblib.load("../models/logistic.pkl")
+model = joblib.load("../models/logistic_1.pkl")
 model_reg = joblib.load("../models/linear.pkl")
 
 @app.get("/", response_class=HTMLResponse)

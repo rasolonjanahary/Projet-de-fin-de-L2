@@ -8,58 +8,119 @@
 </head>
 <body class="bg-light">
 
-  <div class="container mt-5">
-    <div class="card shadow-lg p-4 rounded-4">
-      <h2 class="text-center mb-4">Admission predict</h2>
-      <form action="/predict" method="post" class="row g-3">
-        
-        <div class="col-md-6">
-          <label class="form-label">Graduate Record Examination Score (260-340 ou 'aucun')</label>
-          <input type="number" name="GRE_Score" min="260" max="340" class="form-control" required>
-        </div>
-        
-        <div class="col-md-6">
-          <label class="form-label">Test of English as a Foreign Language Score (0-120 ou 'aucun')</label>
-          <input type="number" name="TOEFL_Score" min="0" max="120"class="form-control" required>
-        </div>
-        
-        <div class="col-md-6">
-          <label class="form-label">University Rating (1 à 5 ou 'aucun')</label>
-          <input type="number" name="University_Rating" min="1" max="5" class="form-control" required>
-        </div>
-        
-        <div class="col-md-6">
-          <label class="form-label">Statement of Purpose (0.0 à 5.0 ou 'aucun')</label>
-          <input type="text" name="SOP" class="form-control" min="0.0" max="5.0" placeholder="Ex: 3.5" required>
-        </div>
-        
-        <div class="col-md-6">
-          <label class="form-label">Letter of Recommendation (0.0 à 5.0 ou 'aucun')</label>
-          <input type="text" name="LOR" class="form-control" min="0.0" max="5.0" placeholder="Ex: 4.0" required>
-        </div>
-        
-        <div class="col-md-6">
-          <label class="form-label">Cumulative Grade Point Average (Sur 10 ou 'aucun')</label>
-          <input type="text" name="CGPA" class="form-control" min="0.0" max="10.0" placeholder="Ex: 9.2" required>
-        </div>
-        
-        <div class="col-md-6">
-          <label class="form-label">Research (Yes / No)</label>
-          <select name="Research" class="form-select" required>
-            <option value="">-- Choice --</option>
-            <option value="0">No</option>
-            <option value="1">Yes</option>
-          </select>
-        </div>
-        
-        <div class="col-12 text-center mt-4">
-          <button type="submit" class="btn btn-primary btn-lg px-4">Predict</button>
-        </div>
-      </form>
-    </div>
-  </div>
+<div class="container mt-5">
+  <div class="card shadow-lg p-4 rounded-4">
+    <h2 class="text-center mb-4">Admission Predict</h2>
+    <form id="predictForm" action="/predict" method="post" class="row g-3">
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- GRE -->
+      <div class="col-md-6">
+        <label class="form-label">Graduate Record Examination (260-340)</label>
+        <div class="input-group">
+          <input type="number" id="GRE_Score" name="GRE_Score" min="260" max="340" class="form-control">
+          <div class="input-group-text">
+            <input type="checkbox" id="GRE_Default"> Aucun
+          </div>
+        </div>
+      </div>
+
+      <!-- TOEFL -->
+      <div class="col-md-6">
+        <label class="form-label">TOEFL Score (0-120)</label>
+        <div class="input-group">
+          <input type="number" id="TOEFL_Score" name="TOEFL_Score" min="0" max="120" class="form-control">
+          <div class="input-group-text">
+            <input type="checkbox" id="TOEFL_Default"> Aucun
+          </div>
+        </div>
+      </div>
+
+      <!-- University Rating -->
+      <div class="col-md-6">
+        <label class="form-label">University Rating (1-5)</label>
+        <div class="input-group">
+          <input type="number" id="University_Rating" name="University_Rating" min="1" max="5" class="form-control">
+          <div class="input-group-text">
+            <input type="checkbox" id="UR_Default"> Aucun
+          </div>
+        </div>
+      </div>
+
+      <!-- SOP -->
+      <div class="col-md-6">
+        <label class="form-label">Statement of Purpose (0.0 - 5.0)</label>
+        <div class="input-group">
+          <input type="number" step="0.1" id="SOP" name="SOP" min="0" max="5" class="form-control">
+          <div class="input-group-text">
+            <input type="checkbox" id="SOP_Default"> Aucun
+          </div>
+        </div>
+      </div>
+
+      <!-- LOR -->
+      <div class="col-md-6">
+        <label class="form-label">Letter of Recommendation (0.0 - 5.0)</label>
+        <div class="input-group">
+          <input type="number" step="0.1" id="LOR" name="LOR" min="0" max="5" class="form-control">
+          <div class="input-group-text">
+            <input type="checkbox" id="LOR_Default"> Aucun
+          </div>
+        </div>
+      </div>
+
+      <!-- CGPA -->
+      <div class="col-md-6">
+        <label class="form-label">Cumulative GPA (0.0 - 10.0)</label>
+        <div class="input-group">
+          <input type="number" step="0.1" id="CGPA" name="CGPA" min="0" max="10" class="form-control">
+          <div class="input-group-text">
+            <input type="checkbox" id="CGPA_Default"> Aucun
+          </div>
+        </div>
+      </div>
+
+      <!-- Research -->
+      <div class="col-md-6">
+        <label class="form-label">Research</label>
+        <select name="Research" class="form-select" required>
+          <option value="">-- Choisir --</option>
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </select>
+      </div>
+
+      <!-- Submit -->
+      <div class="col-12 text-center mt-4">
+        <button type="submit" class="btn btn-primary btn-lg px-4">Predict</button>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+<script>
+  // Valeurs par défaut (les mêmes que Python)
+  const defaults = {
+    GRE_Score: 300,
+    TOEFL_Score: 90,
+    University_Rating: 3,
+    SOP: 3.0,
+    LOR: 3.0,
+    CGPA: 7.5
+  };
+
+  // Gestion des cases "Aucun"
+  document.getElementById("predictForm").addEventListener("submit", function () {
+    for (const key in defaults) {
+      const input = document.getElementById(key);
+      const checkbox = document.getElementById(key.replace(/_.*/, "") + "_Default");
+      if (checkbox && checkbox.checked) {
+        input.value = defaults[key];
+      }
+    }
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
